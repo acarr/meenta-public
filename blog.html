@@ -1,0 +1,20 @@
+---
+layout: default
+title: The startup Blog
+summary: Tap into the Meenta startup.
+tag: blog ngs startup
+published: true
+---
+
+<ul class="posts">
+  {% for post in site.posts %}
+    {% if post.status != "draft" then %}
+    <li>
+      <a href="{{ post.url }}">
+				{{ post.title }}
+			</a>
+      <p>{{ post.summary }}</p>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

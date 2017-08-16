@@ -17,7 +17,7 @@ This version requires Authentication on all endpoints. Nothing is public.
  - Data Format: JSON Only
  - Access to Account API Keys is limited to select users. Please contact support for this level of access.
  - Terms of Use: Use of the API is covered by the Meenta Terms of Use.
- - Rate Limiting: All endpoints have rate limiting. Please contact support for changes to limits. 
+ - Rate Limiting: All endpoints have rate limiting. Please contact support for changes to limits.
 
 ## Authentication
 The '/auth' endpoint returns a token for all authenticate
