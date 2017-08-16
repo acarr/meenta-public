@@ -64,6 +64,25 @@
 		</div>
 	</div>
 
+	<div class="notice notice-host container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-7">
+					<h4>
+						{% if page.title %}
+			         {{ page.title }} 
+			      {% endif %}
+					</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-md-12">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<footer class="container-fluid">
 		<div class="container">
 			<h5 class="logotype-small">Meenta</h5>
