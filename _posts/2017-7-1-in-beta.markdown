@@ -1,0 +1,18 @@
+---
+layout: blog
+title: We are in Beta+
+summary: This week Meenta went live.
+tag: supply NGS instruments core labs
+author: Stephan Smith
+author_link: 'team/stephan-smith'
+---
+
+<img width="500" src="https://cdn-images-1.medium.com/max/1600/1*P2TI1LkSAIYjdw_c9eQYeA.png">
+
+Actually we are in a bit more then Beta. Since our platform is live! But beta gives us the cover to collect more user feedback and roll out feature changes.
+
+*Remember, Google keeps gmail in beta for years, so maybe we will too!*
+
+Meenta is an instrument sharing service for science, initially focused on Next Generation Sequencing (NGS). Every year researchers and research organizations invest in expensive equipment from vendors like Illumina, ThermoFish Scientific and Pacific Biosciences. These instrument are complex to house, service and operate.
+
+More importantly they often sit unused, something as much as 60% of the time. Our mission is to unlock these investments and give labs a way to speed up their sample queues, re-coop their investments.

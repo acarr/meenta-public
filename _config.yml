@@ -1,7 +1,7 @@
-base-url:    /
+base-url:       http://site.meenta.io/
 highlighter:    false
-markdown:    markdown
-permalink:   date
+markdown:               markdown
+permalink:              pretty
 site-title:             Meenta.io
 bio-fullname:           Stephan Smith
 bio-nickname:           d1b1
@@ -16,3 +16,4 @@ github-username:        d1b1
 feedburner-username:    d1b1
 delicious-username:     stephansmith93
 enabled-delicious:      true
+include: ['team']
