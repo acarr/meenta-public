@@ -1,0 +1,57 @@
+
+.mnt-dropdown {
+
+    background: #FFF;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    padding: 24px;
+    box-shadow: 0 2px 7px 1px rgba(0,0,0,0.17);
+    border-radius: 3px;
+    overflow: scroll;
+
+    &.mnt-dropdown-offset-top {
+
+        top: auto;
+        bottom: 100%;
+    }
+
+    .mnt-dropdown-option {
+
+        display: block;
+        padding: 0.4em 0;
+        margin: 0;
+        font-weight: 400;
+
+        &:link,
+        &:active,
+        &:visited {
+
+            color: $text;
+            text-decoration: none;
+        }
+
+        &:hover {
+
+            color: $blue;
+        }
+
+        &.mnt-selected {
+
+            color: $blue;
+            
+            &:before {
+
+                content: " ";
+                position: absolute;
+                margin: 3px 0 0 -17px;
+                width: 12px;
+                height: 13px;
+                background: url('../images/checkmark.svg') no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}

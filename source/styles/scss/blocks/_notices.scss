@@ -1,0 +1,67 @@
+.notice {
+
+    background: red;
+
+    .container {
+
+        margin-top: 122px;
+        margin-bottom: 140px;
+    }
+
+    h3 {
+
+        font-size: pem(42);
+        font-weight: 300;
+        color: #FFF;
+    }
+
+    h4 {
+
+        font-size: pem(42);
+        font-weight: 300;
+        color: $text;
+        margin-top: 0;
+        margin-bottom: 0;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    p {
+
+        font-size: pem(18);
+        line-height: pem(30, 18);
+        font-weight: 300;
+        margin-top: 17px;
+        color: $text;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .button {
+
+        margin-top: 13px;
+    }
+}
+
+.notice-book {
+
+    background: $green url('../images/book-background.svg') no-repeat 600px 13%;
+
+    @media (max-width: $screen-sm-max) { 
+
+        background-position-x: 150px;
+    }
+
+    h4, p {
+
+        color: #FFF;
+    }
+}
+
+.notice-host {
+
+    background: $lightGrey url('../images/host-background.svg') no-repeat 600px 40%;
+
+    @media (max-width: $screen-sm-max) { 
+
+        background-position-x: 150px;
+    }
+}

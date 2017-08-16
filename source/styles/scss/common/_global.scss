@@ -1,0 +1,22 @@
+// Global
+
+body, html {
+
+    width: 100%;
+    height: 100%;
+}
+
+body {
+
+    font-family: $fontStack;
+    font-weight: 300;
+    font-size: 100%;
+    background-color: #FFF;
+}
+
+// Required for Bootstrap grid
+* {
+
+    box-sizing: border-box;
+}
+

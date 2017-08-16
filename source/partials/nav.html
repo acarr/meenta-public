@@ -1,0 +1,38 @@
+        <header class="header container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="header-logo col-md-3 col-sm-3 col-xs-12">
+                        <h1 class="logotype-small"><a href="/">Meenta</a></h1>
+                    </div>
+                    <nav class="header-nav col-md-9 col-sm-9 col-xs-12">
+                        <ul>
+
+                            @@if (selected === "how-to-book") {
+                                <li class="selected"><a href="how-to-book.html">How to Book</a></li>
+                            }
+                            @@if (selected !== "how-to-book") {
+                                <li><a href="how-to-book.html">How to Book</a></li>
+                            }
+
+                            @@if (selected === "become-a-host") {
+                                <li class="selected"><a href="become-a-host.html">Become a Host</a></li>
+                            }
+                            @@if (selected !== "become-a-host") {
+                                <li><a href="become-a-host.html">Become a Host</a></li>
+                            }
+
+                            <!-- @@if (selected === "about") {
+                                <li class="selected"><a href="">About</a></li>
+                            }
+                            @@if (selected !== "about") {
+                                <li><a href="#">About</a></li>
+                            }  -->
+
+                            <li class="strong" ng-if="hasSession !== true"><a href="/app.html#/login">Login</a></li>
+                            <li class="strong" ng-if="hasSession !== true"><a href="/app.html#/register">Signup</a></li>
+                            <li class="strong" ng-if="hasSession"><a href="/app.html#/main/dashboard">Return to Console</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>

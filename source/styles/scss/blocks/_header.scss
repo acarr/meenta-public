@@ -1,0 +1,105 @@
+.header {
+
+    background-color: $darkBlue;
+    height: 67px;
+
+    @media (max-width: $screen-xs-max) { 
+
+        height: auto;
+     }
+
+    .header-logo h1 {
+
+        margin: 27px 0 0 0;
+        padding: 0;
+
+        a {
+
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .header-nav {
+
+        ul {
+
+            list-style: none;
+            text-align: right;
+            margin-top: 26px;
+            padding: 0;
+
+            @media (max-width: $screen-xs-max) { 
+
+                text-align: left;
+            }
+
+            li {
+
+                display: inline;
+                padding-right: 24px;
+
+                &:last-child {
+
+                    padding: 0;
+                }
+
+                a, a:link {
+
+                    text-decoration: none;
+                    color: #FFF;
+                    font-size: pem(16);
+                    font-weight: 400;
+                    letter-spacing: 0.03em;
+                    -webkit-font-smoothing: antialiased;
+                    position: relative;
+                    opacity: 1;
+
+                    @media (max-width: $screen-xs-max) { 
+
+                        font-size: pem(14);
+                        line-height: pem(34, 14);
+                    }
+
+                    &:after {
+
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        height: 0px;
+                        background: #fff;
+                        content: '';
+                        opacity: 0;
+                        transform: translateY(10px);
+                        transition: height 0.3s, opacity 0.3s, transform 0.3s;
+                    }
+
+                    &:active {
+
+                        opacity: 0.5;
+                    }
+                }
+
+                a:hover::after,
+                &.selected a:after {
+
+                    height: 2px;
+                    opacity: 1;
+                    transform: translateY(5px);
+                }
+
+                &.selected a:after {
+
+                    background: $green;
+                }
+
+                &.strong a {
+
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

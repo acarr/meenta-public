@@ -1,1 +1,8 @@
 _site
+
+node_modules
+.sass-cache
+.DS_Store
+app/styles/styles.css
+.publish
+.serve

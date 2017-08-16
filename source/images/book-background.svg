@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1317px" height="1321px" viewBox="0 0 1317 1321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>book-background</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="book-background" transform="translate(659.838009, 662.838009) rotate(-70.000000) translate(-659.838009, -662.838009) translate(-273.161991, -270.161991)">
+            <g id="Page-1" opacity="0.0809818097" transform="translate(932.673844, 932.673844) rotate(-45.000000) translate(-932.673844, -932.673844) translate(272.673844, 273.673844)" stroke-width="2" stroke="#414141">
+                <polyline id="Stroke-1" points="87.6858112 343.819354 87.6858112 985.526738 91.128515 991.458176 649.964856 1312.30096 666.345109 1317.75265 1225.15952 996.909865 1238.09707 985.526738 1238.09707 343.819354"></polyline>
+                <polyline id="Stroke-3" points="479.029132 654.245056 515.539334 407.261746 1238.96761 692.646752"></polyline>
+                <path d="M402.366478,1172.98633 L455.651638,812.498859" id="Stroke-4"></path>
+                <path d="M692.505272,406.129976 L980.025857,179.775857" id="Stroke-5"></path>
+                <path d="M980.032435,1140.4899 L692.818843,914.419271" id="Stroke-6"></path>
+                <g id="Group-11" transform="translate(0.000000, 0.440534)">
+                    <polygon id="Stroke-7" points="323.326824 99.6272718 0.699431693 655.328814 0.699431693 662.219749 323.326824 1217.92129 334.773266 1230.80908 980.02805 1230.80908 996.978432 1227.38542 1319.62775 671.640267 1319.62775 645.908296 996.978432 90.1849468 980.02805 86.7612862 334.773266 86.7612862"></polygon>
+                    <polyline id="Stroke-9" points="1238.09488 974.176285 1238.09488 332.4689 1225.15733 321.085774 666.342916 0.242985045 649.962663 5.69467384 91.1263222 326.537463 87.6836184 332.4689 87.6836184 974.176285"></polyline>
+                </g>
+                <path d="M695.568621,1233.7007 L560.469908,894.998175" id="Stroke-12"></path>
+                <path d="M561.281246,425.31774 L696.489599,86.3317305" id="Stroke-13"></path>
+                <polyline id="Stroke-14" points="443.589018 602.006974 408.591851 514.300204 501.720278 500.692789"></polyline>
+                <path d="M457.294049,507.178118 L403.943105,146.363547" id="Stroke-15"></path>
+                <polyline id="Stroke-16" points="1240.57933 626.709666 517.151046 912.094671 468.42692 582.52918"></polyline>
+                <polyline id="Stroke-17" points="503.483293 819.498827 409.543529 805.760571 444.255631 718.751618"></polyline>
+                <path d="M684.775635,845.991854 L566.758872,828.742711" id="Stroke-18"></path>
+                <path d="M1179.52725,918.311777 L740.5277,854.156303" id="Stroke-19"></path>
+                <path d="M740.023355,465.843414 L1178.60627,401.731553" id="Stroke-20"></path>
+                <path d="M563.313976,491.673515 L684.554161,473.944623" id="Stroke-21"></path>
+                <path d="M408.427391,629.819309 L180.792309,343.823715" id="Stroke-22"></path>
+                <g id="Group-27" transform="translate(178.351335, 343.575425)">
+                    <path d="M968.476809,0.243928985 L485.489591,607.104119 L359.403307,448.699849 L359.425235,448.76527 L191.434448,316.57272 C191.434448,316.57272 350.566303,191.314718 350.588231,191.314718 L483.625707,24.1877462 L966.634853,631.047936" id="Stroke-23" stroke-linejoin="round"></path>
+                    <path d="M0.601211305,631.041394 L227.995084,345.329288" id="Stroke-25"></path>
+                </g>
+            </g>
+            <g id="Group-15" transform="translate(724.000000, 450.000000)">
+                <circle id="Oval-4" fill="#469A2E" cx="595" cy="53" r="4"></circle>
+                <circle id="Oval-4" fill="#469A2E" cx="342" cy="4" r="4"></circle>
+                <circle id="Oval-4" fill="#469A2E" cx="366" cy="217" r="4"></circle>
+                <circle id="Oval-4" fill="#CECECE" cx="757" cy="300" r="4"></circle>
+                <circle id="Oval-4" fill="#CECECE" cx="4" cy="275" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

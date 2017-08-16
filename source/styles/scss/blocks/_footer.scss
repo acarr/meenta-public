@@ -1,0 +1,45 @@
+footer {
+
+    background: $darkGrey;
+
+    h5 {
+
+        margin-top: 50px;
+        margin-bottom: 12px;
+    }
+
+    em {
+
+        font-size: pem(18);
+        font-style: normal;
+        color: $green;
+        font-weight: 300;
+        -webkit-font-smoothing: antialiased;
+        letter-spacing: 0.02em;
+    }
+
+    h6 {
+
+        font-size: pem(13);
+        color: #9C9C9C;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+    }
+
+    a, a:link {
+
+        color: #FFF;
+        -webkit-font-smoothing: antialiased;
+        text-decoration: none;
+       
+        &:hover {
+
+            text-decoration: underline;
+        }
+
+        &:active {
+
+            opacity: 0.5;
+        }
+    }
+}
