@@ -1,4 +1,4 @@
-#### Meenta.io Public Site
+### Meenta.io Public Site
 
 #### Local Jekyll Development
 
