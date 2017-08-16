@@ -1,6 +1,6 @@
 base-url:    /
 highlighter:    false
-markdown:    kramdown
+markdown:    markdown
 permalink:   date
 site-title:             Meenta.io
 bio-fullname:           Stephan Smith
