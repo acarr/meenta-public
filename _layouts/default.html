@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="consoleApp">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +30,6 @@
 	<meta name="msapplication-square310x310logo" content="images/favs/mstile-310x310.png" />
 </head>
 <body class="page-home">
-
 	<header class="header container-fluid">
 		<div class="container">
 			<div class="row">
@@ -48,41 +47,24 @@
 			</div>
 		</div>
 	</header>
-
 	<div class="notice notice-host container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-md-7">
-					<h4>Host Terms & Conditions</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-5 col-md-7">
-					<p>Start utilizing access capacity on your instruments today. Use Meenta's LIMS or connect Meenta to your existing system.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="notice notice-host container-fluid">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 col-md-7">
+				<div class="col-lg-12 col-md-12">
 					<h4>
 						{% if page.title %}
-			         {{ page.title }} 
+			         {{ page.title }}
 			      {% endif %}
 					</h4>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-5 col-md-12">
+				<div class="col-lg-12 col-md-12">
 					{{ content }}
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<footer class="container-fluid">
 		<div class="container">
 			<h5 class="logotype-small">Meenta</h5>
@@ -92,32 +74,6 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="scripts/main.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-	<script>
-		var app = angular.module('consoleApp', []);
-
-		app.run(function($rootScope) {
-			$rootScope.hasSession = false;
-
-			// Initialize Firebase
-			var config = {
-				apiKey: "AIzaSyBFeEzLC7tH2fyEhSXEjA6LxEkfVlFtvXY",
-				authDomain: "samplehub-25c4d.firebaseapp.com",
-				databaseURL: "https://samplehub-25c4d.firebaseio.com",
-				storageBucket: "samplehub-25c4d.appspot.com",
-				messagingSenderId: "529323641154"
-			};
-
-			firebase.initializeApp(config);
-
-			firebase.auth().onAuthStateChanged(function(user) {
-				if (user) $rootScope.hasSession = true;
-				$rootScope.$apply();
-			});
-		});
-	</script>
-
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -126,8 +82,6 @@
 
 		ga('create', 'UA-91836384-1', 'auto');
 		ga('send', 'pageview');
-
 	</script>
-
 </body>
 </html>
