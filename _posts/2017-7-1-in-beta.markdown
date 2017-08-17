@@ -5,6 +5,7 @@ summary: This week Meenta went live.
 tag: supply NGS instruments core labs
 author: Stephan Smith
 author_link: 'team/stephan-smith'
+linkedin: stephansmithbc93
 ---
 
 <img width="500" src="https://cdn-images-1.medium.com/max/1600/1*P2TI1LkSAIYjdw_c9eQYeA.png">

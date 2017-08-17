@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Meenta — Send samples, not emails.</title>
-	<meta name="description" content="">
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/styles/styles.css">
 	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyDv7QmL1cWGDE-uZG7XdttdX7s9eTVIAe8"></script>
@@ -39,9 +39,9 @@
 				<nav class="header-nav col-md-9 col-sm-9 col-xs-12">
 					<ul>
 						<li><a href="/how-to-book">How to Book</a></li>
-						<li class="selected"><a href="/become-a-host">Become a Host</a></li>
+						<li><a href="/become-a-host">Become a Host</a></li>
 						<li><a href="/blog">Blog</a></li>
-						<li><a href="/resources">Resources</a></li>
+						<li class="selected"><a href="/resources">Resources</a></li>
 						<li class="strong"><a href="https://app.meenta.io/#/login">Login</a></li>
 						<li class="strong"><a href="https://app.meenta.io/#/register">Signup</a></li>
 					</ul>

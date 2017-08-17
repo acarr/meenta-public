@@ -5,6 +5,7 @@ summary: I grew in communist Hungary and moved to the United States at the age o
 tag: supply NGS instruments core labs
 author: Gabor Bethlendy
 author_link: 'team/gabor-bethlendy'
+linkedin: gabor-bethlendy-6323102
 ---
 
 I grew in communist Hungary and moved to the United States at the age of eight. How we got here is an interesting story better left for another article. Point being that most kids growing up in the US had chores of taking out the garbage or similar. However, mine was riding my bike to the only store in town to stand in the bread line. My reward for this was often a Coke I could by at the bar next door. The year was 1975 and for me and my brother this was completely normal and in some ways an adventure to try and get the best bread. It is somewhat ironic that after 40 years in the US I find myself starting a company focused on solving a very similar issue, but in genomics.

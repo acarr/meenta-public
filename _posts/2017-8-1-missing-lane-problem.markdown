@@ -5,6 +5,7 @@ summary: Meenta focused on equipment owners 'MLP'. In an effort to get at the un
 tag: supply NGS instruments core labs
 author: Stephan Smith
 author_link: 'team/stephan-smith'
+linkedin: stephansmithbc93
 ---
 
 The ‘Missing Lane Problem’ is an often understated problem in the Next-Generation Sequencing (NGS) space. The cost of the equipment, cost of reagents used for each instrument run, and the number of configurations mean that NGS equipment have to be fully utilized before an instrument can start.
