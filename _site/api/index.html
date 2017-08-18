@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Meenta — Send samples, not emails.</title>
+	<meta name="description" content="Science Equipment Sharing Service for Next Generation Sequencing.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/styles/styles.css">
+	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyDv7QmL1cWGDE-uZG7XdttdX7s9eTVIAe8"></script>
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favs/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favs/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favs/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favs/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/favs/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favs/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/favs/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favs/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="/images/favs/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="/images/favs/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="/images/favs/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/images/favs/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="/images/favs/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="Meenta"/>
+	<meta name="msapplication-TileColor" content="#3C92F6" />
+	<meta name="msapplication-TileImage" content="/images/favs/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="/images/favs/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="/images/favs/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="/images/favs/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="/images/favs/mstile-310x310.png" />
+</head>
+<body class="page-home">
+	<header class="header container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="header-logo col-md-3 col-sm-3 col-xs-12">
+					<h1 class="logotype-small"><a href="/">Meenta</a></h1>
+				</div>
+				<nav class="header-nav col-md-9 col-sm-9 col-xs-12">
+					<ul>
+						<li><a href="/how-to-book">How to Book</a></li>
+						<li class="selected"><a href="/become-a-host">Become a Host</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/resources">Resources</a></li>
+						<li class="strong"><a href="https://app.meenta.io/#/login">Login</a></li>
+						<li class="strong"><a href="https://app.meenta.io/#/register">Signup</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="notice notice-host container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<h4>
+						
+			         API & SDK Documentation
+			      
+					</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<style>
+	li { padding: 4px; }
+</style>
+
+<p>Meenta offers a REST API for user, partner and equipment integrations. To
+access the API you need an active account with API access enabled. Use
+the account API options to generate an API token. This API implements
+standard <strong>OAuth2</strong> with variable rate limiting per endpoint grouping.</p>
+
+<p>There are no public endpoints, all API endpoints require authentication.
+This API is still in active development, so endpoints, validation and schemas
+may change.</p>
+
+<ul>
+  <li>API URL <a href="http://api.meenta.io/v0.1">http://api.meenta.io/v0.1</a></li>
+  <li>Version: 0.0.1</li>
+  <li>Data Format: JSON Only</li>
+  <li>Access to Account API Keys is limited to select users. Please contact support for access.</li>
+  <li>Terms of Use: Use of the API is covered by the Meenta Terms of Use.</li>
+  <li>Rate Limiting: All endpoints have rate limiting. Please contact support for changes to limits.</li>
+  <li>HTTPS required.</li>
+</ul>
+
+<h2 id="authentication">Authentication</h2>
+<p>This endpoint provides access to endpoints for managing access to the API.
+All endpoints requests require a ‘access-token’ for access; via the header, URL or body.</p>
+
+<ul>
+  <li>/authentication (POST) - Creates a new access token using an API key and secret.</li>
+  <li>/authentication/remove (POST) - Remove an active session tokens.</li>
+  <li>/authentication (GET) - Returns the current user account info for a given auth token.</li>
+</ul>
+
+<p>Note: <strong>nonce</strong> values are not currently required.</p>
+
+<h2 id="search">Search</h2>
+<p>The following are search endpoints. These provides access to the meenta search
+engine.</p>
+
+<ul>
+  <li>/search/<strong>{query}</strong> (GET) - Basic search. Returns all search results for a given ‘query’.</li>
+  <li>/search/<strong>{query}</strong> (POST) - Advanced search. Returns all search results for a given a given search object.</li>
+</ul>
+
+<h2 id="instruments">Instruments</h2>
+<p>The following are instrument endpoints. These provides access to manage a given
+users instruments.</p>
+
+<ul>
+  <li>/instrument (GET) - Returns an array of instruments.</li>
+  <li>/instrument (POST) - Create an new instrument.</li>
+  <li>/instrument/<strong>{ id }</strong> (GET) - Return a single instrument.</li>
+  <li>/instrument/<strong>{ id }</strong>/samples - Returns all samples for a given instrument.</li>
+</ul>
+
+<h2 id="scheduled-runs">Scheduled Runs</h2>
+<p>The following are endpoints to manage a given instrument scheduled runs.</p>
+
+<ul>
+  <li>/instrument/<strong>{ id }</strong>/runs (GET) - Return a runs for a given instrument.</li>
+  <li>/instrument/<strong>{ id }</strong>/runs (POST) - Create an new instrument scheduled date.</li>
+  <li>/instrument/<strong>{ id }</strong>/{run} (GET) - Returns all a given scheduled run.</li>
+  <li>/instrument/<strong>{ id }</strong>/{run}/samples (GET) - Returns all a samples orders for a given run.</li>
+  <li>/instrument/<strong>{ id }</strong>/{run} (DELETE) - Provides the ability to delete a given run.</li>
+</ul>
+
+<h2 id="samples">Samples</h2>
+<p>The following are sample endpoints. These provides access to manage a given
+users samples.</p>
+
+<ul>
+  <li>/sample (GET) - Returns all samples for a users account.</li>
+  <li>/sample/<strong>{ id }</strong> (PUT) - Provides the ability to edit owner fields.</li>
+  <li>/sample/cancel (POST) - Provides an action to cancel an sample order.</li>
+  <li>/sample/reject (POST) - Provides an action to reject an sample order.</li>
+</ul>
+
+<h2 id="orders">Orders</h2>
+<p>The following are order endpoints. These provides access to manage a given
+partner or users orders.</p>
+
+<ul>
+  <li>/order (GET) - Returns an array of account orders.</li>
+  <li>/order (POST) - Create an new order.</li>
+  <li>/order/<strong>{ id }</strong> (GET) - Return a single partner order.</li>
+  <li>/order/<strong>{ id }</strong> (PUT) - Updates partner fields for an order.</li>
+  <li>/order/<strong>{ id }</strong>/payments (GET) - Provides a summary of all meenta/customer payments for a given order.</li>
+</ul>
+
+<h2 id="purchase-orders">Purchase Orders</h2>
+<p>The following are purchase order endpoints. These provide hosts and users the
+ability to manage their account purchase order payment options.</p>
+
+<ul>
+  <li>/po (GET) - Returns an array of partner purchase orders.</li>
+  <li>/po (POST) - Create an new purchase order.</li>
+  <li>/po/<strong>{ id }</strong> (GET) - Return a single purchase order.</li>
+  <li>/po/<strong>{ id }</strong> (PUT) - Updates purchase order.</li>
+  <li>/po/<strong>{ id }</strong>/transactions (GET) - Returns a list of all transactions for a given PO.</li>
+</ul>
+
+<p><em>Please note that Credit Cards are not supported via the API.</em></p>
+
+<h2 id="products">Products</h2>
+<p>The following are third party products and services endpoints.
+These provide hosts and users the ability to manage platform products.</p>
+
+<ul>
+  <li>/product (GET) - Returns an array of third party products &amp; services.</li>
+  <li>/product (POST) - Create an new product.</li>
+  <li>/product/<strong>{ id }</strong> (GET) - Return a single product.</li>
+  <li>/product/<strong>{ id }</strong> (PUT) - Updates a product.</li>
+</ul>
+
+<h2 id="reports">Reports</h2>
+<p>The following provides access to partner reports.</p>
+
+<ul>
+  <li>/report/<strong>{ year }</strong>/<strong>{ month }</strong>/transactions (GET) - Returns a report of all transactions for a given year + month.</li>
+  <li>/report/<strong>{ year }</strong>/<strong>{ month }</strong>/payments (GET) - Returns a report of all payments for a given year + month.</li>
+</ul>
+
+<h2 id="sdks--third-party-packages">SDKs &amp; Third Party Packages</h2>
+<p>Currently Meenta only supports a node.js SDK. The node.js SDK is coming soon.</p>
+
+<h2 id="notes">Notes</h2>
+<p>Some helpful things to note.</p>
+
+<ul>
+  <li>API rate limiting values are not documented or available.</li>
+  <li>Error codes and validation codes will not be available until v1.</li>
+  <li>Reference the node.js SKD for working examples.</li>
+  <li>Email <strong>info@meenta.io</strong> for assistance or questions.</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid">
+		<div class="container">
+			<h5 class="logotype-small">Meenta</h5>
+			<em>Send samples, not emails.</em>
+			<h6>
+				Contact us at <a href="mailto:support@meenta.io">support@meenta.io</a> Copyright &copy; 2017 Meenta,
+				<a href="/user-terms">User Terms</a> | <a href="/host-terms">Host Terms</a> | <a href="/privacy-policy">Privacy</a>
+			</h6>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/scripts/main.js"></script>
+	<script src="/scripts/faqs.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-91836384-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
