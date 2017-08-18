@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="consoleApp">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,18 +61,18 @@
 				</div>
 			</div>
 			<div class="row">
-          <div class="hero-search" ng-controller="searchFormCtrl">
-              <form name="searchForm" novalidate action="https://app.meenta.io/#/main/">
-                  <fieldset class="hero-search-text-field Xhero-search-field-location">
-                      <label>Need NGS Lanes or Instrument time?</label>
-                      <input type="text" name="q" ng-model="searchParams.query" placeholder="hint: 2 x 150 bp, PE, v4 "/>
-                  </fieldset>
-                  <fieldset class="hero-search-field hero-search-field-submit">
-                      <input type="submit" value="Search" />
-                  </fieldset>
-              </form>
-          </div>
-      </div>
+				<div class="hero-search">
+					<form name="searchForm" onsubmit="searchSubmit(this);">
+						<fieldset class="hero-search-text-field">
+							<label>Need NGS Lanes or Instrument time?</label>
+							<input type="text" name="q" placeholder="hint: 2 x 150 bp, PE, v4 "/>
+						</fieldset>
+						<fieldset class="hero-search-field hero-search-field-submit">
+							<input type="submit" value="Search" />
+						</fieldset>
+					</form>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="hero-host-cta">
@@ -159,7 +159,7 @@
 			</div>
 		</div>
 	</div>
-
+	<script src="/scripts/search.js"></script>
 	<footer class="container-fluid">
 	<div class="container">
 		<h5 class="logotype-small">
