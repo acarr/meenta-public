@@ -8,7 +8,16 @@ bio-nickname:           d1b1
 bio-email-address:      stephan@meenta.ion
 bio-phone-number:       +1 617 953 7947
 description:            Science Equipment Sharing Service for Next Generation Sequencing.
-include:                [ 'team' ]
+include:                [ 'faqs' ]
 exclude:                [ 'source', 'team', 'assets', 'dist' ]
+collections:
+  faqs:
+    output: true
+    title: FAQs
+    permalink: /faqs/:path/
+  team:
+    output: false
+    title: Team
+    permalink: /team/:path/
 plugins:
   - jekyll-sitemap
