@@ -10,51 +10,11 @@ published: true
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Meenta — Send samples, not emails.</title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles/styles.css">
-	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyDv7QmL1cWGDE-uZG7XdttdX7s9eTVIAe8"></script>
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favs/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favs/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favs/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favs/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/favs/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favs/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/favs/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favs/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="/images/favs/favicon-196x196.png" sizes="196x196" />
-	<link rel="icon" type="image/png" href="/images/favs/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="/images/favs/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="/images/favs/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="/images/favs/favicon-128.png" sizes="128x128" />
-	<meta name="application-name" content="Meenta"/>
-	<meta name="msapplication-TileColor" content="#3C92F6" />
-	<meta name="msapplication-TileImage" content="/images/favs/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="/images/favs/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="/images/favs/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="/images/favs/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="/images/favs/mstile-310x310.png" />
+	{% include head.html %}
 </head>
 <body class="page-home">
+	{% include nav.html %}
 
-	<header class="header container-fluid">
-		<div class="container">
-			<div class="row">
-				<div class="header-logo col-md-3 col-sm-3 col-xs-12">
-					<h1 class="logotype-small"><a href="/">Meenta</a></h1>
-				</div>
-				<nav class="header-nav col-md-9 col-sm-9 col-xs-12">
-					<ul>
-						<li><a href="/how-to-book">How to Book</a></li>
-						<li><a href="/become-a-host">Become a Host</a></li>
-						<li><a href="/blog">Blog</a></li>
-						<li><a href="/resources">Resources</a></li>
-						<li class="strong"><a href="https://app.meenta.io/#/login">Login</a></li>
-						<li class="strong"><a href="https://app.meenta.io/#/register">Signup</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
 	<div class="hero container-fluid">
 		<div class="container">
 			<div class="row">
@@ -64,18 +24,18 @@ published: true
 				</div>
 			</div>
 			<div class="row">
-				<div class="hero-search">
-					<form action="https://app.meenta.io/#/search">
-						<fieldset class="hero-search-text-field Xhero-search-field-location">
-							<label>Need NGS Lanes or Instrument time?</label>
-							<input type="text" name="q" ng-model="searchParams.query" placeholder="hint: 2 x 150 bp, PE, v4 "/>
-						</fieldset>
-						<fieldset class="hero-search-field hero-search-field-submit">
-							<input type="submit" value="Search" />
-						</fieldset>
-					</form>
-				</div>
-			</div>
+          <div class="hero-search" ng-controller="searchFormCtrl">
+              <form name="searchForm" novalidate action="https://app.meenta.io/#/main/">
+                  <fieldset class="hero-search-text-field Xhero-search-field-location">
+                      <label>Need NGS Lanes or Instrument time?</label>
+                      <input type="text" name="q" ng-model="searchParams.query" placeholder="hint: 2 x 150 bp, PE, v4 "/>
+                  </fieldset>
+                  <fieldset class="hero-search-field hero-search-field-submit">
+                      <input type="submit" value="Search" />
+                  </fieldset>
+              </form>
+          </div>
+      </div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="hero-host-cta">
@@ -85,6 +45,7 @@ published: true
 			</div>
 		</div>
 	</div>
+
 	<div class="process container-fluid">
 		<div class="container">
 			<div class="process-header row visible-xs-block visible-sm-block">
@@ -121,6 +82,7 @@ published: true
 			</div>
 		</div>
 	</div>
+
 	<div class="notice notice-book container-fluid">
 		<div class="container">
 			<div class="row">
@@ -140,6 +102,7 @@ published: true
 			</div>
 		</div>
 	</div>
+
 	<div class="notice notice-host container-fluid">
 		<div class="container">
 			<div class="row">
@@ -159,24 +122,7 @@ published: true
 			</div>
 		</div>
 	</div>
-	<footer class="container-fluid">
-		<div class="container">
-			<h5 class="logotype-small">Meenta</h5>
-			<em>Send samples, not emails.</em>
-			<h6>Contact us at <a href="mailto:support@meenta.io">support@meenta.io</a> Copyright &copy; 2017 Meenta</h6>
-		</div>
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="/scripts/main.js"></script>
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-91836384-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-
+	{% include footer.html %}
 </body>
 </html>

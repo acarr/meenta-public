@@ -1,0 +1,19 @@
+<header class="header container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="header-logo col-md-3 col-sm-3 col-xs-12">
+				<h1 class="logotype-small"><a href="/">Meenta</a></h1>
+			</div>
+			<nav class="header-nav col-md-9 col-sm-9 col-xs-12">
+				<ul>
+					<li {% if page.url == '/how-to-book/' %} class="selected" {% endif %}><a href="/how-to-book">How to Book {{ page.id }}</a></li>
+					<li {% if page.url == '/become-a-host/' %} class="selected" {% endif %}><a href="/become-a-host">Become a Host</a></li>
+					<li {% if page.url == '/blog/' %} class="selected" {% endif %}><a href="/blog">Blog</a></li>
+					<li {% if page.url == '/resources/' %} class="selected" {% endif %}><a href="/resources">Resources</a></li>
+					<li class="strong"><a href="https://app.meenta.io/#/login">Login</a></li>
+					<li class="strong"><a href="https://app.meenta.io/#/register">Signup</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
