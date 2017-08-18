@@ -1,13 +1,16 @@
 ### Meenta.io Public Site
 
+	Draft: http://draft.meenta.io
+	Live: https://app.meenta.io
+
 #### Local Jekyll Development
 The following will allow a developer or design to run the
 Jekyll engine locally. This will watch for changes and
 update the site.
 
-    `bundle exec  jekyll serve --watch`
-	  or
-	  `jekyll serve --watch`
+    `bundle exec jekyll serve --watch`
+    or
+    `jekyll serve --watch`
 
 Here is a reference document for getting Jekyll setup
 to provide the content locally.
