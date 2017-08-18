@@ -1,5 +1,8 @@
 ### Meenta.io Public Site
 
+	Draft: http://draft.meenta.io
+	Live: https://app.meenta.io
+	
 #### Local Jekyll Development
 The following will allow a developer or design to run the
 Jekyll engine locally. This will watch for changes and
