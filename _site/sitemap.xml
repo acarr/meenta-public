@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/faqs/can_i_cancel/</loc>
-<lastmod>2017-08-18T14:46:24-04:00</lastmod>
+<lastmod>2017-08-18T15:25:31-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2017/07/01/in-beta/</loc>
@@ -20,6 +20,9 @@
 <loc>http://localhost:4000/api/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/become-a-host/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/blog/</loc>
 </url>
 <url>
@@ -29,6 +32,9 @@
 <loc>http://localhost:4000/host-terms/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/how-to-book/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
@@ -36,14 +42,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/user-terms/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/become-a-host.html</loc>
-<lastmod>2017-08-16T22:44:13-04:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/how-to-book.html</loc>
-<lastmod>2017-08-16T22:44:57-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/resources.html</loc>
