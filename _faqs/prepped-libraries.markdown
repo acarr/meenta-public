@@ -2,7 +2,7 @@
 layout: faq
 title: Do you only accept prepared libraries?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

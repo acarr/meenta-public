@@ -2,7 +2,7 @@
 layout: faq
 title: Can I get a rerun if the Host delivers data below minimum (QC/total reads)?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

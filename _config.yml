@@ -21,3 +21,13 @@ collections:
     permalink: /team/:path/
 plugins:
   - jekyll-sitemap
+  - algoliasearch-jekyll
+algolia:
+  application_id: 'SV1FR11FH0'
+  index_name:     'meenta-help'
+  read_only_api_key: '062a6b570599a431fd8cf0e4387c6bc6'
+  excluded_files:
+    - become-a-host.html
+    - how-to-book.html
+    - index.html
+    - help.html

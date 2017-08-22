@@ -2,7 +2,6 @@
 layout: faq
 title: How do I get my data? What files?
 summary:
-published: true
 collections: faqs
 published: true
 ---

@@ -2,7 +2,7 @@
 layout: faq
 title: What does a quality Host look like?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

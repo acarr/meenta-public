@@ -2,7 +2,7 @@
 layout: faq
 title: Who can be a Host?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

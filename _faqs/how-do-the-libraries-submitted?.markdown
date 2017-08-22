@@ -2,7 +2,6 @@
 layout: faq
 title: How do the libraries have to be submitted?
 summary:
-published: false
 collections: faqs
 ---
 

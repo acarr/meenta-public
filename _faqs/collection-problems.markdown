@@ -2,7 +2,6 @@
 layout: faq
 title: What if Meenta is unable to collect the Hosts genomic service fees?
 summary:
-published: true
 collections: faqs
 published: true
 ---

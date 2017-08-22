@@ -1,10 +1,9 @@
 ---
 layout: faq
 title: When can a Host or User cancel an order or booking?
-summary: adsf
+summary: 
 published: true
 collections: faqs
-published: false
 ---
 
 The User has 48 hours after placing an order to cancel without penalties.

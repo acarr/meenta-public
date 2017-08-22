@@ -2,7 +2,7 @@
 layout: faq
 title: Why can a Host reject my booking request?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

@@ -2,7 +2,7 @@
 layout: faq
 title: Is there a way for the Host and User to communicate with each other?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

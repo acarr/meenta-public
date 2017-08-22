@@ -2,7 +2,7 @@
 layout: faq
 title: How do I take an instrument offline?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

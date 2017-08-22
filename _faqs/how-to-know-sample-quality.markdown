@@ -2,7 +2,7 @@
 layout: faq
 title: How are we going to know sample quality?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

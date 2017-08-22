@@ -24,3 +24,7 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 #### Deployment
 This site uses the Jekyll Pages feature. When code is commmited to
 master it will be built and deployed to the '_site' folder.
+
+#### Index to Algolia
+
+    bundle exec jekyll algolia push

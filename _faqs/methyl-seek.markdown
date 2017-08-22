@@ -2,7 +2,7 @@
 layout: faq
 title: Do you accept Methyl-Seq and RRBS samples for sequencing?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

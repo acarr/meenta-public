@@ -1,10 +1,9 @@
 ---
 layout: faq
 title: When will I get my data?
-summary: adsf
+summary: 
 published: true
 collections: faqs
-published: false
 ---
 
 For Instant Bookings the Host must deliver your data within 5 business days.

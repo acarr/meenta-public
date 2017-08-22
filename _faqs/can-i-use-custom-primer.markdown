@@ -2,7 +2,6 @@
 layout: faq
 title: My libraries require a Custom Primer. Will you accept my samples for sequencing?
 summary:
-published: true
 collections: faqs
 published: true
 ---

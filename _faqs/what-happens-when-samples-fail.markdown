@@ -2,7 +2,7 @@
 layout: faq
 title: What happens if there is a sample failure?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

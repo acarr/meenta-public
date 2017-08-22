@@ -2,7 +2,6 @@
 layout: faq
 title: How do the Hosts get paid?
 summary:
-published: true
 collections: faqs
 published: true
 ---

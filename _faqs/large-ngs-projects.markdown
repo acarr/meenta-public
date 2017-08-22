@@ -2,7 +2,7 @@
 layout: faq
 title: Can the Host refer large projects to other Hosts?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

@@ -4,7 +4,6 @@ title: Is there a penalty for missing the data delivery date?
 summary:
 published: true
 collections: faqs
-published: false
 ---
 
 A late sample submission fee of 10% is applied to the User when samples are submitted less than 2 business days prior to the Instant Booking date.

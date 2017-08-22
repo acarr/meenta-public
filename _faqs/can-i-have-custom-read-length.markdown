@@ -2,7 +2,6 @@
 layout: faq
 title: My samples require a Custom Read Length. Will you accept my samples for sequencing?
 summary:
-published: true
 collections: faqs
 published: true
 ---

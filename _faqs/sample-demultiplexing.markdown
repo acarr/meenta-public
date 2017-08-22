@@ -2,7 +2,7 @@
 layout: faq
 title: Does the Host demultiplex the data?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

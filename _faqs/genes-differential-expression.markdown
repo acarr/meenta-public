@@ -2,7 +2,7 @@
 layout: faq
 title: I want to know what genes are differentially expressed. Which option do I choose?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

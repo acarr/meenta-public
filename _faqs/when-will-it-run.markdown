@@ -4,7 +4,6 @@ title: When will the Host run my samples?
 summary:
 published: true
 collections: faqs
-published: false
 ---
 
 For Instant Bookings the Host must start your run within 3 days of the booking date.

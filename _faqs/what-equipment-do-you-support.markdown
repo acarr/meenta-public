@@ -2,7 +2,7 @@
 layout: faq
 title: What sequencing platforms do you support?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

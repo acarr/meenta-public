@@ -2,7 +2,7 @@
 layout: faq
 title: Do you offer QC services for my library samples?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

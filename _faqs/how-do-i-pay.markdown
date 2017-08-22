@@ -2,7 +2,6 @@
 layout: faq
 title: How do I pay?
 summary:
-published: true
 collections: faqs
 published: true
 ---

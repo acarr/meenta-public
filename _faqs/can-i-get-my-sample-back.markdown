@@ -2,7 +2,7 @@
 layout: faq
 title: Can I get my samples back?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

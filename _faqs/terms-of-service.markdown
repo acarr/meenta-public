@@ -2,7 +2,7 @@
 layout: faq
 title: Where can I find the Terms of Service?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

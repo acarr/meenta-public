@@ -2,7 +2,6 @@
 layout: faq
 title: Will the Host perform pooling?
 summary:
-published: true
 collections: faqs
 published: true
 ---

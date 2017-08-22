@@ -1,8 +1,7 @@
 ---
 layout: faq
 title: Can I cancel a sample order?
-summary: adsf
-published: true
+summary:
 collections: faqs
 published: true
 ---
