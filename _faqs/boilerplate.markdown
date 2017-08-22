@@ -1,7 +1,7 @@
 ---
 layout: faq
 title:
-summary: 
+summary:
 published: false
 collections: faqs
 ---
