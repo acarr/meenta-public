@@ -21,7 +21,7 @@ $(function(config) {
   var $searchContentResults = $searchContent.find('.algolia__results');
   $searchContentResults.on('click', 'a', onLinkClick);
   // Rendering templates
-  var templateResult = Hogan.compile($('#algolia__template').html());
+  var templateResult = Hogan.compile($('#algolia__template__faq').html());
   var templateNoResults = $('#algolia__template--no-results').html();
 
   var lastQuery;

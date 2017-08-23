@@ -1,0 +1,25 @@
+
+.faqs ul {
+	padding: 20px;
+	padding-top: 0px;
+}
+.faqs li {
+	padding: 10px;
+	color: #5D5D5D;
+	font-size: 20px;
+}
+a.question {
+	text-decoration: none;
+	color: #5D5D5D;
+}
+.answer {
+	background-color: white;
+	padding: 15px !important;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	line-heigth: 18px;
+}
+.answer p {
+	margin-top: 0px;
+	font-size: 20px;
+}

@@ -19,25 +19,29 @@
 {% endraw %}
 </script>
 
+<script id="algolia__template__faq" type="text/template">
+
+	<li>
+	{% raw %}
+	<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">
+	  {{{ _highlightResult.title.value }}}
+	</span>
+	<div class="answer" style="display: none !important;">
+		{{{ _highlightResult.text.value }}}
+	</div>
+	{% endraw %}
+</li>
+
+</script>
+
 <script id="algolia__template" type="text/template">
 {% raw %}
   <div>
     <a style="font-size: 18px; text-decoration: none; color: #5D5D5D; font-weight: normal ;" href="{{ full_url }}">
 			{{{ _highlightResult.title.value }}}
 		</a>
-
-    <!-- {{#posted_at}}
-      <div class="algolia__result-date">{{ posted_at_readable }}</div>
-    {{/posted_at}} -->
-
-		<!--
-	    <p class="algolia__result-text">
-				{{{ _highlightResult.text.value }}}
-			</p>
-	  -->
 		<br>
 		<br>
-
   </div>
 {% endraw %}
 </script>

@@ -2,7 +2,7 @@
 layout: faq
 title: My samples failed QC and I already reserved / paid for my sequencing run. What happens now?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

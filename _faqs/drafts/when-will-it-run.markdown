@@ -2,7 +2,7 @@
 layout: faq
 title: When will the Host run my samples?
 summary:
-published: false
+published: true
 collections: faqs
 ---
 

@@ -33,7 +33,7 @@ algolia:
     - user-terms
     - resources
     - host-terms
-    - become-a-host.html
-    - how-to-book.html
-    - index.html
-    - help.html
+    - become-a-host
+    - how-to-book
+    - index
+    - help

@@ -1,6 +1,6 @@
 ---
 layout: faq
-title: How do I pay?
+title: How do I pay for sequencing?
 collections: faqs
 published: true
 summary:
