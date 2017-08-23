@@ -28,3 +28,5 @@ master it will be built and deployed to the '_site' folder.
 #### Index to Algolia
 
     bundle exec jekyll algolia push
+		or
+		npm run-script algolia

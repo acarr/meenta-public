@@ -1,8 +1,8 @@
 ---
 layout: faq
 title: Can I get my samples back?
-summary:
 published: true
+summary:
 collections: faqs
 ---
 

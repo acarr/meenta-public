@@ -4,7 +4,7 @@ title: Can the Host reject booking request?
 summary:
 published: true
 collections: faqs
-published: true
 ---
 
-Yes, they can.
+Yes, they can. Please see our cancellation policy and summary
+for the options available for both users and hosts.

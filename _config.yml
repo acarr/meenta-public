@@ -9,7 +9,7 @@ bio-email-address:      stephan@meenta.ion
 bio-phone-number:       +1 617 953 7947
 description:            Science Equipment Sharing Service for Next Generation Sequencing.
 include:                [ 'faqs' ]
-exclude:                [ 'source', 'team', 'assets', 'dist' ]
+exclude:                [ 'source', 'node_modules', 'team', 'assets', 'dist', '_faqs/drafts' ]
 collections:
   faqs:
     output: true
@@ -27,6 +27,12 @@ algolia:
   index_name:     'meenta-help'
   read_only_api_key: '062a6b570599a431fd8cf0e4387c6bc6'
   excluded_files:
+    - _posts
+    - team
+    - privacy-policy
+    - user-terms
+    - resources
+    - host-terms
     - become-a-host.html
     - how-to-book.html
     - index.html
