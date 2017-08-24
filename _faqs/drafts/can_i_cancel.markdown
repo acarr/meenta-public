@@ -8,12 +8,7 @@ published: false
 
 __For a User Purchasing:__
 
-Yes. If you order a sample you can cancel it without
-any cost within 24 hours of the order, unless the
-lane or instrument is marked as 'non-cancellable'
-at the time of checkout.
+Yes. You can cancel it without any cost within 24 hours of the order, unless the
+lane or instrument is marked as 'non-cancellable' at the time of checkout.
 
-__For a Host:__
-
-Yes, you can cancel a sample within 24 hours as well
-from the time of the users purchase.
+Keep in mind the host can also cancel your booking within the same 24 hours.
