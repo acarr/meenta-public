@@ -1,6 +1,6 @@
 ---
 layout: faq
-title: Is there a Meenta service fee for month where no booking are made?
+title: Is there a fee for month when no booking are made?
 summary:
 published: true
 collections: faqs
