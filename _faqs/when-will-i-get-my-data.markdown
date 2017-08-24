@@ -4,6 +4,7 @@ title: When will I get my data?
 summary:
 published: true
 collections: faqs
+category: general
 ---
 
 For Instant Bookings the Host must deliver your data within 5 business days.

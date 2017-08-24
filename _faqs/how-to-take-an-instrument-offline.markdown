@@ -4,6 +4,7 @@ title: How do I take an instrument offline?
 summary:
 published: true
 collections: faqs
+category: host
 ---
 
 There are two steps to taking a instrument offline; remove scheduled lanes and set the request status.

@@ -4,6 +4,7 @@ title: I’m a host. What penalties apply if I need to cancel a reservation?
 summary:
 published: true
 collections: faqs
+category: host
 ---
 
 No. There are no penalties if you cancel any booking within the first

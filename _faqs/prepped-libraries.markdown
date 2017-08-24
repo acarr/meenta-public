@@ -4,6 +4,7 @@ title: Do you only accept prepared libraries?
 summary:
 published: true
 collections: faqs
+category: user
 ---
 
 Yes, but there are a only few site who also will perform library preps.

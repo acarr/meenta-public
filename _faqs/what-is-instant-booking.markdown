@@ -4,6 +4,7 @@ title: How does instant book differ from another booking?
 summary:
 published: true
 collections: faqs
+category: general
 ---
 
 There are two ways to 'book' lanes on Meenta: Instant Book and Requests. Instant books provide a way to book lanes that are configured and ready. When a host needs to fill a flow cell, they can make lanes available for instant bookings. This means there is no back and forth process, as will happen when a user requests a specific configuration.

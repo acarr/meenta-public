@@ -4,6 +4,7 @@ title: Can I get advice about how to perform QC on my samples?
 summary:
 published: true
 collections: faqs
+category: sample
 ---
 
 Yes, but you have to be registered as a User and make sure

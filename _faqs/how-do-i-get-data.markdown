@@ -4,6 +4,7 @@ title: How do I get my data? What files?
 collections: faqs
 summary:
 published: true
+category: general
 ---
 
 We will notify you by email or SMS when your data is ready. You will

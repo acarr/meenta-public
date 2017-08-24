@@ -4,6 +4,7 @@ title: Why can a Host reject my booking request?
 summary:
 published: true
 collections: faqs
+category: user
 ---
 
 There are multiple reasons, but some are that the samples do not meet incoming

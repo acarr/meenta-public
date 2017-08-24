@@ -4,6 +4,7 @@ title: Who can be a Host?
 summary:
 published: true
 collections: faqs
+category: host
 ---
 
 If you own an instrument, and are willing to accept samples, then you can be a host.

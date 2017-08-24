@@ -4,6 +4,7 @@ title: What is the minimum sample molarity / sample volume requirement for seque
 summary:
 published: true
 collections: faqs
+category: general
 ---
 
 The Host designates these requirements in their site profile which will be visible to you during the sample submission process.

@@ -4,6 +4,7 @@ title: Can I cancel a sample order?
 summary:
 collections: faqs
 published: true
+category: user
 ---
 
 Yes. You can cancel it without any cost within 24 hours of the order, unless the

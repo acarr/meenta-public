@@ -4,6 +4,7 @@ title: Can I request a test run to optimize the molarity and loading of my sampl
 summary:
 published: true
 collections: faqs
+category: user
 ---
 
 Not at this time.

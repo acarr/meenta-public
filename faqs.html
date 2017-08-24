@@ -26,17 +26,92 @@ tag: help questions
 		<div class="algolia__initial-content js-algolia__initial-content">
 			<a href="" style="color: #5D5D5D; text-decoration: none; float: right;" class="showAll">Show All</a>
 
-			<ul class="faqs">
+			<!-- <ul class="faqs">
 				{% assign sortedFaqs = site.faqs | sort: 'title' %}
 				{% for faq in sortedFaqs %}
 				<li>
-					<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">{{ faq.title }}</span>
+					<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">
+						{{ faq.category }} - {{ faq.title }}
+					</span>
 					<div class="answer" style="display: none !important;">
 						{{ faq.content }}
 					</div>
 				</li>
 				{% endfor %}
+			</ul> -->
+
+			<h4 style="font-size: 20px; font-weight: bold;">General Questions</h4>
+
+			<ul class="faqs">
+				{% assign sortedFaqs = site.faqs | sort: 'title' %}
+				{% for faq in sortedFaqs %}
+				{% if faq.category == 'general' %}
+				<li>
+					<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">
+						{{ faq.title }}
+					</span>
+					<div class="answer" style="display: none !important;">
+						{{ faq.content }}
+					</div>
+				</li>
+				{% endif %}
+				{% endfor %}
 			</ul>
+
+			<h4 style="font-size: 20px; font-weight: bold;">Host Questions</h4>
+
+			<ul class="faqs">
+				{% assign sortedFaqs = site.faqs | sort: 'title' %}
+				{% for faq in sortedFaqs %}
+				{% if faq.category == 'host' %}
+				<li>
+					<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">
+						{{ faq.title }}
+					</span>
+					<div class="answer" style="display: none !important;">
+						{{ faq.content }}
+					</div>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+
+			<h4 style="font-size: 20px; font-weight: bold;">User Questions</h4>
+
+			<ul class="faqs">
+				{% assign sortedFaqs = site.faqs | sort: 'title' %}
+				{% for faq in sortedFaqs %}
+				{% if faq.category == 'user' %}
+				<li>
+					<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">
+						{{ faq.title }}
+					</span>
+					<div class="answer" style="display: none !important;">
+						{{ faq.content }}
+					</div>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+
+			<h4 style="font-size: 20px; font-weight: bold;">Sample Questions</h4>
+
+			<ul class="faqs">
+				{% assign sortedFaqs = site.faqs | sort: 'title' %}
+				{% for faq in sortedFaqs %}
+				{% if faq.category == 'sample' %}
+				<li>
+					<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">
+						{{ faq.title }}
+					</span>
+					<div class="answer" style="display: none !important;">
+						{{ faq.content }}
+					</div>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+
 		</div>
 		<div class="algolia__search-content js-algolia__search-content">
 			<a href="" style="color: #5D5D5D; text-decoration: none; float: right;" class="showAll">Show All</a>
