@@ -1,7 +1,7 @@
 ---
 layout: faq
 title: Do you accept ChIP samples for sequencing?
-published: true
+published: false
 summary:
 collections: faqs
 ---
