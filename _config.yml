@@ -36,4 +36,5 @@ algolia:
     - become-a-host
     - how-to-book
     - index
-    - help
+    - faqs
+    - api
