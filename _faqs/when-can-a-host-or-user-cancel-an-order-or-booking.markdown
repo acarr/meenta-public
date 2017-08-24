@@ -1,8 +1,8 @@
 ---
 layout: faq
 title: When can a Host or User cancel an order or booking?
-summary: 
-published: false
+summary:
+published: true
 collections: faqs
 ---
 

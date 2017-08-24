@@ -3,10 +3,8 @@ layout: faq
 title: Can I cancel a sample order?
 summary:
 collections: faqs
-published: false
+published: true
 ---
-
-__For a User Purchasing:__
 
 Yes. You can cancel it without any cost within 24 hours of the order, unless the
 lane or instrument is marked as 'non-cancellable' at the time of checkout.
