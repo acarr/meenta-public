@@ -4,7 +4,7 @@ title: What happens if the user submits the sample late?
 summary:
 published: true
 collections: faqs
-category: general
+category: sample
 ---
 
 For Booking Requests

@@ -4,7 +4,7 @@ title: Does the Host demultiplex the data?
 summary:
 published: true
 collections: faqs
-category: general
+category: sample
 ---
 
 Hosts will deliver FASTQ files which may or may not include demultiplexed data.

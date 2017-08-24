@@ -4,7 +4,7 @@ title: Will the Host perform pooling?
 summary:
 collections: faqs
 published: true
-category: general
+category: sample
 ---
 
 No. Hosts only accepted pooled samples...but there are a few exceptions.

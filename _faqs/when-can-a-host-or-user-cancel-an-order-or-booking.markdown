@@ -4,7 +4,7 @@ title: When can a Host or User cancel an order or booking?
 summary:
 published: true
 collections: faqs
-category: general
+category: sample
 ---
 
 The User has 48 hours after placing an order to cancel without penalties.
