@@ -7,4 +7,5 @@ collections: faqs
 category: user
 ---
 
-This is our policy. Please contact us directly so we can arrange for a rerun for you.
+Call us. In most cases we will rerun the sample. We do want to review the
+in-coming sample quality metrics and data deliverables.

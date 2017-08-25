@@ -1,10 +1,11 @@
 ---
 layout: faq
-title: What happens on an instrument failure?
+title: What happens when I am not happy with my results?
 summary:
 published: true
 collections: faqs
-category: general
+category: user
 ---
 
-If your sample has meet in coming QC at the Host site Meenta will cover the re-run cost. Some Hosts have varying levels of service contracts with their sequencing instrument vendor.
+Call us. In most cases we will rerun the sample. We do want to review the
+in-coming sample quality metrics and data deliverables.

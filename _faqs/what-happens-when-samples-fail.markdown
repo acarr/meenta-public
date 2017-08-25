@@ -7,4 +7,5 @@ collections: faqs
 category: sample
 ---
 
-If your samples have meet incoming QC then we will re-run them at no-charge unless the Host has a service contract with the NGS vendor and the failure is covered under those agreements.
+Call us. In most cases we will rerun the sample. We do want to review the
+in-coming sample quality metrics and data deliverables.
