@@ -27,7 +27,7 @@ algolia:
   index_name:     'meenta-help'
   read_only_api_key: '062a6b570599a431fd8cf0e4387c6bc6'
   excluded_files:
-    - _posts
+    - posts
     - team
     - privacy-policy
     - user-terms
@@ -38,3 +38,4 @@ algolia:
     - index
     - faqs
     - api
+    - about
