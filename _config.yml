@@ -1,4 +1,5 @@
-base-url:               http://site.meenta.io/
+baseurl:                /
+url:                    https://meenta.io
 highlighter:            false
 markdown:               kramdown
 permalink:              pretty
