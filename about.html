@@ -27,7 +27,7 @@ published: true
 		-webkit-font-smoothing: antialiased;
 		color: #5D5D5D;
 		font-size: 2.625em;
-    	line-height: 1.24138em;
+		line-height: 1.24138em;
 	}
 
 	.team-member {
@@ -35,62 +35,64 @@ published: true
 		margin-bottom: 40px;
 	}
 
-		.team-member .photo {
+	.team-member .photo {
 
-			float: left;
-			width: 20%;
-		}
+		float: left;
+		width: 20%;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	}
 
-			.team-member .photo img {
+	.team-member .photo img {
 
-				width: 80%;
-				border-radius: 100px;
-			}
+		width: 80%;
+		border-radius: 100px;
+	}
 
-		.team-member .text {
+	.team-member .text {
 
-			float: left;
-			width: 80%;
-		}
+		float: left;
+		width: 80%;
+	}
 
-			.team-member .text h4 {
+	.team-member .text h4 {
 
-				font-size: 1.25em;
-				line-height: 1.8em;
-				font-weight: 500;
-				margin-bottom: 0;
-				margin-top: 10px;
-				color: #5D5D5D;
-			}
+		font-size: 1.25em;
+		line-height: 1.8em;
+		font-weight: 500;
+		margin-bottom: 0;
+		margin-top: 10px;
+		color: #5D5D5D;
+	}
 
-			.team-member .text h5 {
+	.team-member .text h5 {
 
-				font-size: 1em;
-				line-height: 1.8em;
-				font-weight: 400;
-				margin-top: 0;
-				color: #5D5D5D;
-			}
+		font-size: 1em;
+		line-height: 1.8em;
+		font-weight: 400;
+		margin-top: 0;
+		color: #5D5D5D;
+	}
 
-			.team-member .text p {
+	.team-member .text p {
 
-				line-height: 1.66667em;
-				margin-top: 17px;
-				color: #5D5D5D;
-				font-size: 1em;
-				font-weight: 300;
-				width: 70%;
-			}
+		line-height: 1.66667em;
+		margin-top: 17px;
+		color: #5D5D5D;
+		font-size: 1em;
+		font-weight: 300;
+		width: 70%;
+	}
 
-		.team-member .photo:after,
-		.team-member .text:after {
+	.team-member .photo:after,
+	.team-member .text:after {
 
-			content: " ";
-			visibility: hidden;
-			display: block;
-			height: 0;
-			clear: both;
-		}
+		content: " ";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
 
 
 </style>
@@ -99,8 +101,13 @@ published: true
 	<div class="container">
 		<div class="row">
 			<div class="hero-intro col-lg-9 col-md-9">
-				<h1 class="hero-body">About Meenta</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</h2>
+				<h1 class="hero-body">
+					Team & Advisors
+				</h1>
+				<!-- <h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam
+					vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.
+				</h2> -->
 				</div>
 			</div>
 		</div>
@@ -110,7 +117,9 @@ published: true
 
 			<div class="row team">
 				<div class="col-md-12">
-					<h2>Team</h2>
+					<h2>
+						<!-- Team -->
+					</h2>
 				</div>
 				<div class="team-member col-md-12">
 					<div class="photo">
@@ -119,7 +128,13 @@ published: true
 					<div class="text">
 						<h4>Gabor Bethlendy</h4>
 						<h5>CEO &amp; Founder</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci.</p>
+						<p>
+							Gabor has 20 years of business expertise in the area of genomics and diagnostics
+							spanning some of the best companies in the field including Agilent, Technologies
+							and Roche Diagnostics.  As founder and Chief Commercial Officer of Parabase
+							Genomics he built the company from the ground up creating the first commercial
+							play in the field of Neonatal Precision Medicine.
+						</p>
 					</div>
 				</div>
 				<div class="team-member col-md-12">
@@ -128,8 +143,13 @@ published: true
 					</div>
 					<div class="text">
 						<h4>Stephan Smith</h4>
-						<h5>CEO &amp; Founder</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+						<h5>CTO &amp; Founder</h5>
+						<p>
+							Boston based entrepreneur and full stack developer with extensive web, mobile, and
+							systems design and development experience. Has extensive experience building
+							development teams, system architecture and managing software through the planning,
+							development and deployment.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -145,7 +165,24 @@ published: true
 					<div class="text">
 						<h4>Stacy Gabriel, Ph.D</h4>
 						<h5>Senior Director, The Broad Institute</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+						<p>
+							Dr. Stacey Gabriel is a human geneticist, with a research interest in large-scale genomics and its
+							application to human medical genetics research. She is currently an Institute Scientist and Senior
+							Director of the Broad Institute’s Genomics Platform one of the largest sequencing centers in the world.
+							She oversees the125-person organization that encompasses all production and development activities
+							related to sample handling, sequencing, gene expression, genotyping and related data processing and
+							management activities.
+						</p>
+						<p>
+							Since joining the Broad Institute (formerly the Whitehead Institute Center for Genome Research),
+							she has played central roles in the development of methods for generating and analyzing data using
+							genotyping and next-generation sequencing in the setting of cancer and medical genetics studies.
+						</p>
+						<p>
+							Dr. Gabriel joined the Whitehead Institute/MIT Center for Genome Research working under the direction
+							of Eric Lander in 1998.  Gabriel received her B.S. in Molecular Biology from Carnegie Mellon
+							University (1993) and Ph.D. in Human Genetics from Case Western Reserve University (1998).
+						</p>
 					</div>
 				</div>
 				<div class="team-member col-md-12">
@@ -155,17 +192,38 @@ published: true
 					<div class="text">
 						<h4>Robert Stein</h4>
 						<h5>Director Biopolymers Facility, Harvard Medical School</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p> -->
 					</div>
 				</div>
 				<div class="team-member col-md-12">
 					<div class="photo">
-						<img src="/images/team/AndreiHagiu.jpg" alt="Andrei Hagiu, Ph.D" />
+						<img src="/images/team/AndreiHagiu2.jpg" alt="Andrei Hagiu, Ph.D" />
 					</div>
 					<div class="text">
 						<h4>Andrei Hagiu, Ph.D</h4>
 						<h5>Associate Professor, MIT Sloan School of Management</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+						<p>
+							Andrei Hagiu is a Visiting Associate Professor of Technological Innovation, Entrepreneurship, and
+							Strategic Management at the MIT Sloan School of Management since July 2016. Previously, he was an
+							Associate Professor in the Strategy group at Harvard Business School. In 2012, he took a leave of
+							absence from Harvard in order to work full-time at Intuit, helping with its strategic transformation
+							from a product-focused company into a platform company. Andrei holds a PhD in economics from Princeton
+							University and did his undergraduate studies at the Ecole Polytechnique in France. He is a citizen of
+							Romania, France and the United States.
+						</p>
+						<p>
+							Andrei’s research focuses on multi-sided platforms (e.g. Airbnb, Amazon, eBay, Google, Facebook,
+							PlayStation, TaskRabbit, etc.) and their unique strategic challenges. His work has been published
+							in the Rand Journal of Economics, Management Science, Journal of Economic Perspectives, Journal
+							of Economics & Management Strategy, and the Harvard Business Review. Andrei serves as a Co-Editor
+							for the Journal of Economics & Management Strategy. At Harvard Business School, Andrei teaches the
+							Strategy & Technology elective course in the MBA program.
+						</p>
+						<p>
+							On the consulting side, Andrei works with both startups attempting to build multi-sided platform
+							businesses and large companies seeking to turn products into multi-sided platforms. He is on the
+							board of advisors of CoachUp, a marketplace connecting users with sports coaches for private lessons.
+						</p>
 					</div>
 				</div>
 				<div class="team-member col-md-12">
@@ -175,7 +233,7 @@ published: true
 					<div class="text">
 						<h4>Jennifer Couget, Ph.D</h4>
 						<h5>Scientist, Consulting Advisor</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p> -->
 					</div>
 				</div>
 			</div>
