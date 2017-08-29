@@ -22,6 +22,8 @@ published: true
 				<a class="button button-light" href="/faqs">FAQs</a>
 				<br>
 				<a class="button button-light" href="/api">API & SDK</a>
+				<br>
+				<a class="button button-light" href="https://github.com/Meenta" target="_blank">Github</a>
 			</div>
 		</div>
 	</div>
