@@ -54,109 +54,182 @@
 </header>
 
 
-<div class="notice notice-host container-fluid" style="margin-top: 0px;">
+
+<style>
+
+	.hero-general .hero-intro {
+
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+
+	.team-container {
+
+		background: url(../images/host-background.svg) 600px 40% no-repeat #F4F4F4;
+		padding-bottom: 40px;
+	}
+
+	.team h2 {
+
+		font-weight: 300;
+		-webkit-font-smoothing: antialiased;
+		color: #5D5D5D;
+		font-size: 2.625em;
+    	line-height: 1.24138em;
+	}
+
+	.team-member {
+
+		margin-bottom: 40px;
+	}
+
+		.team-member .photo {
+
+			float: left;
+			width: 20%;
+		}
+
+			.team-member .photo img {
+
+				width: 80%;
+				border-radius: 100px;
+			}
+
+		.team-member .text {
+
+			float: left;
+			width: 80%;
+		}
+
+			.team-member .text h4 {
+
+				font-size: 1.25em;
+				line-height: 1.8em;
+				font-weight: 500;
+				margin-bottom: 0;
+				margin-top: 10px;
+				color: #5D5D5D;
+			}
+
+			.team-member .text h5 {
+
+				font-size: 1em;
+				line-height: 1.8em;
+				font-weight: 400;
+				margin-top: 0;
+				color: #5D5D5D;
+			}
+
+			.team-member .text p {
+
+				line-height: 1.66667em;
+				margin-top: 17px;
+				color: #5D5D5D;
+				font-size: 1em;
+				font-weight: 300;
+				width: 70%;
+			}
+
+		.team-member .photo:after,
+		.team-member .text:after {
+
+			content: " ";
+			visibility: hidden;
+			display: block;
+			height: 0;
+			clear: both;
+		}
+
+
+</style>
+
+<div class="hero container-fluid hero-general">
 	<div class="container">
-	<style>
-	.bio {
-		padding: 5px;
-		border: 2px solid #DFDFDF;
-		margin-right: 10px;
-		width: 100px;
-		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-		filter: grayscale(100%);
-	}
-	.biof {
-		margin-top: 5px @!important;
-		font-size: 14px !important;
-	}
+		<div class="row">
+			<div class="hero-intro col-lg-9 col-md-9">
+				<h1 class="hero-body">About</h1>
+				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid team-container">
+		<div class="container">
 
-	.biop {
-		margin-top: 5px @!important;
-		font-size: 12px !important;
-	}
-	</style>
-	<div class="row">
-		<div class="col-md-offset-1 col-md-3">
-			<h4 style="font-size: 26px;">
-				Team
-			</h4>
-		</div>
-	</div>
-	<br>
-	<br>
-	<div class="row">
-		<div class="col-md-offset-1 col-md-4">
-			<img src="/images/team/gabor.jpg" align="left" class="bio">
-			<p class="biof">
-				<b>Gabor Bethdlendy</b><br>
-				CEO & Founder
-			</p>
-		</div>
-		<div class="col-md-4">
-			<img src="/images/team/ssmith.jpg" align="left" class="bio">
-			<p class="biof">
-				<b>Stephan Smith</b><br>
-				CTO & Founder
-			</p>
-		</div>
-	</div>
-	<br>
-	<br>
-	<div class="row">
-		<div class="col-md-offset-1 col-md-3">
-			<h4 style="font-size: 26px;">
-				Advisors
-			</h4>
-		</div>
-	</div>
-	<br>
-	<br>
-	<div class="row">
-		<div class="col-md-offset-1 col-md-4">
-			<img src="/images/team/StacyGabriel.jpg" align="left" class="bio">
-			<p class="biop">
-				<b>Stacy Gabriel, Ph.D</b><br>
-				Senior Director<br>The Broad Institute<br>
-			</p>
-		</div>
-		<div class="col-md-4">
-			<img src="/images/team/RobertSteen.jpg" align="left" class="bio advisor">
-			<p class="biop">
-				<b>Robert Stein</b><br>
-				Director Biopolymers Facility<br>Harvard Medical School<br>
-			</p>
-		</div>
-	</div>
-	<br>
-	<br>
-	<div class="row">
-		<div class="col-md-offset-1 col-md-4">
-			<img src="/images/team/AndreiHagiu.jpg" align="left" class="bio">
-			<p class="biop">
-				<b>Andrei Hagiu, Ph.D</b><br>
-				Associate Professor, MIT Sloan School of Management<br>
-			</p>
-		</div>
-		<div class="col-md-4">
-			<img src="/images/team/JenCouget.jpg" align="left" class="bio">
-			<p class="biop">
-				<b>Jennifer Couget, Ph.D</b><br>
-				Scientist<br>
-				Consulting Advisor<br>
-			</p>
-		</div>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-</div>
-</div>
+			<div class="row team">
+				<div class="col-md-12">
+					<h2>Team</h2>
+				</div>
+				<div class="team-member col-md-12">
+					<div class="photo">
+						<img src="/images/team/gabor.jpg" alt="Gabor Bethlendy" />
+					</div>
+					<div class="text">
+						<h4>Gabor Bethlendy</h4>
+						<h5>CEO &amp; Founder</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci.</p>
+					</div>
+				</div>
+				<div class="team-member col-md-12">
+					<div class="photo">
+						<img src="/images/team/ssmith.jpg" alt="Stephan Smith" />
+					</div>
+					<div class="text">
+						<h4>Stephan Smith</h4>
+						<h5>CEO &amp; Founder</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+					</div>
+				</div>
+			</div>
 
+			<div class="row">
+				<div class="team col-md-12">
+					<h2>Advisors</h2>
+				</div>
+				<div class="team-member col-md-12">
+					<div class="photo">
+						<img src="/images/team/StacyGabriel.jpg" alt="Stacy Gabriel" />
+					</div>
+					<div class="text">
+						<h4>Stacy Gabriel, Ph.D</h4>
+						<h5>Senior Director, The Broad Institute</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+					</div>
+				</div>
+				<div class="team-member col-md-12">
+					<div class="photo">
+						<img src="/images/team/RobertSteen.jpg" alt="Robert Stein" />
+					</div>
+					<div class="text">
+						<h4>Robert Stein</h4>
+						<h5>Director Biopolymers Facility, Harvard Medical School</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+					</div>
+				</div>
+				<div class="team-member col-md-12">
+					<div class="photo">
+						<img src="/images/team/AndreiHagiu.jpg" alt="Andrei Hagiu, Ph.D" />
+					</div>
+					<div class="text">
+						<h4>Andrei Hagiu, Ph.D</h4>
+						<h5>Associate Professor, MIT Sloan School of Management</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+					</div>
+				</div>
+				<div class="team-member col-md-12">
+					<div class="photo">
+						<img src="/images/team/JenCouget.jpg" alt="Jennifer Couget, Ph.D" />
+					</div>
+					<div class="text">
+						<h4>Jennifer Couget, Ph.D</h4>
+						<h5>Scientist, Consulting Advisor</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 	<footer class="container-fluid">
 	<div class="container">
 		<h5 class="logotype-small">
