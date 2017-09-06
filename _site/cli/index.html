@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Meenta — Send samples, not emails.</title>
+	<meta name="description" content="Science Equipment Sharing Service for Next Generation Sequencing.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styles/styles.css">
+<link rel="stylesheet" href="/styles/faqs.css">
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyDv7QmL1cWGDE-uZG7XdttdX7s9eTVIAe8"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favs/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favs/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favs/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favs/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/favs/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favs/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/favs/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favs/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="Meenta"/>
+<meta name="msapplication-TileColor" content="#3C92F6" />
+<meta name="msapplication-TileImage" content="/images/favs/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/images/favs/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/images/favs/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/images/favs/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/images/favs/mstile-310x310.png" />
+
+</head>
+<body class="page-home">
+	<header class="header container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="header-logo col-md-3 col-sm-3 col-xs-12">
+				<h1 class="logotype-small"><a href="/">Meenta</a></h1>
+			</div>
+			<nav class="header-nav col-md-9 col-sm-9 col-xs-12">
+				<ul>
+					<li ><a href="/how-to-book">How to Book</a></li>
+					<li ><a href="/become-a-host">Become a Host</a></li>
+					<li ><a href="/blog">Blog</a></li>
+					<li ><a href="/resources">Resources</a></li>
+					<!-- <li class="strong"><a href="https://app.meenta.io/#/login">Login</a></li>
+					<li class="strong"><a href="https://app.meenta.io/#/register">Signup</a></li> -->
+					<li class="strong"><a href="https://app.meenta.io/#/login">Start</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+	<div class="notice notice-host container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<h4>
+						
+							Meenta Command Line
+						
+					</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<style>
+  pre {
+		padding: 10px;
+		margin-left: 0px;
+		margin-right: 30px;
+		background-color: #DFDFDF;
+	}
+	code {
+		padding: 0px;
+		padding-left: 5px;
+		padding-right: 5px;
+		background-color: #DFDFDF;
+	}
+</style>
+
+<p>Meenta offers a command line tool to work with our
+account, instruments and samples. It is designed to provide secure
+access to the Meenta Cloud, for secure file storage and transfer,
+as well as labs who are interested in integration with our API.</p>
+
+<h4 style="font-weight: bold; font-size: 26px;">Installation</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install -g https://github.com/Meenta/meenta-cli/tarball/master
+</code></pre>
+</div>
+
+<h4 style="font-weight: bold; font-size: 26px;">Getting Started</h4>
+<p>You need an account. You need to generate API keys. Go to the web application and
+use the Account -&gt; Setting -&gt; API to generate a token and secret. The CLI
+will maintain your session.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>% meenta login [token] [secret]
+</code></pre>
+</div>
+
+<h4 style="font-weight: bold; font-size: 26px;">Upload Sample Data</h4>
+<p>If you are a host and need to upload sample data, used the following.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>% meenta sample upload &lt;sampleId&gt; &lt;file&gt;
+</code></pre>
+</div>
+
+<h4 style="font-weight: bold; font-size: 26px;">Download Sample Data</h4>
+<p>If you are a user and need to download/receive your sample data, use the following.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>% meenta sample download &lt;sampleId&gt; &lt;file&gt;
+</code></pre>
+</div>
+
+<h4 style="font-weight: bold; font-size: 26px;">Features &amp; Commands</h4>
+<p>The CLI application has its own internal help support.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">meenta help</code> - Get cli help.</li>
+</ul>
+
+<p>Sample Commands:</p>
+<ul>
+  <li><code class="highlighter-rouge">meenta sample list</code> - Get a list of all sample/projects for your account.</li>
+  <li><code class="highlighter-rouge">meenta sample data</code> - Get a list of all project data files.</li>
+  <li><code class="highlighter-rouge">meenta sample get &lt;id&gt;</code> - Get details for a sample/project.</li>
+  <li><code class="highlighter-rouge">meenta sample upload &lt;id&gt; &lt;file&gt;</code> - Upload a file to the sample storage.</li>
+  <li><code class="highlighter-rouge">meenta sample download &lt;sampleId&gt; &lt;file&gt;</code> - Download a data file.</li>
+</ul>
+
+<p>Instrument Commands:</p>
+<ul>
+  <li><code class="highlighter-rouge">meenta instrument list</code> - Get a list of all instruments for your account.</li>
+  <li><code class="highlighter-rouge">meenta instrument get &lt;id&gt;</code> - Get an instrument details.</li>
+</ul>
+
+<p>Account Commands:</p>
+<ul>
+  <li><code class="highlighter-rouge">meenta login &lt;token&gt; &lt;secret&gt;</code> - Login into account.</li>
+  <li><code class="highlighter-rouge">meenta logout</code> - Log out of the CLI.</li>
+  <li><code class="highlighter-rouge">meenta whoami</code> - Get information about current session/environment.</li>
+  <li><code class="highlighter-rouge">meenta use &lt;environment&gt;</code> - Change the current environment. For Dev Only.</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid">
+	<div class="container">
+		<h5 class="logotype-small">
+			Meenta
+		</h5>
+		<em>
+			Send samples, not emails...
+		</em>
+		<h6 style="margin-bottom:10px;">
+			Contact us at <a href="mailto:support@meenta.io">support@meenta.io</a>,
+			71 Commerical St., #271, Boston MA 02109,
+			Copyright &copy; 2017 Meenta
+		</h6>
+
+		<h6 style="margin-top:0px;">
+			Resources:
+			<a href="/user-terms">User Terms</a>
+			|
+			<a href="/host-terms">Host Terms</a>
+			|
+			<a href="/privacy-policy">Privacy</a>
+			|
+			<a href="/api">API</a>
+			|
+			<a href="/faqs">FAQs</a>
+			|
+			<a href="/about">Team</a>
+		</h6>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/scripts/main.js"></script>
+<script src="/scripts/faqs.js"></script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','
+	https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-91836384-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2910074.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+</body>
+</html>
