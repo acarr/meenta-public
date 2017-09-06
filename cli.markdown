@@ -12,11 +12,15 @@ published: true
 		background-color: #DFDFDF;
 	}
 	code {
-		padding: 0px;
+		padding: 5px !important;
 		padding-left: 5px;
 		padding-right: 5px;
 		background-color: #DFDFDF;
 	}
+</style>
+
+<style>
+	li { padding: 4px; }
 </style>
 
 Meenta offers a command line tool to work with our
@@ -25,9 +29,14 @@ access to the Meenta Cloud, for secure file storage and transfer,
 as well as labs who are interested in integration with our API.
 
 <h4 style="font-weight: bold; font-size: 26px;">Installation</h4>
+First step is install the cli. Use the following `npm` command.
 
-    npm install -g https://github.com/Meenta/meenta-cli/tarball/master
+  - ``npm install -g https://github.com/Meenta/meenta-cli/tarball/master``
+  - Stable Version: 0.0.1
+  - Reference: [Github CLI Repo](https://github.com/Meenta/meenta-cli)
+  - Node.js >=6.0.0
 
+<i>Remember to include the `-g` to ensure the package is available from anywhere.</i>
 <h4 style="font-weight: bold; font-size: 26px;">Getting Started</h4>
 You need an account. You need to generate API keys. Go to the web application and
 use the Account -> Setting -> API to generate a token and secret. The CLI
