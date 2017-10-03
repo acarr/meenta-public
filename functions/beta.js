@@ -1,8 +1,7 @@
 const functions = require('firebase-functions')
 const admin = require('firebase-admin')
 const mcapi = require('mailchimp-api');
-const apikey = '191ee247c1caf240f284318717714ad4-us16'
-var mc = new mcapi.Mailchimp(apikey);
+const mc = new mcapi.Mailchimp(functions.config().services.mailchimp.apikey);
 
 // This action will reject a given request remove any transactions charges.
 module.exports = functions.database.ref('/emails/{id}/actions/subscribe').onWrite((event) => {
