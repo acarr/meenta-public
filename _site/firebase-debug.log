@@ -1,0 +1,28 @@
+[debug] [2017-10-02T23:49:41.418Z] ----------------------------------------------------------------------
+[debug] [2017-10-02T23:49:41.421Z] Command:      /Users/ssmith/.nvm/versions/node/v6.0.0/bin/node /Users/ssmith/.nvm/versions/node/v6.0.0/bin/firebase serve
+[debug] [2017-10-02T23:49:41.421Z] CLI Version:  3.9.1
+[debug] [2017-10-02T23:49:41.421Z] Platform:     darwin
+[debug] [2017-10-02T23:49:41.421Z] Node Version: v6.0.0
+[debug] [2017-10-02T23:49:41.422Z] Time:         Mon Oct 02 2017 19:49:41 GMT-0400 (EDT)
+[debug] [2017-10-02T23:49:41.422Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-02T23:49:41.437Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-02T23:49:41.437Z] > authorizing via signed-in user
+[debug] [2017-10-02T23:49:41.440Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/meenta-public  
+ Mon Oct 02 2017 19:49:41 GMT-0400 (EDT)
+[debug] [2017-10-02T23:49:41.964Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T23:49:41.967Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/meenta-public/tokens  
+ Mon Oct 02 2017 19:49:41 GMT-0400 (EDT)
+[debug] [2017-10-02T23:49:42.601Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/ssmith/Documents/meenta/site'...
+[info] 
+[debug] [2017-10-02T23:49:42.607Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/meenta-public  
+ Mon Oct 02 2017 19:49:42 GMT-0400 (EDT)
+[debug] [2017-10-02T23:49:42.853Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T23:49:42.855Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/693979123470/clients/_:getWebAppConfig  
+ Mon Oct 02 2017 19:49:42 GMT-0400 (EDT)
+[debug] [2017-10-02T23:49:43.216Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: _site
+[info] ✔  hosting: Local server: http://localhost:5000
+
