@@ -8,7 +8,9 @@
 		"deploy": "firebase deploy",
 		"algolia": "bundle exec jekyll algolia push"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"firebase-admin": "^5.3.0"
+	},
 	"devDependencies": {
 		"browser-sync": "^2.18.7",
 		"gulp": "^3.9.1",

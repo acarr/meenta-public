@@ -95,7 +95,7 @@ input[type="email"]  {
 			}
 
 			event.preventDefault();
-			firebase.database().ref().child('emails').push({  email: $('#bfe').val(), actions: 'pending' });
+			firebase.database().ref().child('emails').push({  email: $('#bfe').val(), actions: { subscribe: 'pending' }});
 			$('#betaForm').hide()
 			m.html('Thanks for joining! We will be in touch.').show()
 		})
