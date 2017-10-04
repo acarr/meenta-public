@@ -237,6 +237,11 @@
             margin-top: 0px;
             margin-bottom: 110px;
             
+            @media (max-width: $screen-xs-max) {
+                
+                margin-bottom: 30px;
+            }
+
             h3 {
 
                 margin-top: 386px;
