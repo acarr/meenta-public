@@ -11,6 +11,15 @@
         $('body').addClass('is-touch');
     }
 
+    var $header = $('header.header');
+
+    // Mobile Menu
+    $('#mobile-nav-button').on('click', function(event){
+
+        event.preventDefault();
+        $header.toggleClass('open');
+    });
+
     // LocationField
     $('.hero-search-field-location input').geocomplete({
         componentRestrictions: {

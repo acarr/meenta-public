@@ -3,10 +3,10 @@
     background-color: $darkBlue;
     height: 67px;
 
-    @media (max-width: $screen-xs-max) { 
+    // @media (max-width: $screen-xs-max) { 
 
-        height: auto;
-     }
+    //     height: auto;
+    //  }
 
     .header-logo h1 {
 
@@ -32,7 +32,7 @@
 
             @media (max-width: $screen-xs-max) { 
 
-                text-align: left;
+                display: none;
             }
 
             li {
@@ -98,6 +98,70 @@
                 &.strong a {
 
                     font-weight: 500;
+                }
+            }
+        }
+
+        .header-nav-menu {
+
+            @include image-replace;
+            display: none;
+            width: 32px;
+            height: 32px;
+            background: red;
+            float: right;
+            margin-top: -24px;
+            background: url('../images/menu-icon.png') no-repeat center center;
+            @include box-retina('../images/menu-icon@2x.png', 28px, 21px);
+
+            @media (max-width: $screen-xs-max) { 
+
+                display: block;
+            }
+        }
+    }
+}
+
+.header.open {
+
+    @media (max-width: $screen-xs-max) { 
+
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+
+        .mobile-header-nav {
+
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 67px;
+            z-index: 10;
+            background:#3C92F6;
+                    
+            ul {
+                
+                list-style: none;
+                margin: 0;
+                padding: 20px 30px;     
+                
+                li {
+                
+                    text-align: center;
+                    margin: pem(18) 0;
+
+                    a {
+
+                        text-decoration: none;
+                        color: #FFF;
+                        font-size: pem(24);
+                        font-weight: 400;
+                        letter-spacing: 0.03em;
+                        -webkit-font-smoothing: antialiased;
+                        position: relative;
+                        opacity: 1;
+                    }
                 }
             }
         }

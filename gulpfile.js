@@ -101,7 +101,7 @@ gulp.task('scripts', function() {
         .pipe(plumber())
         .pipe(concat(config.scriptsMain))
         .on('error', gutil.log)
-        .pipe(gulp.dest(config.serveDir + config.scriptsDir))
+        .pipe(gulp.dest(config.scriptsDir))
         .pipe(browserSync.reload({stream: true}));
 });
 
@@ -115,7 +115,7 @@ gulp.task('scripts-deploy', function() {
         .pipe(plumber())
         .pipe(concat(config.scriptsMain))
         .pipe(uglify())
-        .pipe(gulp.dest(config.distDir + config.scriptsDir));
+        .pipe(gulp.dest(config.scriptsDir));
 });
 
 // Compiling our SCSS files
