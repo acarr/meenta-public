@@ -1,0 +1,319 @@
+.page-pipeline {
+    
+    .hero {
+
+        h1 {
+
+            margin-bottom: 0; 
+        }
+
+        .hero-after {
+
+            margin-bottom: 90px;
+        }
+    }
+
+    .milestones {
+
+        background: #F3F3F3;
+
+        .container {
+
+            position: relative;
+            @include clearfix;
+        }
+
+        .piping {
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 150px;
+            bottom: 150px;
+            background: url('../images/pipeline-line.png') repeat-y center center;
+            @include box-retina('../images/pipeline-line@2x.png', 172px, 18px);
+
+            @media (max-width: $screen-md) {
+
+                background-position: left top;
+            }
+        }
+
+        .milestone {
+
+            position: relative;
+            width: 414px;
+
+            @media (max-width: $screen-lg) {
+
+                width: 380px;
+            }
+
+            @media (max-width: $screen-md) {
+
+                width: auto;
+                padding-left: 172px;
+            }
+
+            h3, p {
+
+                color: #5D5D5D;
+                font-size: pem(20);
+            }
+
+            h3 {
+
+                margin-bottom: pem(4, 20);
+            }
+
+            p {
+
+                margin-top: pem(8, 20);
+                line-height: pem(28, 20);
+            }
+        }
+
+        .mls-right {
+
+            float: left;
+            text-align: right;
+            clear: both;
+
+            @media (max-width: $screen-md) {
+
+                float: left;
+                text-align: left;
+            }
+
+            &:after {
+    
+                content: " ";
+                position: absolute;
+                top: 0;
+                right: -240px;
+                width: 172px;
+                height: 150px;
+
+                @media (max-width: $screen-lg) {
+    
+                    right: -176px;
+                }
+
+                @media (max-width: $screen-md) {
+                    
+                    right: auto;
+                    left: -12px;
+                }
+            }
+        }
+
+        .mls-left {
+
+            float: right;
+            text-align: left;
+            clear: both;
+
+            @media (max-width: $screen-md) {
+
+                float: left;
+                text-align: left;
+            }
+
+            &:after {
+                
+                content: " ";
+                position: absolute;
+                top: 0;
+                left: -240px;
+                width: 172px;
+                height: 150px;
+
+                @media (max-width: $screen-lg) {
+    
+                    left: -176px;
+                }
+
+                @media (max-width: $screen-md) {
+                    
+                    left: -12px;
+                }
+            }
+        }
+
+        .mls-submit-order {
+        
+            margin-top: 100px;
+
+            h3 {
+
+                margin-top: 46px;
+            }
+
+            &:after {
+
+                background: url('../images/pipeline-point-1.png') no-repeat center center;
+                @include box-retina('../images/pipeline-point-1@2x.png', 172px, 150px);
+            }
+        }
+
+        .mls-cancellation-period {
+            
+            margin-top: 0px;
+
+            h3 {
+
+                margin-top: 50px;
+            }
+
+            &:after {
+
+                height: 184px;
+                background: url('../images/pipeline-range-1.png') no-repeat center center;
+                @include box-retina('../images/pipeline-range-1@2x.png', 172px, 184px);
+            
+                @media (max-width: $screen-md) {
+                    
+                    left: 92px;
+                }
+            }
+        }
+
+        .mls-sample-arrival {
+        
+            margin-top: 130px;
+        
+            h3 {
+
+                margin-top: 23px;
+            }
+
+            &:after {
+
+                background: url('../images/pipeline-point-2.png') no-repeat center center;
+                @include box-retina('../images/pipeline-point-2@2x.png', 172px, 150px);
+            }
+
+            &:before {
+                
+                content: " ";
+                position: absolute;
+                top: 130px;
+                left: -240px;
+                width: 172px;
+                height: 184px;
+                background: url('../images/pipeline-range-2.png') no-repeat center center;
+                @include box-retina('../images/pipeline-range-2@2x.png', 172px, 184px);
+            
+                @media (max-width: $screen-lg) {
+    
+                    left: -176px;
+                }
+
+                @media (max-width: $screen-md) {
+                    
+                    left: -12px;
+                }
+            }
+        }
+
+        .mls-run-sample {
+        
+            margin-top: 180px;
+            
+            h3 {
+
+                margin-top: 27px;
+            }
+
+            &:after {
+
+                background: url('../images/pipeline-point-3.png') no-repeat center center;
+                @include box-retina('../images/pipeline-point-3@2x.png', 172px, 150px);
+            }
+        }
+
+        .mls-data-delivery {
+        
+            margin-top: 0px;
+            margin-bottom: 110px;
+            
+            h3 {
+
+                margin-top: 386px;
+            }
+
+            &:before {
+                
+                content: " ";
+                position: absolute;
+                top: 0px;
+                right: -240px;
+                width: 172px;
+                height: 364px;
+                background: url('../images/pipeline-range-3.png') no-repeat center center;
+                @include box-retina('../images/pipeline-range-3@2x.png', 172px, 364px);
+            
+                @media (max-width: $screen-lg) {
+    
+                    right: -176px;
+                }
+
+                @media (max-width: $screen-md) {
+                    
+                    left: 90px;
+                }
+            }
+
+            &:after {
+
+                top: 350px;
+                background: url('../images/pipeline-point-4.png') no-repeat center center;
+                @include box-retina('../images/pipeline-point-4@2x.png', 172px, 150px);
+            }
+        }
+    }
+
+    .text-blocks {
+
+        .container {
+
+            margin-bottom: 100px;
+        }
+    
+        .text-block {
+            
+            width: 90%;
+
+            h4 {
+                
+                font-size: pem(42);
+                font-weight: 300;
+                color: $text;
+                margin-bottom: 0;
+    
+                @media (max-width: $screen-xs-max) {
+    
+                    font-size: pem(32);
+                }
+            }
+    
+            p, li {
+    
+                font-size: pem(20);
+                line-height: pem(36, 20);
+                font-weight: 300;
+                color: $text;
+    
+                @media (max-width: $screen-xs-max) {
+    
+                    font-size: pem(16);
+                }
+            }
+    
+            ul {
+    
+                padding-left: 0;
+            }
+        }
+    }
+}
