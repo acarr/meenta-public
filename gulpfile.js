@@ -26,6 +26,7 @@ var config = {
     // Directories
     baseDir: "source/",
     serveDir: ".serve/",
+    jekyllDir: "./",
     distDir: "dist/",
     imagesDir: "images/",
     scriptsDir: "scripts/",
@@ -148,7 +149,8 @@ gulp.task('styles', function() {
                 //get our sources via sourceMaps
                 .pipe(sourceMaps.write())
                 //where to save our final, compressed css file
-                .pipe(gulp.dest(config.serveDir + config.stylesDir))
+                .pipe(gulp.dest(config.stylesDir))
+                //.pipe(gulp.dest(config.serveDir + config.stylesDir))
                 //notify browserSync to refresh
                 .pipe(browserSync.reload({stream: true}));
 });
@@ -172,7 +174,7 @@ gulp.task('styles-deploy', function() {
                 .pipe(concat(config.stylesMain))
                 .pipe(minifyCSS())
                 //where to save our final, compressed css file
-                .pipe(gulp.dest(config.distDir + config.stylesDir));
+                .pipe(gulp.dest(config.stylesDir));
 });
 
 // Watching all HTML files
