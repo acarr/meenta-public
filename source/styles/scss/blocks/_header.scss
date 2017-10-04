@@ -122,6 +122,11 @@
     }
 }
 
+.mobile-header-nav {
+
+    display: none;
+}
+
 .header.open {
 
     @media (max-width: $screen-xs-max) { 
@@ -133,6 +138,7 @@
         .mobile-header-nav {
 
             position: fixed;
+            display: block;
             left: 0;
             bottom: 0;
             right: 0;
