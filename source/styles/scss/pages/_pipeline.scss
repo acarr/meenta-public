@@ -2,6 +2,8 @@
     
     .hero {
 
+        background: $blue url('../images/outlines.svg') no-repeat left top;
+
         h1 {
 
             margin-bottom: 0; 
@@ -218,7 +220,7 @@
 
         .mls-run-sample {
         
-            margin-top: 180px;
+            margin-top: 200px;
             
             h3 {
 
@@ -230,11 +232,33 @@
                 background: url('../images/pipeline-point-3.png') no-repeat center center;
                 @include box-retina('../images/pipeline-point-3@2x.png', 172px, 150px);
             }
+
+            &:before {
+                
+                content: " ";
+                position: absolute;
+                top: 130px;
+                left: -240px;
+                width: 172px;
+                height: 184px;
+                background: url('../images/pipeline-range-2.png') no-repeat center center;
+                @include box-retina('../images/pipeline-range-2@2x.png', 172px, 184px);
+            
+                @media (max-width: $screen-lg) {
+    
+                    left: -176px;
+                }
+
+                @media (max-width: $screen-md) {
+                    
+                    left: -12px;
+                }
+            }
         }
 
         .mls-data-delivery {
         
-            margin-top: 0px;
+            margin-top: 164px;
             margin-bottom: 110px;
             
             @media (max-width: $screen-xs-max) {
