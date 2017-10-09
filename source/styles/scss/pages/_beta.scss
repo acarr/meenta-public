@@ -1,0 +1,35 @@
+.page-beta {
+
+    background: #585858;
+
+    .hero-search {
+
+        max-width: 600px;
+    }
+
+    .beta-message {
+
+        font-size: pem(18);
+        line-height: pem(36, 20);
+        font-weight: 300;
+        color: #FFF;
+        letter-spacing: 0;
+        -webkit-font-smoothing: antialiased;
+        margin-top: 20px;
+        margin-bottom: 230px;
+
+        @media (max-width: $screen-xs-max) {
+        
+            margin-bottom: 100px;
+        }
+    }
+}
+
+
+.page-home.page-beta .hero-intro .hero-title {
+
+    @media (max-width: $screen-xs-max) {
+    
+        display: block;
+    }
+}

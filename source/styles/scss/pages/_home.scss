@@ -89,7 +89,7 @@
                 margin-bottom: 7px;
             }
 
-            input[type="text"],
+            input[type="text"],,
             select {
 
                 font-family: $fontStack;
@@ -183,6 +183,7 @@
             }
 
             input[type="text"],
+            input[type="email"],
             select {
 
                 font-family: $fontStack;

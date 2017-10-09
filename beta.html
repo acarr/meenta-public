@@ -11,7 +11,7 @@ published: true
 	<meta name="description" content="">
 	{% include head.html %}
 </head>
-<body class="page-home" >
+<body class="page-home page-beta" >
 	{% include nav.html %}
 
 	<div class="hero container-fluid">
@@ -27,7 +27,7 @@ published: true
 				</div>
 			</div>
 			<div class="row">
-				<div class="hero-search" style="width: 600px;">
+				<div class="hero-search">
 					<form id="betaForm" name="betaForm" onSubmit="return false;">
 						<fieldset class="hero-search-text-field">
 							<label>Enter your email <i style="font-size: 10px; font-weight: normal;" id="emailError"></i></label>
@@ -43,33 +43,16 @@ published: true
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12" s>
-					<br>
-					<br>
-					<h2 class="hero-body" style="font-size: 20px; font-style: italic; width: 800px;">
-						FYI, beta meaning, we need early adopters, who are willing
+				<div class="col-md-8">
+					<p class="beta-message">
+						FYI, beta meading, we need early adaptors, who are willing
 						to handle a few bugs and are open to providing
 						feedback, in exchange for reduced pricing.
-					</h2>
-					<br>
-					<br>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-<style>
-input[type="email"]  {
-	font-family: "Helvetica Neue LT", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1.625em;
-	color: #5D5D5D;
-	width: 100%;
-	border: none;
-	-webkit-font-smoothing: antialiased;
-	display: block;
-	background: #FFF;
-}
-</style>
 
 <script>
 	$( document ).ready(function() {

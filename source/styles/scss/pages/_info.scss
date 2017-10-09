@@ -37,7 +37,7 @@
     
         @media (max-width: $screen-xs-max) { 
 
-            background-position: top right;
+            background: none;
         }
     }
 
@@ -45,6 +45,11 @@
 
         background-image: url('../images/hosting-hero.png');
         @include box-retina('../images/hosting-hero@2x.png', 592px, 626px);
+    
+        @media (max-width: $screen-xs-max) { 
+
+            background: none;
+        }
     }
 
     .hero-intro {
