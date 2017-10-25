@@ -1,0 +1,124 @@
+---
+title: Meenta.io Beta
+published: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Meenta — Send samples, not emails.</title>
+	<meta name="description" content="">
+	{% include head.html %}
+</head>
+<body class="page-home page-beta" >
+	{% include nav.html %}
+
+	<div class="hero container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="hero-intro col-lg-7 col-md-9">
+					<h1 class="hero-title">Meenta <b>β</b> Program</h1>
+					<h2 class="hero-body">
+						Are you interested in learning what on-demand sequencing
+						looks like? Join our newsletter and we will keep you
+						up to date.
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="hero-search">
+
+					<!-- <form action="https://app.hatchbuck.com/onlineForm/submit.php" method="post" name="form_72924318501" accept-charset="utf-8">
+						<input type="hidden" name="formID" value="72924318501">
+						<input type="hidden" name="enableServerValidation" value="1">
+						<input type="hidden" name="enable303Redirect" value="0"><li>
+						<div>
+							<label for="input_1"> First Name </label>
+							<input type="text" id="input_1" name="q1_firstName1" size="51">
+							<label for="input_3"> Last Name </label>
+							<input type="text" id="input_3" name="q3_lastName3" size="51">
+							<label for="input_4"> Email<span>*</span> </label>
+							<input type="email" id="input_4" name="q4_email" size="51">
+							<button type="submit" style="white-space:nowrap;">Submit Form</button>
+						</div>
+						<input type="hidden" name="website" value="">
+						<input type="hidden" id="simple_spc" name="simple_spc" value="72924318501-72924318501">
+					</form> -->
+
+					<form id="betaForm" style="width: 100%" name="betaForm" XonSubmit="return false;" action="https://app.hatchbuck.com/onlineForm/submit.php" method="post" name="form_72924318501" accept-charset="utf-8">
+						<input type="hidden" name="enable303Redirect" value="0">
+						<input type="hidden" name="website" value="">
+						<input type="hidden" id="simple_spc" name="simple_spc" value="72924318501-72924318501">
+
+						<fieldset class="hero-search-text-field" style="margin-bottom: 10px;">
+							<label>First Name <i style="font-size: 10px; font-weight: normal;" id="emailError"></i></label>
+							<input type="text" id="input_1" placeholder="Enter your first name" name="q1_firstName1" size="51">
+						</fieldset>
+
+						<fieldset class="hero-search-text-field" style="margin-bottom: 10px;">
+							<label>Last Name <i style="font-size: 10px; font-weight: normal;" id="emailError"></i></label>
+							<input type="text" id="input_3" placeholder="Enter your last name" name="q3_lastName3" size="51">
+						</fieldset>
+
+						<fieldset class="hero-search-text-field" style="margin-bottom: 10px;">
+							<label>Email Address <i style="font-size: 10px; font-weight: normal;" id="emailError"></i></label>
+							<input type="email" id="input_4" name="q4_email"  placeholder="your email..." size="51">
+						</fieldset>
+
+						<fieldset style="clear: both" class="hero-search-field hero-search-field-submit">
+							<input type="submit" id="submitBtn" value="Continue" />
+						</fieldset>
+
+						<input type="hidden" name="formID" value="72924318501">
+						<input type="hidden" name="enableServerValidation" value="1">
+					</form>
+					<!-- <h2 class="hero-body" style="display: none;  text-align: center;" id="message"></h2> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<p class="beta-message">
+						FYI, beta meaning, we need early adaptors, who are willing
+						to handle a few bugs and are open to providing
+						feedback, in exchange for reduced pricing.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	$( document ).ready(function() {
+
+		function isValidEmailAddress(emailAddress) {
+		    var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+		    return pattern.test(emailAddress);
+		};
+
+		var m = $('#message');
+
+		$('#bfe').keydown(function() {
+			$('#emailError').html('')
+
+			$("#submitBtn").prop('disabled', !isValidEmailAddress(  $('#bfe').val() ));
+		});
+
+		$('#betaForm').on('submit', function(event) {
+
+			if( !isValidEmailAddress(  $('#bfe').val() ) ) {
+				$('#emailError').html('(Oops, is that an email?)');
+				return;
+			}
+
+			event.preventDefault();
+			firebase.database().ref().child('emails').push({  email: $('#bfe').val(), actions: { subscribe: 'pending' }});
+			$('#betaForm').hide()
+			m.html('Thanks for joining! We will be in touch.').show()
+		})
+});
+</script>
+
+{% include footer.html %}
+</body>
+</html>
