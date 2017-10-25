@@ -409,6 +409,28 @@
             }
         }
 
+        .process-step-pipeline {
+
+            margin-bottom: 80px;
+
+            .process-step-image {
+
+                text-align: center;
+                margin-top: 81px;
+
+                @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                    img {
+                        width: auto;
+                    }
+                }
+
+                @media (max-width: $screen-sm-max) {
+
+                    margin-top: 30px;
+                }
+            }
+        }
+
         .process-step-track {
 
             margin-top: 40px;
@@ -422,7 +444,7 @@
 
                 img {
 
-                    width: 100%;
+                    width: 90%;
 
                     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 
