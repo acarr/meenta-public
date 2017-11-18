@@ -9,22 +9,43 @@
 </head>
 <body class="page-home">
 	{% include nav.html %}
+
 	<div class="notice notice-host container-fluid">
 		<div class="container">
+
 			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<h4>
-						FAQ: {% if page.title %}{{ page.title }}{% endif %}
-					</h4>
+				<div class="col-md-3">
+					<input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search..." />
+					<p>
+						Got questions about meenta? Here are some
+						common questions. When you need to know more
+						try a search for the terms that match your question.
+					</p>
+					<p>
+						<a href="/api" kstyle="text-decoration: none;" class="question">
+							API Documentation
+						</a>
+					</p>
+				</div>
+				<div class="col-md-9">
+					<div class="algolia__initial-content js-algolia__initial-content">
+						<h4>
+							{% if page.title %}{{ page.title }}{% endif %}
+						</h4>
+						{{ content }}
+					</div>
+					<div class="algolia__search-content js-algolia__search-content">
+						<a href="" style="color: #5D5D5D; text-decoration: none; float: right;" class="showAll">Show All</a>
+						<ul class="faqs posts algolia__results"></ul>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					{{ content }}
-				</div>
-			</div>
+
 		</div>
 	</div>
+
+	{% include search.html %}
+
 	{% include footer.html %}
 </body>
 </html>

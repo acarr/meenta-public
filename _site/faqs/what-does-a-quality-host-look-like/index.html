@@ -65,23 +65,108 @@
 	</nav>
 </header>
 
+
 	<div class="notice notice-host container-fluid">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<h4>
-						FAQ: What does a quality Host look like?
-					</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<p>We are working on this metric, but are open to suggestions which you can submit using the “?” help icon at the bottom right of out website.</p>
 
+			<div class="row">
+				<div class="col-md-3">
+					<input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search..." />
+					<p>
+						Got questions about meenta? Here are some
+						common questions. When you need to know more
+						try a search for the terms that match your question.
+					</p>
+					<p>
+						<a href="/api" kstyle="text-decoration: none;" class="question">
+							API Documentation
+						</a>
+					</p>
+				</div>
+				<div class="col-md-9">
+					<div class="algolia__initial-content js-algolia__initial-content">
+						<h4>
+							What does a quality Host look like?
+						</h4>
+						<p>We are working on this metric, but are open to suggestions which you can submit using the “?” help icon at the bottom right of out website.</p>
+
+					</div>
+					<div class="algolia__search-content js-algolia__search-content">
+						<a href="" style="color: #5D5D5D; text-decoration: none; float: right;" class="showAll">Show All</a>
+						<ul class="faqs posts algolia__results"></ul>
+					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
+
+	<script>
+  window.ALGOLIA_CONFIG = {
+    'applicationId': 'SV1FR11FH0',
+    'indexName': 'meenta-help',
+    'apiKey': '062a6b570599a431fd8cf0e4387c6bc6',
+    'baseurl': '/'
+  }
+</script>
+
+<script id="algolia__template-old" type="text/template">
+
+  <div class="algolia__result">
+    <a class="algolia__result-link" href="{{ full_url }}#algolia:{{ css_selector }}">{{{ _highlightResult.title.value }}}</a>
+    {{#posted_at}}
+    <div class="algolia__result-date">{{ posted_at_readable }}</div>
+    {{/posted_at}}
+    <div class="algolia__result-text">{{{ _highlightResult.text.value }}}</div>
+  </div>
+
+</script>
+
+<script id="algolia__template__faq" type="text/template">
+
+	<li>
+	
+	<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">
+	  {{{ _highlightResult.title.value }}}
+	</span>
+	<div class="answer" style="display: none !important;">
+		{{{ _highlightResult.text.value }}}
+		<br>
+		<br>
+		<a href="{{{ url }}}">Read full</a>
+	</div>
+	
+</li>
+
+</script>
+
+<script id="algolia__template" type="text/template">
+
+  <div>
+    <a style="font-size: 18px; text-decoration: none; color: #5D5D5D; font-weight: normal ;" href="{{ full_url }}">
+			{{{ _highlightResult.title.value }}}
+		</a>
+		dsfadsf
+		<br>
+		<br>
+  </div>
+
+</script>
+
+<script id="algolia__template--no-results" type="text/template">
+  No results found.
+</script>
+
+<script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/algoliasearch/3.6.0/algoliasearch.min.js"></script>
+<script src="//cdn.jsdelivr.net/algoliasearch.helper/2.1.0/algoliasearch.helper.min.js"></script>
+<script src="//cdn.jsdelivr.net/hogan.js/3.0.2/hogan.min.js"></script>
+<script src="//cdn.jsdelivr.net/momentjs/2.10.3/moment.min.js"></script>
+<script src="/scripts/algolia.js"></script>
+
+<link rel="stylesheet" href="/styles/algolia.css">
+
+
 	<footer class="container-fluid">
 	<div class="container">
 		<h5 class="logotype-small">

@@ -54,6 +54,7 @@ $(function(config) {
     if (data.query !== lastQuery) {
       return false;
     }
+
     var content = data.nbHits ? renderResults(data) : templateNoResults;
 
     $searchContentResults.html(content);

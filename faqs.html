@@ -7,7 +7,6 @@ tag: help questions
 
 <br>
 
-
 <div class="row">
 	<div class="col-md-3">
 		<input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search faqs..." />
@@ -26,20 +25,6 @@ tag: help questions
 		<div class="algolia__initial-content js-algolia__initial-content">
 			<a href="" style="color: #5D5D5D; text-decoration: none; float: right;" class="showAll">Show All</a>
 
-			<!-- <ul class="faqs">
-				{% assign sortedFaqs = site.faqs | sort: 'title' %}
-				{% for faq in sortedFaqs %}
-				<li>
-					<span class="question" style="padding-bottom: 10px; margin-bottom: 10px !important;">
-						{{ faq.category }} - {{ faq.title }}
-					</span>
-					<div class="answer" style="display: none !important;">
-						{{ faq.content }}
-					</div>
-				</li>
-				{% endfor %}
-			</ul> -->
-
 			<h4 style="font-size: 20px; font-weight: bold;">General Questions</h4>
 
 			<ul class="faqs">
@@ -52,6 +37,8 @@ tag: help questions
 					</span>
 					<div class="answer" style="display: none !important;">
 						{{ faq.content }}
+
+						<a href="{{ faq.url}}">Read more</a>
 					</div>
 				</li>
 				{% endif %}
@@ -70,6 +57,8 @@ tag: help questions
 					</span>
 					<div class="answer" style="display: none !important;">
 						{{ faq.content }}
+
+						<a href="{{ faq.url}}">Read more</a>
 					</div>
 				</li>
 				{% endif %}
@@ -88,6 +77,8 @@ tag: help questions
 					</span>
 					<div class="answer" style="display: none !important;">
 						{{ faq.content }}
+
+						<a href="{{ faq.url}}">Read more</a>
 					</div>
 				</li>
 				{% endif %}
@@ -106,6 +97,8 @@ tag: help questions
 					</span>
 					<div class="answer" style="display: none !important;">
 						{{ faq.content }}
+
+						<a href="{{ faq.url}}">Read more</a>
 					</div>
 				</li>
 				{% endif %}
