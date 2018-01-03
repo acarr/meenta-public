@@ -8,4 +8,5 @@ function searchSubmit(el) {
 	} else {
 		window.location = 'https://app.meenta.io/search?q=' + input.val();
 	}
+
 }
