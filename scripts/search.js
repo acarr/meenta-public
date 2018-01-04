@@ -1,12 +1,17 @@
 
 function searchSubmit(el) {
 	event.preventDefault();
-	var input = $(el).find('input[name=q]');
+	var inputs = $('#searchForm :input')
+	var values = [];
+  inputs.each(function() {
+		values.push( this.name + '=' + $(this).val());
+  });
+	var qstr = values.join('&');
 
 	if (window.location.hostname === 'training.meenta.io') {
-		window.location = 'https://demo.meenta.io/search?q=' + input.val();
+		window.location = 'https://demo.meenta.io/search?' + qstr;
 	} else {
-		window.location = 'https://app.meenta.io/search?q=' + input.val();
+		window.location = 'https://app.meenta.io/search?' + qstr;
 	}
 
 }
