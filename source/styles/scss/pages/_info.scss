@@ -19,12 +19,12 @@
         background-repeat: no-repeat;
         background-position: center right;
 
-        @media (max-width: $screen-sm-max) { 
+        @media (max-width: $screen-sm-max) {
 
             opacity: 0.5;
         }
 
-        @media (max-width: $screen-xs-max) { 
+        @media (max-width: $screen-xs-max) {
 
             opacity: 0.25;
         }
@@ -34,8 +34,8 @@
 
         background-image: url('../images/booking-hero.png');
         @include box-retina('../images/booking-hero@2x.png', 592px, 626px);
-    
-        @media (max-width: $screen-xs-max) { 
+
+        @media (max-width: $screen-xs-max) {
 
             background: none;
         }
@@ -45,8 +45,8 @@
 
         background-image: url('../images/hosting-hero.png');
         @include box-retina('../images/hosting-hero@2x.png', 592px, 626px);
-    
-        @media (max-width: $screen-xs-max) { 
+
+        @media (max-width: $screen-xs-max) {
 
             background: none;
         }
@@ -56,11 +56,11 @@
 
         margin-top: 243px;
 
-        @media (max-width: $screen-sm-max) { 
+        @media (max-width: $screen-sm-max) {
 
             margin-top: 100px;
         }
-            
+
         margin-top: 120px;
 
         @media (max-width: $screen-xs-max) {
@@ -224,7 +224,7 @@
             @media (max-width: $screen-xs-max) {
 
                 img {
-                
+
                     width: 35%;
                 }
             }
