@@ -7,7 +7,7 @@ summary:
 category: user
 ---
 
-All Users require either a Credit card or Purchase Order in order to book or make a request.  Please make your PO out to; Meenta, 71 Commercial Street, Boston, MA 02109.
-
-Please note: We are enabling the PO payment option on a user by user
-bases as we launch this feature. Please contact us for this feature.
+You must be registered with a validated payment method before a booking is possible. A credit card or
+Purchase Order can be set-up in minutes. Purchase Orders should be addressed to; Meenta, Inc, 71 Commercial
+Street #271, Boston MA 02109. If the PO payment option is not enabled in your User profile please send us
+a request to; support@meenta.io or via the Chat feature on the site.
