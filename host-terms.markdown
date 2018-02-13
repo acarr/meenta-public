@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Meenta Host Terms of Use
+title: Host Terms of Use
 published: true
 ---
 

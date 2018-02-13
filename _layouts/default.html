@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Meenta — Send samples, not emails.</title>
+	<title>Meenta — {% if page.title %}{{ page.title }}{% else %}Send samples, not emails. {% endif %}</title>
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{% include head.html %}
