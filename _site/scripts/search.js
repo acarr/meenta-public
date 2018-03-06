@@ -8,10 +8,14 @@ function searchSubmit(el) {
   });
 	var qstr = values.join('&');
 
-	if (window.location.hostname === 'training.meenta.io') {
-		window.location = 'https://demo.meenta.io/search?' + qstr;
-	} else {
-		window.location = 'https://app.meenta.io/search?' + qstr;
-	}
+	alert('asdfasdf');
+
+	window.location.href = '/search?' + qstr;
+
+	// if (window.location.hostname === 'training.meenta.io') {
+	// 	window.location = 'https://demo.meenta.io/search?' + qstr;
+	// } else {
+	// 	window.location = 'https://app.meenta.io/search?' + qstr;
+	// }
 
 }
