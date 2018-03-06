@@ -1,0 +1,32 @@
+[debug] [2018-03-06T01:03:04.822Z] ----------------------------------------------------------------------
+[debug] [2018-03-06T01:03:04.824Z] Command:       /Users/ssmith/.nvm/versions/node/v6.0.0/bin/node /Users/ssmith/.nvm/versions/node/v6.0.0/bin/firebase serve
+[debug] [2018-03-06T01:03:04.825Z] CLI Version:   3.17.4
+[debug] [2018-03-06T01:03:04.825Z] Platform:      darwin
+[debug] [2018-03-06T01:03:04.825Z] Node Version:  v6.0.0
+[debug] [2018-03-06T01:03:04.825Z] Time:          Mon Mar 05 2018 20:03:04 GMT-0500 (EST)
+[debug] [2018-03-06T01:03:04.825Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-06T01:03:04.842Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-06T01:03:04.842Z] > authorizing via signed-in user
+[debug] [2018-03-06T01:03:04.845Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/meenta-public  
+  
+ Mon Mar 05 2018 20:03:04 GMT-0500 (EST)
+[debug] [2018-03-06T01:03:05.193Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-06T01:03:05.196Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/meenta-public/tokens  
+  
+ Mon Mar 05 2018 20:03:05 GMT-0500 (EST)
+[debug] [2018-03-06T01:03:05.560Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/ssmith/Documents/meenta/site'...
+[info] 
+[debug] [2018-03-06T01:03:05.564Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/meenta-public  
+  
+ Mon Mar 05 2018 20:03:05 GMT-0500 (EST)
+[debug] [2018-03-06T01:03:05.893Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-06T01:03:05.893Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/693979123470/clients/_:getWebAppConfig  
+  
+ Mon Mar 05 2018 20:03:05 GMT-0500 (EST)
+[debug] [2018-03-06T01:03:06.320Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: _site
+[info] ✔  hosting: Local server: http://localhost:5000
+

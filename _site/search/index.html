@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Meenta — App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styles/styles.css">
+<link rel="stylesheet" href="/styles/faqs.css">
+<!-- <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyDv7QmL1cWGDE-uZG7XdttdX7s9eTVIAe8"></script> -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favs/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favs/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favs/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favs/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/favs/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favs/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/favs/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favs/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/images/favs/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="Meenta"/>
+<meta name="msapplication-TileColor" content="#3C92F6" />
+<meta name="msapplication-TileImage" content="/images/favs/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/images/favs/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/images/favs/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/images/favs/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/images/favs/mstile-310x310.png" />
+ <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<!--
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script> -->
+<!-- <script src="/__/firebase/3.7.4/firebase.js"></script>
+<script src="/__/firebase/init.js"></script> -->
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+</head>
+<body class="page-home">
+	<header class="header container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="header-logo col-md-3 col-sm-3 col-xs-12">
+				<h1 class="logotype-small"><a href="/">Meenta</a></h1>
+			</div>
+			<nav class="header-nav col-md-9 col-sm-9 col-xs-12">
+				<ul>
+					<li ><a href="/how-to-book">For Scientists</a></li>
+					<li ><a href="/become-a-host">For Service Providers</a></li>
+					<!-- <li><a href="http://blog.meenta.io" target="_blank">Blog</a></li> -->
+					<!-- <li ><a href="/resources">Resources</a></li> -->
+					<li style="color: white">
+						<span style="color: light-gray; position: absolute; font-size: 10px; top: 12px;">Need help?</span>
+						<span>617-531-9760</span>
+					</li>
+					<li style="background-color:white; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
+						<a style="color: #2977D2; font-weight: bold;" id="GoToSite" href="/app">
+							Console
+						</a>
+					</li>
+				</ul>
+				<a id="mobile-nav-button" class="header-nav-menu" href="#">Menu</a>
+			</nav>
+		</div>
+	</div>
+	<nav class="mobile-header-nav">
+		<ul>
+			<li ><a href="/how-to-book">How to Book</a></li>
+			<li ><a href="/become-a-host">Become a Host</a></li>
+			<li ><a href="/blog">Blog</a></li>
+			<li ><a href="/resources">Resources</a></li>
+			<li class="strong"><a id="GoToSite" href="app">Console</a></li>
+		</ul>
+	</nav>
+</header>
+
+<!-- <script>
+	$('#GoToSite').on('click', function(e) {
+		e.preventDefault();
+		if (window.location.hostname === 'training.meenta.io') {
+			window.location.href = 'https://demo.meenta.io';
+		} else {
+			window.location.href = 'https://app.meenta.io';
+		}
+	});
+</script> -->
+
+
+	<div class="knotice knotice-host container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<br>
+					<br>
+					<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+<script>
+var config = {
+  apiKey: "AIzaSyDevLM4q4OFtIS2KvxuPUm4vE_1T_-f9NY",
+  authDomain: "meenta-development.firebaseapp.com",
+  databaseURL: "https://meenta-development.firebaseio.com",
+  projectId: "meenta-development",
+  storageBucket: "meenta-development.appspot.com",
+  messagingSenderId: "521551258641"
+};
+firebase.initializeApp(config);
+</script>
+
+<link href="https://app.meenta.io/css/vendors.css" rel="stylesheet" />
+
+<link href="https://app.meenta.io/css/app.css" rel="stylesheet" />
+
+<script src="https://app.meenta.io/scripts/vendors.js"></script>
+
+<script src="https://app.meenta.io/scripts/core.js"></script>
+
+<script src="https://app.meenta.io/find/templates.js"></script>
+
+<script src="https://app.meenta.io/find/app.js"></script>
+
+<script src="https://app.meenta.io/scripts/modals.js"></script>
+
+<!-- Setup the view -->
+<div ui-view=""></div>
+
+<p><br />
+<br /></p>
+
+<script>
+  angular.element(document).ready(function () {
+    Keen.ready(function () {
+      console.log('Bootstrapping Ng /w Keen');
+      angular.bootstrap(document, ['app']);
+    });
+});
+</script>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

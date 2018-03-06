@@ -3,8 +3,12 @@
     "public": "_site",
     "rewrites": [
       {
-        "source": "**",
+        "source": "/**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/app/**",
+        "destination": "/app/index.html"
       }
     ]
   }

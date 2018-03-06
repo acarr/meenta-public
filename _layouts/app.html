@@ -1,0 +1,40 @@
+<!doctype html>
+<!--[if IE 9 ]><html class="ie9" data-ng-app="app" data-ng-controller="mainCtrl as mactrl"><![endif]-->
+<![if IE 9 ]><html xxx-data-ng-app="app" data-ng-controller="mainCtrl as mactrl"><![endif]>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Meenta - Console</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+	<!-- <base href="/app" target='_blank'> -->
+	<script>
+	var config = {
+	  apiKey: "AIzaSyDevLM4q4OFtIS2KvxuPUm4vE_1T_-f9NY",
+	  authDomain: "meenta-development.firebaseapp.com",
+	  databaseURL: "https://meenta-development.firebaseio.com",
+	  projectId: "meenta-development",
+	  storageBucket: "meenta-development.appspot.com",
+	  messagingSenderId: "521551258641"
+	};
+	firebase.initializeApp(config);
+	</script>
+
+	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+	<script src="//media.twiliocdn.com/sdk/js/chat/v1.0/twilio-chat.min.js"></script>
+
+	<link href="/css/vendors.css?d9ad735" rel="stylesheet">
+	<link href="/css/app.css?d9ad735" rel="stylesheet">
+	<link href="/css/custom.css" rel="stylesheet">
+
+	<script src="https://app.meenta.io/scripts/vendors.js"></script>
+	<script src="https://app.meenta.io/scripts/app.js"></script>
+	<script src="https://app.meenta.io/scripts/templates.js"></script>
+</head>
+
+<body ng-class="{ 'sw-toggled': showSideBar  }">
+	{{ content }}
+</body>
+
+</html>

@@ -15,7 +15,7 @@
 						<span>617-531-9760</span>
 					</li>
 					<li style="background-color:white; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
-						<a style="color: #2977D2; font-weight: bold;" id="GoToSite" href="https://app.meenta.io/search">
+						<a style="color: #2977D2; font-weight: bold;" id="GoToSite" href="/search">
 							Get Started
 						</a>
 					</li>
@@ -30,12 +30,12 @@
 			<li {% if page.url == '/become-a-host/' %} class="selected" {% endif %}><a href="/become-a-host">Become a Host</a></li>
 			<li {% if page.url == '/blog/' %} class="selected" {% endif %}><a href="/blog">Blog</a></li>
 			<li {% if page.url == '/resources/' %} class="selected" {% endif %}><a href="/resources">Resources</a></li>
-			<li class="strong"><a id="GoToSite" href="https://app.meenta.io/search">Get Started</a></li>
+			<li class="strong"><a id="GoToSite" href="/search">Get Started</a></li>
 		</ul>
 	</nav>
 </header>
 
-<script>
+<!-- <script>
 	$('#GoToSite').on('click', function(e) {
 		e.preventDefault();
 		if (window.location.hostname === 'training.meenta.io') {
@@ -44,4 +44,4 @@
 			window.location.href = 'https://app.meenta.io';
 		}
 	});
-</script>
+</script> -->

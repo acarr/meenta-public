@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/styles/styles.css">
 <link rel="stylesheet" href="/styles/faqs.css">
-<script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyDv7QmL1cWGDE-uZG7XdttdX7s9eTVIAe8"></script>
+<!-- <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyDv7QmL1cWGDE-uZG7XdttdX7s9eTVIAe8"></script> -->
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favs/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favs/apple-touch-icon-114x114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favs/apple-touch-icon-72x72.png" />
@@ -29,10 +29,11 @@
 <meta name="msapplication-square150x150logo" content="/images/favs/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/images/favs/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/images/favs/mstile-310x310.png" />
-<script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
-<script src="/__/firebase/3.7.4/firebase.js"></script>
-<script src="/__/firebase/init.js"></script>
+ <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<!--
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script> -->
+<!-- <script src="/__/firebase/3.7.4/firebase.js"></script>
+<script src="/__/firebase/init.js"></script> -->
 
 </head>
 <body class="page-home page-beta" >
@@ -53,7 +54,7 @@
 						<span>617-531-9760</span>
 					</li>
 					<li style="background-color:white; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
-						<a style="color: #2977D2; font-weight: bold;" id="GoToSite" href="https://app.meenta.io/search">
+						<a style="color: #2977D2; font-weight: bold;" id="GoToSite" href="/search">
 							Get Started
 						</a>
 					</li>
@@ -68,12 +69,12 @@
 			<li ><a href="/become-a-host">Become a Host</a></li>
 			<li ><a href="/blog">Blog</a></li>
 			<li ><a href="/resources">Resources</a></li>
-			<li class="strong"><a id="GoToSite" href="https://app.meenta.io/search">Get Started</a></li>
+			<li class="strong"><a id="GoToSite" href="/search">Get Started</a></li>
 		</ul>
 	</nav>
 </header>
 
-<script>
+<!-- <script>
 	$('#GoToSite').on('click', function(e) {
 		e.preventDefault();
 		if (window.location.hostname === 'training.meenta.io') {
@@ -82,7 +83,7 @@
 			window.location.href = 'https://app.meenta.io';
 		}
 	});
-</script>
+</script> -->
 
 
 	<div class="hero container-fluid">
@@ -175,6 +176,8 @@
 			<a href="/faqs">FAQs</a>
 			|
 			<a href="/about">Team</a>
+			|
+			v1.1
 		</h6>
 	</div>
 </footer>
@@ -247,6 +250,11 @@
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2910074.js"></script>
 <!-- End of HubSpot Embed Code -->
+
+<script type="text/javascript">
+    function createKeenWebAutoCollector(){window.keenWebAutoCollector=window.KeenWebAutoCollector.create({projectId:'5a9708e5c9e77c00018ed27f',writeKey:'300B5C24137DB1DA139102DBCAB07D2E6DD59AE886B9A239A01EB1014D3FE54E847B25FE5707FBF28D809CC4061B1876E7729CC3D9BE98FF170378DA36FA765A47F93E2DBB7048580C77ECF7EEB45B02E66F5EC342620E840693A809D831F07F',onloadCallbacks:window.keenWebAutoCollector.onloadCallbacks}),window.keenWebAutoCollector.loaded()}function initKeenWebAutoCollector(){window.keenWebAutoCollector.domReady()?window.createKeenWebAutoCollector():document.addEventListener("readystatechange",function(){window.keenWebAutoCollector.domReady()&&window.createKeenWebAutoCollector()})}window.keenWebAutoCollector={onloadCallbacks:[],onload:function(a){this.onloadCallbacks.push(a)},domReady:function(){return["ready","complete"].indexOf(document.readyState)>-1}};
+  </script>
+  <script async type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.8.min.js" onload="initKeenWebAutoCollector()"></script>
 
 </body>
 </html>
