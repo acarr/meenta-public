@@ -4,18 +4,18 @@ title: Search
 published: true
 ---
 
-<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 <script>
-var config = {
-  apiKey: "AIzaSyDevLM4q4OFtIS2KvxuPUm4vE_1T_-f9NY",
-  authDomain: "meenta-development.firebaseapp.com",
-  databaseURL: "https://meenta-development.firebaseio.com",
-  projectId: "meenta-development",
-  storageBucket: "meenta-development.appspot.com",
-  messagingSenderId: "521551258641"
-};
-firebase.initializeApp(config);
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBFeEzLC7tH2fyEhSXEjA6LxEkfVlFtvXY",
+    authDomain: "samplehub-25c4d.firebaseapp.com",
+    databaseURL: "https://samplehub-25c4d.firebaseio.com",
+    projectId: "samplehub-25c4d",
+    storageBucket: "samplehub-25c4d.appspot.com",
+    messagingSenderId: "529323641154"
+  };
+  firebase.initializeApp(config);
 </script>
 
 <link href="https://app.meenta.io/css/vendors.css" rel="stylesheet">
@@ -26,7 +26,6 @@ firebase.initializeApp(config);
 <script src="https://app.meenta.io/find/app.js"></script>
 <script src="https://app.meenta.io/scripts/modals.js"></script>
 
-<!-- Setup the view -->
 <div ui-view></div>
 
 <br>

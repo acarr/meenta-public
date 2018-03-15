@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "Public site for Meenta.io.",
 	"scripts": {
-		"serve": "bundle exec jekyll serve --watch",
+		"start": "bundle exec jekyll serve --watch",
 		"watch": "bundle exec jekyll serve --watch --incremental",
 		"deploy": "firebase deploy",
 		"algolia": "bundle exec jekyll algolia push"

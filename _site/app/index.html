@@ -1,26 +1,26 @@
 <!doctype html>
 <!--[if IE 9 ]><html class="ie9" data-ng-app="app" data-ng-controller="mainCtrl as mactrl"><![endif]-->
-<![if IE 9 ]><html xxx-data-ng-app="app" data-ng-controller="mainCtrl as mactrl"><![endif]>
+<![if IE 9 ]><html data-ng-controller="mainCtrl as mactrl"><![endif]>
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Meenta - Console</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-	<!-- <base href="/app" target='_blank'> -->
+	<base href="/app" target='_blank'>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 	<script>
-	var config = {
-	  apiKey: "AIzaSyDevLM4q4OFtIS2KvxuPUm4vE_1T_-f9NY",
-	  authDomain: "meenta-development.firebaseapp.com",
-	  databaseURL: "https://meenta-development.firebaseio.com",
-	  projectId: "meenta-development",
-	  storageBucket: "meenta-development.appspot.com",
-	  messagingSenderId: "521551258641"
-	};
-	firebase.initializeApp(config);
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBFeEzLC7tH2fyEhSXEjA6LxEkfVlFtvXY",
+	    authDomain: "samplehub-25c4d.firebaseapp.com",
+	    databaseURL: "https://samplehub-25c4d.firebaseio.com",
+	    projectId: "samplehub-25c4d",
+	    storageBucket: "samplehub-25c4d.appspot.com",
+	    messagingSenderId: "529323641154"
+	  };
+	  firebase.initializeApp(config);
 	</script>
-
 	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 	<script src="//media.twiliocdn.com/sdk/js/chat/v1.0/twilio-chat.min.js"></script>
 
@@ -47,5 +47,35 @@ angular.element(document).ready(function () {
 
 
 </body>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2910074.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- Start of LinkedIn -->
+<script type=“text/javascript”>_linkedin_data_partner_id = '268490';</script>
+<script type=“text/javascript”>
+	(function(){var s = document.getElementsByTagName(“script”)[0];
+	var b = document.createElement(“script”);
+	b.type = “text/javascript”;b.async = true;
+	b.src = “https://snap.licdn.com/li.lms-analytics/insight.min.js“;
+	s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=268490&fmt=gif" />
+</noscript>
+<!-- End of LinkedIn -->
+
+<!-- Start of GA -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-91836384-1', 'auto');
+	ga('send', 'pageview');
+</script>
+<!-- End of GA -->
 
 </html>
