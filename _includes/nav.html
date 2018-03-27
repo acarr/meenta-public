@@ -1,10 +1,14 @@
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+<script src="/scripts/profile.js"></script>
+
 <header class="header container-fluid">
 	<div class="container">
 		<div class="row">
 			<div class="header-logo col-md-3 col-sm-3 col-xs-12">
 				<h1 class="logotype-small"><a href="/">Meenta</a></h1>
 			</div>
-			<nav class="header-nav col-md-9 col-sm-9 col-xs-12">
+			<nav class="header-nav col-md-9 col-sm-9 col-xs-12" data-ng-app="mtprofile">
 				<ul>
 					<li {% if page.url == '/how-to-book/' %} class="selected" {% endif %}><a href="/how-to-book">For Scientists</a></li>
 					<li {% if page.url == '/become-a-host/' %} class="selected" {% endif %}><a href="/become-a-host">For Service Providers</a></li>
@@ -14,10 +18,13 @@
 						<span style="color: light-gray; position: absolute; font-size: 10px; top: 12px;">Need help?</span>
 						<span>(888) 204-5303</span>
 					</li>
-					<li style="background-color:white; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
+					<!-- <li style="background-color:white; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
 						<a style="color: #2977D2; font-weight: bold;" id="GoToSite" href="/search">
 							Get Started
 						</a>
+					</li> -->
+					<li style="width: 100px; color: #2977D2; font-weight: bold; background-color: white; color: red; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
+						<profile title="Search">...</profile>
 					</li>
 				</ul>
 				<a id="mobile-nav-button" class="header-nav-menu" href="#">Menu</a>
@@ -32,6 +39,7 @@
 			<li {% if page.url == '/resources/' %} class="selected" {% endif %}><a href="/resources">Resources</a></li>
 			<li><a href="event.preventDefault();">(888) 204-5303</a></i>
 			<li class="strong"><a id="GoToSite" href="/search">Get Started</a></li>
+
 		</ul>
 	</nav>
 </header>

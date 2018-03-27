@@ -4,6 +4,7 @@ highlighter:            false
 markdown:               kramdown
 permalink:              pretty
 site-title:             Meenta.io
+site-url:               https://meenta.io
 bio-fullname:           Stephan Smith
 bio-nickname:           d1b1
 bio-email-address:      stephan@meenta.ion

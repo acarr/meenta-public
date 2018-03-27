@@ -5,11 +5,13 @@
 	"scripts": {
 		"start": "bundle exec jekyll serve --watch",
 		"watch": "bundle exec jekyll serve --watch --incremental",
+		"build": "JEKYLL_ENV=production bundle exec jekyll build",
 		"deploy": "firebase deploy",
 		"algolia": "bundle exec jekyll algolia push"
 	},
 	"dependencies": {
-		"firebase-admin": "^5.3.0"
+		"firebase-admin": "^5.11.0",
+		"firebase-functions": "^0.9.1"
 	},
 	"devDependencies": {
 		"browser-sync": "^2.18.7",
@@ -23,7 +25,7 @@
 		"gulp-minify-css": "^1.2.4",
 		"gulp-order": "^1.1.1",
 		"gulp-plumber": "^1.1.0",
-		"gulp-sass": "^3.1.0",
+		"gulp-sass": "^3.2.1",
 		"gulp-sequence": "^0.4.6",
 		"gulp-shell": "^0.5.2",
 		"gulp-sourcemaps": "^2.4.1",

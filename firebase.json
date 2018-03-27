@@ -3,6 +3,10 @@
     "public": "_site",
     "rewrites": [
       {
+        "source": "/instrument.xml",
+        "function": "instrumentSitemap"
+      },
+      {
         "source": "/**",
         "destination": "/index.html"
       },
