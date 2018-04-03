@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=a55ae6d3-5067-49bc-968f-006b5ec17e7c");
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=a55ae6d3-5067-49bc-968f-006b5ec17e7c");
 html {
   font-family: sans-serif;
   /* 1 */
