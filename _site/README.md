@@ -30,3 +30,7 @@ master it will be built and deployed to the '_site' folder.
     bundle exec jekyll algolia push
 		or
 		npm run-script algolia
+
+
+#### Reference for Sitemap
+http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/

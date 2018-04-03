@@ -1,6 +1,6 @@
 ---
 layout: app
-title: Search
+title: Console
 published: true
 ---
 
@@ -9,7 +9,7 @@ published: true
 <script>
 angular.element(document).ready(function () {
   Keen.ready(function () {
-    console.log('Bootstrapping Ng /w Keen kk');
+    console.log('Bootstrapping Ng /w Keen');
     angular.bootstrap(document, ['app']);
   });
 });

@@ -30,13 +30,26 @@
 <meta name="msapplication-wide310x150logo" content="/images/favs/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/images/favs/mstile-310x310.png" />
 <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://meenta.io",
+  "logo": "https://meenta.io/images/logo1.png",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "(888) 204-5303",
+    "contactType": "customer service"
+  }]
+}
+</script>
+
 
 </head>
 <body class="page-home">
 	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
 <script src="/scripts/profile.js"></script>
-
 <header class="header container-fluid">
 	<div class="container">
 		<div class="row">
@@ -45,21 +58,21 @@
 			</div>
 			<nav class="header-nav col-md-9 col-sm-9 col-xs-12" data-ng-app="mtprofile">
 				<ul>
-					<li ><a href="/how-to-book">For Scientists</a></li>
-					<li ><a href="/become-a-host">For Service Providers</a></li>
-					<!-- <li><a href="http://blog.meenta.io" target="_blank">Blog</a></li> -->
-					<!-- <li ><a href="/resources">Resources</a></li> -->
+					<li >
+						<a href="/how-to-book" title="Meenta for Scientists">For Scientists</a>
+					</li>
+					<li >
+						<a href="/become-a-host" title="Meenta for Instrument Service Providers">For Service Providers</a>
+					</li>
 					<li style="color: white">
 						<span style="color: light-gray; position: absolute; font-size: 10px; top: 12px;">Need help?</span>
 						<span>(888) 204-5303</span>
 					</li>
-					<!-- <li style="background-color:white; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
-						<a style="color: #2977D2; font-weight: bold;" id="GoToSite" href="/search">
-							Get Started
-						</a>
-					</li> -->
+					<li>
+						<a href="https://map.meenta.io/?utc-source=site" title="NGS Instrument Map of the United States">Instrument Map</a>
+					</li>
 					<li style="width: 100px; color: #2977D2; font-weight: bold; background-color: white; color: red; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
-						<profile title="Search">...</profile>
+						<profile title="Sign Up">...</profile>
 					</li>
 				</ul>
 				<a id="mobile-nav-button" class="header-nav-menu" href="#">Menu</a>
@@ -68,13 +81,21 @@
 	</div>
 	<nav class="mobile-header-nav">
 		<ul>
-			<li ><a href="/how-to-book">How to Book</a></li>
-			<li ><a href="/become-a-host">Become a Host</a></li>
-			<li  class="selected" ><a href="/blog">Blog</a></li>
-			<li ><a href="/resources">Resources</a></li>
-			<li><a href="event.preventDefault();">(888) 204-5303</a></i>
-			<li class="strong"><a id="GoToSite" href="/search">Get Started</a></li>
-
+			<li >
+				<a href="/how-to-book" title="Meenta for Scientists">How to Book</a>
+			</li>
+			<li >
+				<a href="/become-a-host" title="Meenta for Instrument Service Providers">For Service Providers</a>
+			</li>
+			<li >
+				<a href="/resources">Resources</a>
+			</li>
+			<li>
+				<a href="event.preventDefault();">(888) 204-5303</a>
+			</i>
+			<li>
+				<a href="https://map.meenta.io/?utc-source=site" title="NGS Instrument Map of the United States">Instrument Map</a>
+			</li>
 		</ul>
 	</nav>
 </header>

@@ -25,9 +25,17 @@ app.directive('profile', function() {
     `,
     controller: ['$scope', '$timeout', function($scope, $timeout) {
 
+      var hasEmail = localStorage.getItem('meenta-email')
+      if (hasEmail) {
+        $timeout(function() {
+          $scope.title = 'Log In'
+          $scope.$apply()
+        }, 50);
+      }
+
       $scope.go = function() {
-        if ($scope.title.toLowerCase() === 'search') {
-          document.location = '/search'
+        if ($scope.title.toLowerCase() === 'sign up') {
+          document.location = '/app/#!/register/researcher'
         } else {
           document.location = '/app'
         }
@@ -35,8 +43,8 @@ app.directive('profile', function() {
 
       firebase.auth().onAuthStateChanged(function(user) {
         $timeout(function() {
-          if (user) $scope.title = 'Console'
-        }, 400);
+          if (user) $scope.title = 'App Console'
+        }, 100);
       });
     }]
   }

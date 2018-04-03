@@ -8,5 +8,5 @@ function searchSubmit(el) {
   });
 	var qstr = values.join('&');
 
-	window.location.href = '/search/#!/?' + qstr;
+	window.location.href = '/app/#!/search?' + qstr;
 }

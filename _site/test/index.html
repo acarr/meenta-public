@@ -3,10 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>The Genomic Breadlines</title>
-	<meta name="description" content="Science Equipment Sharing Service for Next Generation Sequencing.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="author" href="https://www.linkedin.com/in/gabor-bethlendy-6323102"/>
+	<title>Meenta — Send samples, not emails.</title>
+	<meta name="description" content="Meenta is the world first instrument sharing services for Next Generation Sequencing.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/styles/styles.css">
 <link rel="stylesheet" href="/styles/faqs.css">
@@ -48,9 +46,9 @@
 
 </head>
 <body class="page-home">
-	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+	<!-- <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
-<script src="/scripts/profile.js"></script>
+<script src="/scripts/profile.js"></script> -->
 <header class="header container-fluid">
 	<div class="container">
 		<div class="row">
@@ -101,32 +99,182 @@
 	</nav>
 </header>
 
-
-	<div class="notice notice-host container-fluid">
+	<div class="hero container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<h4>
-						The Genomic Breadlines
-					</h4>
-					<p>
-						August 1 2017 - Gabor Bethlendy
-					</p>
+				<div class="hero-intro col-lg-7 col-md-8">
+					<h1 class="hero-title klogotype-large">
+						Find a Sequencer.<br>When You Need it.
+					</h1>
+					<h2 class="hero-body">
+						Meenta is creating the first sharing economy in science.
+						Scientists can now instantly find, book and then send samples
+						to host sites for next-generation sequencing.
+					</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<p>I grew in communist Hungary and moved to the United States at the age of eight. How we got here is an interesting story better left for another article. Point being that most kids growing up in the US had chores of taking out the garbage or similar. However, mine was riding my bike to the only store in town to stand in the bread line. My reward for this was often a Coke I could by at the bar next door. The year was 1975 and for me and my brother this was completely normal and in some ways an adventure to try and get the best bread. It is somewhat ironic that after 40 years in the US I find myself starting a company focused on solving a very similar issue, but in genomics.
-Oppressive and grey? No, growing up under communism was the happiest time of my life</p>
+				<search-bar></search-bar>
+			</div>
+		</div>
+	</div>
 
-<p>Bread and next-generation sequencing are actually very similar businesses and as such manifest very similar problems. Both are abundantly available, yet both resist the notion they are “commodities.” Both require a few simple ingredients with a very dedicated working team who all claim they are the best at sour dough or chip seq. Now I am not arguing that both do not require a simple yet meticulous attention to detail. However, being skilled in the art of bread making or genomics assumes one critical thing! That just because it is so rare to find a good bread or good quantitated library prep that that in and of itself is enough to make it available to the masses. It is not the case as when I arrived to the front of the bread line I was always amazed to see that the shelves were mostly full! How could this be when there seemed to be plenty of workers handing out bread? When we visit academic or commercial genomic facilities we see the same things. Plenty of lab technicians, plenty of instruments, yet the freezers are full of partially filled boxes of various types of prepped libraries…all waiting to get on one or another instrument at some yet to be determined date. This is the modern version of the breadline, folks with advanced degrees waiting for science to happen completely out of their control.
-The demise of the Genomics Breadline will come once all scientific equipment, including NGS, is organized and accessible in one place. No we don’t mean a Google search that results in a list of service providers! Those lists are not actionable and don’t speed up or decrease the cost of science. We mean the ability to know where every single scientific instrument is (@MeentaNGS) in the world with the ability to book time on them! Until then we will have to know by tribal knowledge which shops have good bread and good library preps, without the lines!</p>
-
-					<a href="https://twitter.com/intent/tweet?screen_name=meentaNGS" class="twitter-mention-button" data-size="large" data-text="The Genomic Breadlines http://localhost:4000/2017/08/01/in-the-genomic-breadlines/" data-show-count="false">Tweet @meentaNGS</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<div class="process container-fluid">
+		<div class="container">
+			<div class="process-header row visible-lg-block visible-md-block visible-xs-block visible-sm-block">
+				<div class="col-md-12">
+					<results-grid></results-grid>
+					<br>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="notice notice-host container-fluid" kstyle="height: 300px;">
+		<div class="container" style="margin-bottom: 40px; margin-top: 40px;">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<h4 style="margin-top: 10px; font-size: 32px; margin-bottom: 40px;">
+						Your Next-Gen Sequencing Core In the Cloud
+					</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<h4 style="font-size: 26px;">
+						Never Wait for a Sequencer
+					</h4>
+					<p>
+						It can be frustrating not knowing when your samples will
+						be sequenced. With Meenta your samples will be ready in
+						12 days.
+					</p>
+					<p>
+						Tell us how you want to do your next-gen sequencing project
+						and we will show you live instruments matching your needs.
+					</p>
+					<!-- <p>
+						Select from 100+ NGS instruments.
+					</p> -->
+					<p>
+						Select from the full suite <b>Illumnia NGS</b> instruments:
+						MiSeq, HiSeq and NovaSeq.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<h4 style="font-size: 26px;">
+						Skip the e-mails & Quotes
+					</h4>
+					<p>
+						There can be a lot of back and forth by e-mail before
+						you get in the sequencing queue. Getting a final quote
+						for your project may require multiple iterations as well.
+					</p>
+					<p>
+						With Meenta <b>all pricing is visible</b> on our site and
+						you get complete visibility to the sequencing workflow.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<h4 style="font-size: 26px;">
+						Your Project is Safe
+					</h4>
+					<p>
+						We understand that you may have spent years on collecting your
+						samples.
+					</p>
+					<p>
+						So, Meenta provides <b>insurance</b> for your samples
+						should they get lost or damaged during shipment to the Host.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<div class="notice notice-host container-fluid" style="background-color: #2977D2">
+		<div class="container" style="margin-bottom: 15px; margin-top: 10px;">
+			<div class="row">
+				<div class="col-lg-8 col-md-8">
+					<h4 style="color: white; margin-top: 10px; font-size: 22px; margin-bottom: 10px;">
+						Need help with your experimental design?<br>We are happy to
+						help. Start a chat, <a href="mailto:support@meenta.io" style="color: white">email</a> or give us call.
+						<br>
+						<br>
+						Of course, we also have <a href="/faqs" style="color: white">FAQs</a>
+					</h4>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<p style="color: white; margin-top: 10px; font-weight: bold; font-size: 33px; margin-bottom: 0px;">
+						<i class="fa fa-phone"></i>
+						(888) 204-5303
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="process container-fluid">
+		<div class="container">
+			<div class="process-header row visible-xs-block visible-sm-block">
+				<div class="col-md-12">
+					<h4>How it works</h4>
+				</div>
+			</div>
+			<div class="process-step process-step-search row">
+				<div class="process-step-image col-md-7 col-md-push-5">
+					<img src="images/search-example.png" srcset="/images/search-example@2x.png 2x" style="-webkit-filter: grayscale(100%); filter: grayscale(100%);" alt="Search example" />
+				</div>
+				<div class="process-step-body col-md-5 col-md-pull-7">
+					<h4 class="hidden-xs hidden-sm">How it works</h4>
+					<p>Search by read type, read length, instrument type, location and date. View live instrument capacity that you can book instantly or reserve.</p>
+				</div>
+			</div>
+			<div class="process-step process-step-book row">
+				<div class="process-step-image col-md-7">
+					<img src="images/book-example.png" srcset="/images/book-example@2x.png 2x" alt="Book example" />
+				</div>
+				<div class="process-step-body col-md-5">
+					<h4>Instantly book your lanes</h4>
+					<p>Choose your instruments and ship your samples. Labels, shipping, and data transfer is handled for you.</p>
+				</div>
+			</div>
+
+			<div class="process-step process-step-pipeline row">
+				<div class="process-step-image col-md-7 col-md-push-5">
+					<img src="images/pipeline-example.png" srcset="/images/pipeline-example@2x.png 2x" alt="Pipeline example" />
+				</div>
+				<div class="process-step-body col-md-5 col-md-pull-7">
+					<h4>Submission and Delivery Deadlines</h4>
+					<p>Timeline of events that will impact your booking. <a href="/pipeline">Learn more</a></p>
+				</div>
+			</div>
+
+			<div class="process-step process-step-track row">
+				<div class="process-step-image col-md-5">
+					<img src="images/progress-example.png" srcset="/images/progress-example@2x.png 2x" alt="Progress example" />
+				</div>
+				<div class="process-step-body col-md-7">
+					<h4>Do it all from your phone</h4>
+					<p>Monitor your samples and book lanes or accept requests from any device. Download your data from the Meenta Cloud when your data is ready.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<link href="https://meenta.github.io/meenta-guided-search/dist/app.css" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+	<script src="https://meenta.github.io/meenta-guided-search/dist/libs.js"></script>
+	<script src="https://meenta.github.io/meenta-guided-search/dist/app.js"></script>
+
+	<script>
+    angular.element(document).ready(function () {
+      angular.bootstrap(document, ['guidedSearch']);
+    });
+  </script>
 
 	<footer class="container-fluid">
 
