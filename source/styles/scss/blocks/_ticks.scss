@@ -2,13 +2,13 @@
 
     position: absolute;
     height: 6px;
-    background-color: $secondaryHighlight;
+    background-color: $primaryHighlight;
     content: '';
 }
 
-.tick.tick-blue:before {
+.tick.tick-secondary-highlight:before {
 
-    background-color: $primaryHighlight;
+    background-color: $secondaryHighlight;
 }
 
 @for $i from 1 to 13 {

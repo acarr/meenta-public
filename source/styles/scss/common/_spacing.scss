@@ -1,0 +1,16 @@
+.section-spacer {
+
+    padding-top: pem(96, 16);
+    padding-bottom: pem(96, 16);
+}
+
+.group-spacer {
+
+    padding-top: pem(60, 16);
+    padding-bottom: pem(60, 16);
+}
+
+.group-spacer + .group-spacer {
+
+    padding-top: 0;
+}
