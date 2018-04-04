@@ -1,37 +1,20 @@
 .hero {
 
-    background: $blue url('../images/outlines.svg') no-repeat;
+    background: $primaryHighlight;
     position: relative;
 
-    h1 {
+    h1, h2, h3, h4, h5, p {
 
-        font-size: pem(58);
-        line-height: pem(72, 58);
         color: #FFF;
-        font-weight: 300;
-        -webkit-font-smoothing: antialiased;
-
-        @media (max-width: $screen-xs-max) { 
-
-            font-size: pem(36);
-        }
     }
 
-    h2 {
+    &.hero-large {
 
-        font-size: pem(24);
-        line-height: pem(42, 24);
-        color: #FFF;
-        font-weight: 300;
-        -webkit-font-smoothing: antialiased;
+        min-height: 530px;
     }
 
-    h3 {
+    .hero-content {
 
-        font-size: pem(12);
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #FFF;
-        letter-spacing: 0.25em;
+        margin-top: 110px;
     }
 }

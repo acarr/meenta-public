@@ -1,0 +1,23 @@
+.tick:before {
+
+    position: absolute;
+    height: 6px;
+    background-color: $secondaryHighlight;
+    content: '';
+}
+
+.tick.tick-blue:before {
+
+    background-color: $primaryHighlight;
+}
+
+@for $i from 1 to 13 {
+
+	.col-lg-#{nth($i, 1)}, .col-md-#{nth($i, 1)}, .col-sm-#{nth($i, 1)}, .col-xs-#{nth($i, 1)} {
+
+        &.tick:before, .tick:before {
+
+            width: 100%/nth($i, 1);
+        }
+    }
+}
