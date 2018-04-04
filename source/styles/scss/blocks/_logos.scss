@@ -6,6 +6,21 @@
 
     @include image-replace;
     @include box-retina('../images/logo-small-white@2x.png', 138px, 16px);
+
+    a {
+
+        position: relative;
+    }
+}
+
+.tagline:after {
+
+    position: absolute;
+    bottom: -19px;
+    width: 100%;
+    height: 12px;
+    content: '';
+    background: url('../images/tagline-blue.svg') no-repeat;
 }
 
 .logotype-large {

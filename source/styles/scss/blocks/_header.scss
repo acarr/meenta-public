@@ -1,16 +1,11 @@
 .header {
 
-    background-color: $darkBlue;
+    background-color: $primaryHighlightDark;
     height: 67px;
-
-    // @media (max-width: $screen-xs-max) { 
-
-    //     height: auto;
-    //  }
 
     .header-logo h1 {
 
-        margin: 27px 0 0 0;
+        margin: 20px 0 0 0;
         padding: 0;
 
         a {
@@ -18,6 +13,88 @@
             display: block;
             width: 100%;
             height: 100%;
+        }
+    }
+
+    .nav {
+
+        a, a:link {
+
+            text-decoration: none;
+            color: #FFF;
+            font-size: pem(16);
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            opacity: 1;
+
+            // @media (max-width: $screen-xs-max) { 
+
+            //     font-size: pem(14);
+            //     line-height: pem(34, 14);
+            // }
+
+            &:after {
+
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 0px;
+                background: #fff;
+                content: '';
+                opacity: 0;
+                transform: translateY(10px);
+                transition: height 0.3s, opacity 0.3s, transform 0.3s;
+            }
+
+            &:active {
+
+                opacity: 0.5;
+            }
+
+            em {
+
+                font-weight: 600;
+                font-style: normal;
+            }
+        }
+
+        a:hover::after,
+        &.selected a:after {
+
+            height: 2px;
+            opacity: 1;
+            transform: translateY(5px);
+        }
+
+        &.selected a:after {
+
+            background: $green;
+        }
+
+        &.strong a {
+
+            font-weight: 500;
+        }
+
+        li.nav-cta a {
+
+            border: 1px solid #FFF;
+            border-radius: 3px;
+            padding: 8px 17px;
+
+            &:hover {
+
+                background: #FFF;
+                color: $primaryHighlightDark;
+            }
+
+            &:hover::after {
+
+                height: 0px;
+            }
         }
     }
 
@@ -44,75 +121,17 @@
 
                     padding: 0;
                 }
-
-                a, a:link {
-
-                    text-decoration: none;
-                    color: #FFF;
-                    font-size: pem(16);
-                    font-weight: 400;
-                    letter-spacing: 0.03em;
-                    -webkit-font-smoothing: antialiased;
-                    position: relative;
-                    opacity: 1;
-
-                    @media (max-width: $screen-xs-max) { 
-
-                        font-size: pem(14);
-                        line-height: pem(34, 14);
-                    }
-
-                    &:after {
-
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        width: 100%;
-                        height: 0px;
-                        background: #fff;
-                        content: '';
-                        opacity: 0;
-                        transform: translateY(10px);
-                        transition: height 0.3s, opacity 0.3s, transform 0.3s;
-                    }
-
-                    &:active {
-
-                        opacity: 0.5;
-                    }
-                }
-
-                a:hover::after,
-                &.selected a:after {
-
-                    height: 2px;
-                    opacity: 1;
-                    transform: translateY(5px);
-                }
-
-                &.selected a:after {
-
-                    background: $green;
-                }
-
-                &.strong a {
-
-                    font-weight: 500;
-                }
             }
         }
 
         .header-nav-menu {
 
-            @include image-replace;
             display: none;
             width: 32px;
             height: 32px;
-            background: red;
             float: right;
-            margin-top: -24px;
-            background: url('../images/menu-icon.png') no-repeat center center;
-            @include box-retina('../images/menu-icon@2x.png', 28px, 21px);
+            margin: -26px 16px;
+            outline: none;
 
             @media (max-width: $screen-xs-max) { 
 
@@ -144,7 +163,7 @@
             right: 0;
             top: 67px;
             z-index: 10;
-            background:#3C92F6;
+            background:$primaryHighlightDark;
                     
             ul {
                 
@@ -155,19 +174,7 @@
                 li {
                 
                     text-align: center;
-                    margin: pem(18) 0;
-
-                    a {
-
-                        text-decoration: none;
-                        color: #FFF;
-                        font-size: pem(24);
-                        font-weight: 400;
-                        letter-spacing: 0.03em;
-                        -webkit-font-smoothing: antialiased;
-                        position: relative;
-                        opacity: 1;
-                    }
+                    margin: pem(22) 0;
                 }
             }
         }

@@ -1,0 +1,53 @@
+h1 {
+
+    font-family: $fontStack;
+    font-weight: 300;
+    font-style: normal;
+    font-size: pem(84.0);
+    line-height: pem(96.0, 84.0);
+}
+
+h2 {
+
+    font-family: $fontStack;
+    font-weight: 300;
+    font-style: normal;
+    font-size: pem(60.0);
+    line-height: pem(72.0, 60.0);
+}
+
+h3 {
+
+    font-family: $fontStack;
+    font-weight: 300;
+    font-style: normal;
+    font-size: pem(36.0);
+    line-height: pem(48.0, 36.0);
+}
+
+h4 {
+
+    font-family: $fontStack;
+    font-weight: 400;
+    font-style: normal;
+    font-size: pem(30.0);
+    line-height: pem(42.0, 30.0);
+}
+
+h5 {
+
+    font-family: $fontStack;
+    font-weight: 500;
+    font-style: normal;
+    font-size: pem(22.0);
+    line-height: pem(24.0, 22.0);
+}
+
+p {
+
+    font-family: $fontStack;
+    font-weight: 300;
+    font-style: normal;
+    font-size: pem(16.0);
+    line-height: pem(24.0, 16.0);
+}

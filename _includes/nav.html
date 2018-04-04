@@ -5,47 +5,56 @@
 	<div class="container">
 		<div class="row">
 			<div class="header-logo col-md-3 col-sm-3 col-xs-12">
-				<h1 class="logotype-small"><a href="/">Meenta</a></h1>
+				<h1 class="logotype-small tagline"><a href="/">Meenta</a></h1>
 			</div>
-			<nav class="header-nav col-md-9 col-sm-9 col-xs-12" data-ng-app="mtprofile">
+			<nav class="nav header-nav col-md-9 col-sm-9 col-xs-12" data-ng-app="mtprofile">
 				<ul>
-					<li {% if page.url == '/how-to-book/' %} class="selected" {% endif %}>
-						<a href="/how-to-book" title="Meenta for Scientists">For Scientists</a>
-					</li>
-					<li {% if page.url == '/become-a-host/' %} class="selected" {% endif %}>
-						<a href="/become-a-host" title="Meenta for Instrument Service Providers">For Service Providers</a>
-					</li>
-					<li style="color: white">
-						<span style="color: light-gray; position: absolute; font-size: 10px; top: 12px;">Need help?</span>
-						<span>(888) 204-5303</span>
-					</li>
 					<li>
 						<a href="https://map.meenta.io/?utc-source=site" title="NGS Instrument Map of the United States">Instrument Map</a>
 					</li>
-					<li style="width: 100px; color: #2977D2; font-weight: bold; background-color: white; color: red; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
+					<li {% if page.url == '/scientists/' %} class="selected" {% endif %}>
+						<a href="/scientists" title="Meenta for Scientists">For <em>Scientists</em></a>
+					</li>
+					<li {% if page.url == '/hosts/' %} class="selected" {% endif %}>
+						<a href="/hosts" title="Meenta for Instrument Hosts">For <em>Instrument Hosts</em></a>
+					</li>
+					<li {% if page.url == '/about/' %} class="selected" {% endif %}>
+						<a href="/about" title="About Meenta">About Meenta</a>
+					</li>
+					<li {% if page.url == '/resources/' %} class="selected" {% endif %}>
+						<a href="/resources" title="Resources">Resources</a>
+					</li>
+					<li class="nav-cta">
 						<profile title="Sign Up">...</profile>
 					</li>
 				</ul>
-				<a id="mobile-nav-button" class="header-nav-menu" href="#">Menu</a>
+				<button id="mobile-nav-button" class="header-nav-menu hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
 			</nav>
 		</div>
 	</div>
-	<nav class="mobile-header-nav">
+	<nav class="nav mobile-header-nav">
 		<ul>
-			<li {% if page.url == '/how-to-book/' %} class="selected" {% endif %}>
-				<a href="/how-to-book" title="Meenta for Scientists">How to Book</a>
-			</li>
-			<li {% if page.url == '/become-a-host/' %} class="selected" {% endif %}>
-				<a href="/become-a-host" title="Meenta for Instrument Service Providers">For Service Providers</a>
-			</li>
-			<li {% if page.url == '/resources/' %} class="selected" {% endif %}>
-				<a href="/resources">Resources</a>
-			</li>
-			<li>
-				<a href="event.preventDefault();">(888) 204-5303</a>
-			</i>
 			<li>
 				<a href="https://map.meenta.io/?utc-source=site" title="NGS Instrument Map of the United States">Instrument Map</a>
+			</li>
+			<li {% if page.url == '/scientists/' %} class="selected" {% endif %}>
+				<a href="/scientists" title="Meenta for Scientists">For <em>Scientists</em></a>
+			</li>
+			<li {% if page.url == '/hosts/' %} class="selected" {% endif %}>
+				<a href="/hosts" title="Meenta for Instrument Hosts">For <em>Instrument Hosts</em></a>
+			</li>
+			<li {% if page.url == '/about/' %} class="selected" {% endif %}>
+				<a href="/about" title="About Meenta">About Meenta</a>
+			</li>
+			<li {% if page.url == '/resources/' %} class="selected" {% endif %}>
+				<a href="/resources" title="Resources">Resources</a>
+			</li>
+			<li class="nav-cta">
+				<profile title="Sign Up">...</profile>
 			</li>
 		</ul>
 	</nav>

@@ -605,13 +605,15 @@
         $('body').addClass('is-touch');
     }
 
-    var $header = $('header.header');
+    var $header = $('header.header'),
+        $headerMenuButton = $('#mobile-nav-button');
 
     // Mobile Menu
-    $('#mobile-nav-button').on('click', function(event){
+    $headerMenuButton.on('click', function(event){
 
         event.preventDefault();
         $header.toggleClass('open');
+        $headerMenuButton.toggleClass('is-active');
     });
 
     // LocationField
