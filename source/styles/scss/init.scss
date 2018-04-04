@@ -1,11 +1,12 @@
 @import 'utilities/mixins';
 @import 'utilities/normalize';
 
+@import 'common/fonts';
+@import 'common/variables';
+
 @import 'vendor/bootstrap/bootstrap';
 @import "vendor/hamburgers/hamburgers";
 
-@import 'common/fonts';
-@import 'common/variables';
 @import 'common/global';
 @import 'common/typography';
 @import 'common/spacing';
