@@ -1,3 +1,9 @@
+/*
+//  Use spacing classes on divs that need
+//  padding on both sides. Adjacent spacers
+//  have their top padding removed.
+*/
+
 .section-spacer {
 
     padding-top: pem(96, 16);
@@ -13,4 +19,34 @@
 .group-spacer + .group-spacer {
 
     padding-top: 0;
+}
+
+/*
+//  Use prefix and postfix classes
+//  to add and remove margins to
+//  text elements.
+//
+//  Examples: 
+//  .sp-pos-0 removes space after the element
+//  .sp-pos-2 adds two spaces after the element
+//  .sp-pre-1 adds one space before the element
+*/
+
+@for $i from 0 to 7 {
+
+    .sp-pre-#{nth($i, 1)} {
+
+        margin-top: nth($i, 1) * 1em;
+    }
+
+    .sp-pos-#{nth($i, 1)} {
+
+        margin-bottom: nth($i, 1) * 1em;
+    }
+
+    .sp-#{nth($i, 1)} {
+
+        margin-bottom: nth($i, 1) * 1em;
+        margin-top: nth($i, 1) * 1em;
+    }
 }

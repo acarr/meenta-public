@@ -53,151 +53,116 @@
 	<div class="container">
 		<div class="row">
 			<div class="header-logo col-md-3 col-sm-3 col-xs-12">
-				<h1 class="logotype-small"><a href="/">Meenta</a></h1>
+				<h1 class="logotype-small tagline"><a href="/">Meenta</a></h1>
 			</div>
-			<nav class="header-nav col-md-9 col-sm-9 col-xs-12" data-ng-app="mtprofile">
+			<nav class="nav header-nav col-md-9 col-sm-9 col-xs-12" data-ng-app="mtprofile">
 				<ul>
-					<li >
-						<a href="/how-to-book" title="Meenta for Scientists">For Scientists</a>
-					</li>
-					<li >
-						<a href="/become-a-host" title="Meenta for Instrument Service Providers">For Service Providers</a>
-					</li>
-					<li style="color: white">
-						<span style="color: light-gray; position: absolute; font-size: 10px; top: 12px;">Need help?</span>
-						<span>(888) 204-5303</span>
-					</li>
 					<li>
 						<a href="https://map.meenta.io/?utc-source=site" title="NGS Instrument Map of the United States">Instrument Map</a>
 					</li>
-					<li style="width: 100px; color: #2977D2; font-weight: bold; background-color: white; color: red; border-radius: 5px; padding: 5px 12px; color: #2977D2;">
+					<li >
+						<a href="/scientists" title="Meenta for Scientists">For <em>Scientists</em></a>
+					</li>
+					<li >
+						<a href="/hosts" title="Meenta for Instrument Hosts">For <em>Instrument Hosts</em></a>
+					</li>
+					<li >
+						<a href="/about" title="About Meenta">About Meenta</a>
+					</li>
+					<li >
+						<a href="/resources" title="Resources">Resources</a>
+					</li>
+					<li class="nav-cta">
 						<profile title="Sign Up">...</profile>
 					</li>
 				</ul>
-				<a id="mobile-nav-button" class="header-nav-menu" href="#">Menu</a>
+				<button id="mobile-nav-button" class="header-nav-menu hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
 			</nav>
 		</div>
 	</div>
-	<nav class="mobile-header-nav">
+	<nav class="nav mobile-header-nav">
 		<ul>
-			<li >
-				<a href="/how-to-book" title="Meenta for Scientists">How to Book</a>
-			</li>
-			<li >
-				<a href="/become-a-host" title="Meenta for Instrument Service Providers">For Service Providers</a>
-			</li>
-			<li >
-				<a href="/resources">Resources</a>
-			</li>
-			<li>
-				<a href="event.preventDefault();">(888) 204-5303</a>
-			</i>
 			<li>
 				<a href="https://map.meenta.io/?utc-source=site" title="NGS Instrument Map of the United States">Instrument Map</a>
+			</li>
+			<li >
+				<a href="/scientists" title="Meenta for Scientists">For <em>Scientists</em></a>
+			</li>
+			<li >
+				<a href="/hosts" title="Meenta for Instrument Hosts">For <em>Instrument Hosts</em></a>
+			</li>
+			<li >
+				<a href="/about" title="About Meenta">About Meenta</a>
+			</li>
+			<li >
+				<a href="/resources" title="Resources">Resources</a>
+			</li>
+			<li class="nav-cta">
+				<profile title="Sign Up">...</profile>
 			</li>
 		</ul>
 	</nav>
 </header>
 
-	<div class="hero container-fluid">
+	<div class="hero hero-large container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="hero-intro col-lg-7 col-md-8">
-					<h1 class="hero-title klogotype-large">
-						Find a Sequencer.<br>When You Need it.
-					</h1>
-					<h2 class="hero-body">
-						Meenta is creating the first sharing economy in science.
-						Scientists can now instantly find, book and then send samples
-						to host sites for next-generation sequencing.
-
-						<!-- Meenta is creating the first sharing economy in science.
-						Scientists can now leverage our cloud to instantly find,
-						book and then send samples to host sites for next-generation
-						sequencing. -->
-					</h2>
-				</div>
-
-				<!-- <div class="col-lg-5 col-md-4 hero-intro" style="height: 50px;">
-					&nbsp;
-					<div class="hero-host-cta hero-title">
-						<p>
-							Join our newsletter to keep up to date on
-							sequencing resources and local resources.
-						</p>
-
-						<br>
-
-						<style>
-							.hbspt-form { padding: 0px; min-height: 50px; margin: 0px; }
-							.hbspt-form span, label { color: white; color: #FFF; -webkit-font-smoothing: antialiased; }
-							.hs-error-msgs li { color: white }
-							.hs-form-required { margin-left: 10px; display: none; }
-							.actions { height: 0px !important; margin: 0px; padding: 0px; }
-							.hs_submit { padding: 0px; position: relative; height: 40px; }
-						</style> -->
-
-						<!--[if lte IE 8]>
-						  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-						  <![endif]-->
-						  <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-						<script>
-						  hbspt.forms.create({
-						    portalId: '2910074',
-						    formId: 'd0fe46f1-b03a-495c-98b5-71bebda60eed',
-
-						  });
-						</script>
-
-					</div>
-				</div> -->
-
-			</div>
-			<div class="row">
-				<div class="hero-search">
-					<form id="searchForm" name="searchForm" onsubmit="searchSubmit(this);">
-						<fieldset class="hero-search-text-field">
-							<label>Service Provider or Instrument?</label>
-							<input type="text" id="q" name="q" placeholder="Enter an Provider or Instrument"/>
-						</fieldset>
-						<fieldset class="hero-search-field hero-search-field-type">
-                			<label>Read Type</label>
-                			<select name="rt" id="rt">
-								<option value="">Any</option>
-                  				<option value="sr">Single Read</option>
-                  				<option value="pe">Paired End</option>
-                			</select>
-            			</fieldset>
-						<fieldset class="hero-search-field hero-search-field-type">
-                			<label>Read Length</label>
-                			<select name="rl" id="rl">
-								<option value="">Any</option>
-								<option value="30">30 bp</option>
-								<option value="50">50 bp</option>
-								<option value="75">75 bp</option>
-								<option value="100">100 bp</option>
-								<option value="125">125 bp</option>
-								<option value="150">150 bp</option>
-								<option value="200">200 bp</option>
-								<option value="250">250 bp</option>
-                			</select>
-            			</fieldset>
-						<fieldset class="hero-search-field hero-search-field-submit">
-							<input type="submit" value="Search" />
-						</fieldset>
-					</form>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12" style="height: 50px;">
-					&nbsp;
-					<!-- <div class="hero-host-cta">
-						<p>Have an instrument with excess capacity? <a href="https://app.meenta.io/register">Become a host</a></p>
-					</div> -->
+				<div class="col-lg-9 tick tick-secondary-highlight hero-content">
+					<h3>Meenta makes it fast and easy for scientists to find and instantly book available time on expensive NGS equipment.</h3>
+					<h3><strong>Get samples back in 12 days. Guaranteed.</strong></h3>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="container section-spacer">
+		<div class="row">
+			<div class="col-md-6 tick text-primary">
+				<h1>Never Wait for a Sequencer. Ever Again.</h1>
+			</div>
+			<div class="col-md-6 text-base">
+				<div class="group-spacer">
+					<h4 class="sp-0">Sequence Your Samples in 12 Days, Guaranteed</h4>
+					<p class="sp-pos-0">Select from the full suite Illumnia NGS instruments: MiSeq, HiSeq and NovaSeq.</p>
+				</div>
+				<div class="group-spacer">
+					<h4 class="sp-0">Never Wait for a Price Quote Again</h4>
+					<p class="sp-pos-0">All pricing is visible. You get complete visibility into the sequencing workflow. Every time you search.</p>
+				</div>
+				<div class="group-spacer">
+					<h4 class="sp-0">Keep Your Samples Safe and Secure</h4>
+					<p class="sp-pos-0">Meenta was created by scientists. We know the value of your samples. Your samples are insured for $1,000,000 should they get lost or damaged.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid field-light">
+		<div class="container section-spacer">
+			<div class="row">
+				<div class="col-md-12 tick text-primary">
+					<h2 class="sp-pos-0">Find Your Sequencing Solution Now.</h2>
+				</div>
+				<div class="col-md-6">
+					<p class="sp-pre-1">Search by read type, read length, instrument type, location and date. View live instrument capacity that you can book instantly or reserve.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container section-spacer">
+		<div class="row">
+			<div class="col-md-6 tick text-primary">
+				<h2>5 Fast and Easy Steps to Get Your Samples Back</h2>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
 	<div class="notice notice-host container-fluid" kstyle="height: 300px;">
 		<div class="container" style="margin-bottom: 40px; margin-top: 40px;">
 			<div class="row">

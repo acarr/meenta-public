@@ -19,7 +19,7 @@ app.directive('profile', function() {
       title: '@'
     },
     template: `
-      <a href="#" style="color: #2977D2; font-weight: bold;" ng-click="go()">
+      <a href="#" ng-click="go()">
         {{ title }}
       </a>
     `,
