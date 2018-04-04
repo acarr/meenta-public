@@ -21,6 +21,11 @@
     padding-top: 0;
 }
 
+.group-spacer:last-child {
+
+    padding-bottom: 0;
+}
+
 /*
 //  Use prefix and postfix classes
 //  to add and remove margins to

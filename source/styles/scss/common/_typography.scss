@@ -5,6 +5,7 @@ h1 {
     font-style: normal;
     font-size: pem(84.0);
     line-height: pem(96.0, 84.0);
+    margin-top: pem(48.0, 84.0);
 }
 
 h2 {
@@ -14,6 +15,7 @@ h2 {
     font-style: normal;
     font-size: pem(60.0);
     line-height: pem(72.0, 60.0);
+    margin-top: pem(36.0, 60.0);
 }
 
 h3 {
@@ -23,6 +25,7 @@ h3 {
     font-style: normal;
     font-size: pem(36.0);
     line-height: pem(48.0, 36.0);
+    margin-top: pem(36.0, 36.0);
     letter-spacing: 0.02em;
     -webkit-font-smoothing: antialiased;
 
@@ -40,6 +43,7 @@ h4 {
     font-style: normal;
     font-size: pem(30.0);
     line-height: pem(42.0, 30.0);
+    margin-top: pem(42.0, 30.0);
 }
 
 h5 {
@@ -49,6 +53,7 @@ h5 {
     font-style: normal;
     font-size: pem(22.0);
     line-height: pem(24.0, 22.0);
+    margin-top: pem(24.0, 22.0);
 }
 
 p {
@@ -58,6 +63,12 @@ p {
     font-style: normal;
     font-size: pem(16.0);
     line-height: pem(24.0, 16.0);
+    margin-top: pem(12.0, 16.0);
     letter-spacing: 0.03em;
     @extend .text-base;
 }
+
+// h1, h2, h3, h4, h5, p {
+
+//     margin-top: auto;
+// }
