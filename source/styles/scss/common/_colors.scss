@@ -27,3 +27,8 @@
 
     background-color: $lightSectionColor;
 }
+
+h5 {
+
+    @extend .text-base;
+}
