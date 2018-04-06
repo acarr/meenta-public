@@ -11,15 +11,15 @@
         $('body').addClass('is-touch');
     }
 
-    var $header = $('#navbarNav'),
-        $headerMenuButton = $('#navbarToggleButton');
+    var $header = $('header.header'),
+        $headerMenuButton = $('#mobile-nav-button');
 
     // Mobile Menu
     $headerMenuButton.on('click', function(event){
 
         event.preventDefault();
-        $header.toggleClass('show');
-        $headerMenuButton.toggleClass('active');
+        $header.toggleClass('open');
+        $headerMenuButton.toggleClass('is-active');
     });
 
     // LocationField

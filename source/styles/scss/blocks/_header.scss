@@ -2,6 +2,11 @@
 
     padding-top: 22px;
     padding-bottom: 22px;
+
+    .navbar-collapse.show {
+
+        @extend .sp-2;
+    }
 }
 
 .navbar-brand.logotype-small {
