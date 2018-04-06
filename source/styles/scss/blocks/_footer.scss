@@ -19,6 +19,13 @@ footer {
 
         padding-left: 2rem;
         height: 100%;
+
+        @include media-breakpoint-down(sm) {
+            
+            padding-left: 0;
+            height: auto;
+            border: none !important;
+        }
     }
 
     a {

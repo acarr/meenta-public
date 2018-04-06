@@ -71,3 +71,9 @@ p {
 b, strong {
     font-weight: 500;
 }
+
+@include media-breakpoint-down(sm) {
+    html {
+      font-size: 0.8rem;
+    }
+}
