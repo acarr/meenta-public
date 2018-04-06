@@ -4,25 +4,25 @@
     height: 6px;
     background-color: $primaryHighlight;
     content: '';
+    width: 84px;
+
+    @include media-breakpoint-down(sm) {
+
+        width: 72px;
+    }
+}
+
+.tick.text-center:before {
+
+    margin-left: (84px / 2) * -1;
+
+    @include media-breakpoint-down(sm) {
+
+        margin-left: (72px / 2) * -1;
+    }
 }
 
 .tick.tick-secondary-highlight:before {
 
     background-color: $secondaryHighlight;
-}
-
-@for $i from 1 to 13 {
-
-	.col-lg-#{nth($i, 1)}, .col-md-#{nth($i, 1)}, .col-sm-#{nth($i, 1)}, .col-xs-#{nth($i, 1)} {
-
-        &.tick:before, .tick:before {
-
-            width: 100%/nth($i, 1);
-        }
-
-        &.text-center:before {
-
-            margin-left: ((100%/nth($i, 1)) / 2) * -1 ;
-        }
-    }
 }
