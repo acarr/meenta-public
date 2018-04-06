@@ -13,6 +13,11 @@ footer {
             @extend p;
             margin: 0;
         }
+
+        a {
+            @extend .text-base;
+            text-decoration: none;
+        }
     }
 
     .border-left {
@@ -26,10 +31,5 @@ footer {
             height: auto;
             border: none !important;
         }
-    }
-
-    a {
-        @extend .text-base;
-        text-decoration: none;
     }
 }
