@@ -3,6 +3,7 @@
     width: 138px;
     height: 16px;
     background: url('../images/logo-small-white.png') no-repeat;
+    position: relative;
 
     @include text-hide;
     @include box-retina('../images/logo-small-white@2x.png', 138px, 16px);
@@ -16,7 +17,7 @@
 .tagline:after {
 
     position: absolute;
-    bottom: 10px;
+    bottom: -19px;
     width: 100%;
     height: 12px;
     content: '';

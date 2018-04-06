@@ -1,0 +1,15 @@
+.map-callout {
+
+    background-size: contain;
+    background: url('../images/map-blue-background.png') no-repeat center center;
+    
+    .map-callout-primary {
+
+        background: url('../images/map-blue-background.png') no-repeat center center;
+    }
+
+    .map-callout-secondary {
+
+        background: url('../images/map-gray-background.png') no-repeat center center;
+    }
+}

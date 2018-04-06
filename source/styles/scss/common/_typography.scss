@@ -67,3 +67,7 @@ p {
     letter-spacing: 0.03em;
     @extend .text-base;
 }
+
+b, strong {
+    font-weight: 500;
+}

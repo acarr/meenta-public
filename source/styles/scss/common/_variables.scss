@@ -24,13 +24,23 @@ $screen-md-max:     ($screen-lg-min - 1);
 // Fonts
 $fontStack: "Helvetica Neue LT", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+// Bootstrap Overides
+
+// Colors
 $primary:#3C92F6;
 $dark:#2977D2;
+$green: #82CE66;
 
-// $theme-colors: (
-//   "primary": #0074d9,
-//   "danger": #ff4136
-// );
+// Anchor Links
+$link-decoration: underline;
+
+// Buttons
+$btn-padding-x-lg: 50px;
+$btn-border-radius: 2px;
+$btn-border-radius-lg: 2px;
+$btn-border-radius-sm: 2px;
+$btn-font-weight: 400;
+
 
 
 
@@ -45,7 +55,6 @@ $lightSectionColor: #F5F5F5;
 
 $blue: #3C92F6;
 $darkBlue: #2977D2;
-$green: #82CE66;
 $lightGrey: #F4F4F4;
 $darkGrey: #585858;
 $text: #5D5D5D;
