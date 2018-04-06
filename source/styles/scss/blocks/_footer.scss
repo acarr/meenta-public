@@ -1,62 +1,28 @@
-.techstars-callout {
-
-    background: #2A3842;
-
-    h5 {
-
-        color: #FFF;
-        font-weight: 300;
-        margin-top: 0;
-    }
-
-    img {
-
-        margin: 25px 0;
-    }
-}
-
 footer {
 
-    background: $darkGrey;
-
-    h5 {
-
-        margin-top: 50px;
-        margin-bottom: 12px;
+    p {
+        @extend .font-weight-normal;
     }
 
-    em {
+    ul {
 
-        font-size: pem(18);
-        font-style: normal;
-        color: $green;
-        font-weight: 300;
-        -webkit-font-smoothing: antialiased;
-        letter-spacing: 0.02em;
+        margin-top: pem(12.0, 16.0);
+
+        li {
+
+            @extend p;
+            margin: 0;
+        }
     }
 
-    h6 {
+    .border-left {
 
-        font-size: pem(13);
-        color: #9C9C9C;
-        font-weight: 400;
-        letter-spacing: 0.02em;
+        padding-left: 2rem;
+        height: 100%;
     }
 
-    a, a:link {
-
-        color: #FFF;
-        -webkit-font-smoothing: antialiased;
+    a {
+        @extend .text-base;
         text-decoration: none;
-       
-        &:hover {
-
-            text-decoration: underline;
-        }
-
-        &:active {
-
-            opacity: 0.5;
-        }
     }
 }

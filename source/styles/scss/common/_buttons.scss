@@ -11,6 +11,19 @@ a.btn {
     -webkit-font-smoothing: antialiased;
 }
 
+.btn-outline-success {
+
+    box-shadow: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: pem(20, 16);
+    
+    &:hover {
+
+        @extend .text-light;
+    }
+}
+
 // .button {
 
 //     display: block;
