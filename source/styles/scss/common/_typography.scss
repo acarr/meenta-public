@@ -70,10 +70,23 @@ p {
 
 b, strong {
     font-weight: 500;
+    -webkit-font-smoothing: auto;
 }
 
 @include media-breakpoint-down(sm) {
     html {
       font-size: 0.8rem;
     }
+}
+
+dl {
+
+    @extend .sp-pre-0;
+    @extend .sp-pos-1;
+}
+
+dt, dd {
+
+    @extend p;
+    @extend .sp-0;
 }
