@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Meenta — Team</title>
-	<meta name="description" content="Science Equipment Sharing Service for Next Generation Sequencing.">
+	<title>Meenta — Send samples, not emails.</title>
+	<meta name="description" content="Meenta is the world first instrument sharing services for Next Generation Sequencing.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/styles/styles.css">
 <link rel="stylesheet" href="/styles/faqs.css">
@@ -45,7 +45,7 @@
 
 
 </head>
-<body class="page-info page-home">
+<body class="page-home">
 	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
 <script src="/scripts/profile.js"></script>
@@ -68,7 +68,7 @@
 		  			<a class="nav-link" href="/hosts/">For <em>Instrument Hosts</em></a>
 				</li>
 				<li class="nav-item active">
-		  			<a class="nav-link" href="#">About Meenta</a>
+		  			<a class="nav-link" href="/about/">About Meenta</a>
 				</li>
 				<li class="nav-item">
 		  			<a class="nav-link" href="#">Resources</a>
@@ -80,292 +80,95 @@
 		</div>
 	</div>
 </nav>
-
-
-<style>
-
-	.hero-general .hero-intro {
-
-		margin-top: 60px;
-		margin-bottom: 30px;
-	}
-
-	.team-container {
-
-		background: url(../images/host-background.svg) 600px 40% no-repeat #F4F4F4;
-		padding-bottom: 40px;
-	}
-
-	.team h2 {
-
-		font-weight: 300;
-		-webkit-font-smoothing: antialiased;
-		color: #5D5D5D;
-		font-size: 2.625em;
-		line-height: 1.24138em;
-	}
-
-	.team-member {
-
-		margin-bottom: 40px;
-	}
-
-	.team-member .photo {
-
-		float: left;
-		width: 20%;
-		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-	}
-
-	.team-member .photo img {
-
-		width: 80%;
-		border-radius: 100px;
-	}
-
-	.team-member .text {
-
-		float: left;
-		width: 80%;
-	}
-
-	.team-member .text h4 {
-
-		font-size: 1.25em;
-		line-height: 1.8em;
-		font-weight: 500;
-		margin-bottom: 0;
-		margin-top: 10px;
-		color: #5D5D5D;
-	}
-
-	.team-member .text h5 {
-
-		font-size: 1em;
-		line-height: 1.8em;
-		font-weight: 400;
-		margin-top: 0;
-		color: #5D5D5D;
-	}
-
-	.team-member .text p {
-
-		line-height: 1.66667em;
-		margin-top: 17px;
-		color: #5D5D5D;
-		font-size: 1em;
-		font-weight: 300;
-		width: 70%;
-	}
-
-	.team-member .photo:after,
-	.team-member .text:after {
-
-		content: " ";
-		visibility: hidden;
-		display: block;
-		height: 0;
-		clear: both;
-	}
-
-
-</style>
-
-<div class="hero container-fluid hero-general">
-	<div class="container">
-		<div class="row">
-			<div class="hero-intro col-lg-9 col-md-9">
-				<h1 class="hero-body">
-					Team & Advisors
-				</h1>
-				<!-- <h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam
-					vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.
-				</h2> -->
+	<div class="jumbotron jumbotron-fluid section-spacer bg-primary text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 tick tick-secondary-highlight">
+					<h3><strong>About Meenta</strong></h3>
+					<h3>Accelerating Science Research Outcomes Enabling Personalized Medicine</h3>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid team-container">
-		<div class="container">
+	<div class="container section-spacer">
+		<div class="row">
+			<div class="col-md-12 col-lg-10 offset-lg-1 tick text-primary text-center">
+				<h2>Why Meenta</h2>
+			</div>
+			<div class="col-md-8 offset-md-2 text-base">
+				<h4>There is no viable alternative to trial-and-error medicine for many diseases today. We still now little about their causes, about the biological markers of their presence or stage, and about the factors that influence the effectiveness of possible remedies.</h4>
+				<h4>Meenta is here to enable life science acceleration - enabling scientists to speed up their research and discoveries to empower the next phase of Personalized Medicine .</h4> 
+			</div>
+		</div>
+	</div>
 
-			<div class="row team">
-				<div class="col-md-12">
-					<h2>
-						<!-- Team -->
-					</h2>
+	<div class="container-fluid bg-light section-spacer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 tick text-primary">
+					<h2 class="sp-pos-0">The Team</h2>
 				</div>
-				<div class="team-member col-md-12">
-					<div class="photo">
-						<img src="/images/team/gabor.jpg" alt="Gabor Bethlendy" />
-					</div>
-					<div class="text">
-						<h4>Gabor Bethlendy</h4>
-						<h5>CEO &amp; Founder</h5>
-						<p>
-							Gabor has 20 years of business expertise in the area of genomics and diagnostics
-							spanning some of the best companies in the field including Agilent Technologies
-							and Roche Diagnostics.  As founder and Chief Commercial Officer of Parabase
-							Genomics he built the company from the ground up creating the first commercial
-							play in the field of Neonatal Precision Medicine.
-						</p>
-					</div>
-				</div>
-				<div class="team-member col-md-12">
-					<div class="photo">
-						<img src="/images/team/ssmith.jpg" alt="Stephan Smith" />
-					</div>
-					<div class="text">
-						<h4>Stephan Smith</h4>
-						<h5>CTO &amp; Founder</h5>
-						<p>
-							Boston based entrepreneur and full stack developer with extensive web, mobile, and
-							systems design and development experience. Has extensive experience building
-							development teams, system architecture and managing software through the planning,
-							development and deployment.
-						</p>
-					</div>
+				<div class="col-md-9 col-lg-6">
+					<p class="sp-pre-1">Donec id dui quis mi mollis commodo eget dictum felis. In eget lorem ac nibh maximus varius.</p>
 				</div>
 			</div>
-
 			<div class="row">
-				<div class="team col-md-12">
-					<h2>Advisors</h2>
-				</div>
-				<div class="team-member col-md-12">
-					<div class="photo">
-						<img src="/images/team/StacyGabriel.jpg" alt="Stacy Gabriel" />
-					</div>
-					<div class="text">
-						<h4>Stacy Gabriel, Ph.D</h4>
-						<h5>Senior Director, The Broad Institute</h5>
-						<p>
-							Dr. Stacey Gabriel is a human geneticist, with a research interest in large-scale genomics and its
-							application to human medical genetics research. She is currently an Institute Scientist and Senior
-							Director of the Broad Institute’s Genomics Platform one of the largest sequencing centers in the world.
-							She oversees the125-person organization that encompasses all production and development activities
-							related to sample handling, sequencing, gene expression, genotyping and related data processing and
-							management activities.
-						</p>
-						<p>
-							Since joining the Broad Institute (formerly the Whitehead Institute Center for Genome Research),
-							she has played central roles in the development of methods for generating and analyzing data using
-							genotyping and next-generation sequencing in the setting of cancer and medical genetics studies.
-						</p>
-						<p>
-							Dr. Gabriel joined the Whitehead Institute/MIT Center for Genome Research working under the direction
-							of Eric Lander in 1998.  Gabriel received her B.S. in Molecular Biology from Carnegie Mellon
-							University (1993) and Ph.D. in Human Genetics from Case Western Reserve University (1998).
-						</p>
-					</div>
-				</div>
-				<div class="team-member col-md-12">
-					<div class="photo">
-						<img src="/images/team/AndreiHagiu2.jpg" alt="Andrei Hagiu, Ph.D" />
-					</div>
-					<div class="text">
-						<h4>Andrei Hagiu, Ph.D</h4>
-						<h5>Associate Professor, MIT Sloan School of Management</h5>
-						<p>
-							Andrei Hagiu is a Visiting Associate Professor of Technological Innovation, Entrepreneurship, and
-							Strategic Management at the MIT Sloan School of Management since July 2016. Previously, he was an
-							Associate Professor in the Strategy group at Harvard Business School. In 2012, he took a leave of
-							absence from Harvard in order to work full-time at Intuit, helping with its strategic transformation
-							from a product-focused company into a platform company. Andrei holds a PhD in economics from Princeton
-							University and did his undergraduate studies at the Ecole Polytechnique in France. He is a citizen of
-							Romania, France and the United States.
-						</p>
-						<p>
-							Andrei’s research focuses on multi-sided platforms (e.g. Airbnb, Amazon, eBay, Google, Facebook,
-							PlayStation, TaskRabbit, etc.) and their unique strategic challenges. His work has been published
-							in the Rand Journal of Economics, Management Science, Journal of Economic Perspectives, Journal
-							of Economics & Management Strategy, and the Harvard Business Review. Andrei serves as a Co-Editor
-							for the Journal of Economics & Management Strategy. At Harvard Business School, Andrei teaches the
-							Strategy & Technology elective course in the MBA program.
-						</p>
-						<p>
-							On the consulting side, Andrei works with both startups attempting to build multi-sided platform
-							businesses and large companies seeking to turn products into multi-sided platforms. He is on the
-							board of advisors of CoachUp, a marketplace connecting users with sports coaches for private lessons.
-						</p>
-					</div>
-				</div>
-				<div class="team-member col-md-12">
-					<div class="photo">
-						<img src="/images/team/RobertSteen3.jpg" alt="Robert Steen" />
-					</div>
-					<div class="text">
-						<h4>Robert Steen</h4>
-						<h5>Director Biopolymers Facility, Harvard Medical School</h5>
-						<p>Robert Steen is the director of Harvard Medical School’s genomics
-							core facility located within the Department of Genetics in the
-							Longwood Medical Area of Boston. He directs a team of scientists
-							that provide a wide variety of molecular biology services to the
-							faculty at HMS and its sixteen affiliate hospitals and research
-							institutes. Robert has expertise in technology evaluation, process
-							optimization, production oversite, team management and data quality
-							analysis. His core currently focuses on sample preparation and
-							next-generation sequencing for a wide variety of scientific
-							applications. He has over 17 years of experience directing core
-							facilities, three years as director of the HHMI genetics core
-							at HMS and 14 years as current director of the genomics core
-							within the department of genetics at HMS.
-						</p>
-						<p>
-							In the nine years prior to serving as a core director, Robert
-							worked on and later managed various teams under the direction
-							of Dr. Eric Lander and Dr. Thomas Hudson at the Whitehead
-							Institute/MIT Center for Genome Research, constructing the first
-							comprehensive, genome-wide genetic maps of the mouse and rat.
-							From 1988 to 1991 Robert conducted research on the origins of
-							HIV and SIV in the department of microbiology and molecular
-							genetics at the New England Regional Primate Research Center
-							at Harvard Medical School.
-						</p>
+
+				<div class="media col-md-6">
+					<img src="..." alt="Generic placeholder image">
+					<div class="media-body">
+						<h5 class="mt-0">Media heading</h5>
+						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
 					</div>
 				</div>
 
-				<!-- <div class="team-member col-md-12">
-					<div class="photo">
-						<img src="/images/team/JenCouget.jpg" alt="Jennifer A. Couget, Sc.M." />
-					</div>
-					<div class="text">
-						<h4>Jennifer A. Couget, Sc.M.</h4>
-						<h5>Scientist, Consulting Advisor</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nisi. Aliquam vitae arcu pretium, commodo ligula in, volutpat orci. Ut in dignissim lacus, id luctus purus.</p>
-					</div>
-				</div> -->
 
-				<div class="team-member col-md-12">
-					<div class="photo">
-						<img src="/images/team/ShawnLevy.jpg" alt="Shawn Levy, PhD" />
-					</div>
-					<div class="text">
-						<h4>Shawn Levy, PhD</h4>
-						<h5>Director of Genomic Services Lab,  HudsonAlpha Institute</h5>
-						<p>
-							Shawn Levy, PhD, is a faculty investigator and the founding director of the Genomic Services Laboratory
-							(GSL) at the HudsonAlpha Institute for Biotechnology. He serves as executive director of the HudsonAlpha
-							Clinical Services Laboratory, LLC., which he launched in 2014. Levy focuses on the development and
-							application of genomic and bioinformatic technologies and methods to support scientific investigation.
-							His team uses high performance genotyping and sequencing technologies to support projects from plant
-							and animal phylogenetic studies to translational and clinical-basedprojectsat the GSL. Levy is adjunct
-							faculty in the department of genetics and department of epidemiology at the University of Alabama at
-							Birmingham and serves as an ad hoc reviewer for more than a dozen scientific journals. He received
-							his PhD in biochemistry and completed a postdoctoral fellowship in genetics in 2000 at Emory University
-							in Atlanta, where he set up a microarray facility at the Emory Center for Molecular Medicine. Before
-							joining HudsonAlpha in 2009, Levy was a faculty member at Vanderbilt University Medical Center with
-							appointments in the department of molecular physiology and biophysics and the department of biomedical
-							informatics. He was the founding director of the Vanderbilt Microarray Shared Resource.
+			</div>
+		</div>
+	</div>
 
-						</p>
-					</div>
+	<div class="container-fluid section-spacer border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 tick text-primary">
+					<h2 class="sp-pos-0">Techstars 2018</h2>
+				</div>
+				<div class="col-md-9 col-lg-6">
+					<p class="sp-pre-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis in velit ut cursus. Phasellus dignissim erat rhoncus, sollicitudin metus non, feugiat lectus. Aenean sagittis eros id purus tincidunt, vel tempus nisl ornare. Pellentesque auctor libero ut aliquet tincidunt. Mauris fermentum a nibh eget ultrices. Maecenas iaculis odio in bibendum pharetra.</p>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="container-fluid">
+	<div class="container section-spacer">
+		<div class="row">
+			<div class="col-md-12 tick text-primary">
+				<h2 class="sp-pos-0">Join our Newsletter</h2>
+			</div>
+			<div class="col-md-6">
+				<p class="sp-pre-1">Keep up to date on sequencing resources.</p>
+			</div>
+		</div>
+		<form>
+			<div class="row">
+				<div class="col-md-4 sp-pre-2">
+					<label for="subscriptionName">Name</label>
+					<input type="text" class="form-control form-control-lg" id="subscriptionName" aria-describedby="subscriptionName">
+				</div>
+				<div class="col-md-4 sp-pre-2">
+					<label for="subscriptionEmail">Email Address</label>
+					<input type="email" class="form-control form-control-lg" id="subscriptionEmail" aria-describedby="subscriptionEmail">
+				</div>
+				<div class="col-md-3 d-flex align-items-end sp-pre-2">
+					<button type="submit" class="btn btn-lg btn-outline-success">Submit</button>
+				</div>
+			</div>
+		</form>
 	</div>
 </div>
+
+	<script src="/scripts/search.js"></script>
 
 	<footer class="container-fluid bg-light">
 	<div class="container section-spacer">
