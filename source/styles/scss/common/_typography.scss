@@ -56,6 +56,17 @@ h5 {
     margin-top: pem(24.0, 22.0);
 }
 
+h6 {
+
+    font-family: $fontStack;
+    font-weight: 500;
+    font-style: normal;
+    font-size: pem(16.0);
+    line-height: pem(24.0, 16.0);
+    margin-top: pem(12.0, 16.0);
+    @extend .text-base;
+}
+
 p {
 
     font-family: $fontStack;

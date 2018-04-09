@@ -24,59 +24,18 @@ a.btn {
     }
 }
 
-// .button {
+.btn-icon {
 
-//     display: block;
-//     font-size: pem(24);
-//     font-weight: 400;
-//     -webkit-font-smoothing: antialiased;
-//     text-decoration: none;
-//     background: #FFF;
-//     color: $blue;
-//     padding: 18px 24px;
-//     text-align: center;
-//     box-shadow: 0 1px 14px 1px rgba(0,0,0,0.15);
-//     border-radius: 2px;
-//     transition: transform 0.15s, background 0.15s;
+    svg {
 
-//     &.button-inline {
+        fill: $primaryHighlight;
 
-//         display: inline-block;
-//     }
+        transition: fill .15s ease-in-out;
+    }
 
-//     &.button-dark {
 
-//         background: $blue;
-//         color: #FFF;
-//     }
-
-//     &.button-green {
-
-//         background: $green;
-//         color: #FFF;
-//     }
-
-//     &:hover {
-
-//         transform: scale(1.07);
-//         background: $blue;
-//         color: #FFF;
-
-//         &.button-dark {
-
-//             background: $green;
-//         }
-
-//         &.button-green {
-
-//             background: #FFF;
-//             color: $green;
-//         }
-//     }
-
-//     &:active {
-
-//         box-shadow: 0 1px 4px 1px rgba(0,0,0,0.08);
-//         opacity: 0.2;
-//     }
-// }
+    &:hover svg {
+    
+        fill: $secondaryHighlight;
+    }
+}
