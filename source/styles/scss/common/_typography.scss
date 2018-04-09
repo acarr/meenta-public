@@ -78,15 +78,3 @@ b, strong {
       font-size: 0.8rem;
     }
 }
-
-dl {
-
-    @extend .sp-pre-0;
-    @extend .sp-pos-1;
-}
-
-dt, dd {
-
-    @extend p;
-    @extend .sp-0;
-}

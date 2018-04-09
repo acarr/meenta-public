@@ -1,0 +1,27 @@
+// Overflow
+
+.ov-hidden {
+
+    overflow: hidden;
+}
+
+// Dictionaries
+
+dl {
+
+    @extend .sp-pre-0;
+    @extend .sp-pos-1;
+}
+
+dt, dd {
+
+    @extend p;
+    @extend .sp-0;
+}
+
+// Lists
+
+.hang {
+
+    padding-left: 0;
+}
