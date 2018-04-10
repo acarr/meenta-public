@@ -38,14 +38,14 @@ published: true
 				</div>
 			</div>
 			<div class="row" style="margin-bottom:2em;">
-				<search-bar hide-id="homepage-banner"></search-bar>
+				<search-bar-application libraries="5" type="rna" species="human" application="mRNA-Seq" hide-id="homepage-banner"></search-bar-application>
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid">
 		<div class="container">
-			<results-grid></results-grid>
+			<results-grid show-help="yes" results="$root.results" show-loading="$root.showLoading"></results-grid>
 		</div>
 	</div>
 
