@@ -1,0 +1,187 @@
+---
+title: Meenta.io
+published: true
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Meenta — Send samples, not emails.</title>
+	<meta name="description" content="Meenta is the world first instrument sharing services for Next Generation Sequencing.">
+	{% include head.html %}
+
+	<!-- Start of: CSS and JS for the Meenta Guided Search Feature -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://meenta.github.io/meenta-guided-search/search-styles.css" rel="stylesheet">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="https://meenta.github.io/meenta-guided-search/search-bundle.js"></script>
+	<!-- End of: CSS and JS for the Meenta Guided Search Feature -->
+
+</head>
+<body class="page-home">
+	{% include nav-bare.html %}
+	<div class="hero container-fluid">
+		<div class="container">
+			<div id="homepage-banner" class="row">
+				<div class="hero-intro col-lg-7 col-md-8">
+					<h1 class="hero-title klogotype-large">
+						Find a Sequencer.<br>When You Need it.
+					</h1>
+					<h2 class="hero-body">
+						Meenta is creating the first sharing economy in science.
+						Scientists can now instantly find, book and then send samples
+						to host sites for next-generation sequencing.
+					</h2>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom:2em;">
+				<search-bar-application libraries="5" type="rna" species="human" application="mRNA-Seq" hide-id="homepage-banner"></search-bar-application>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="container">
+			<results-grid show-help="yes" results="$root.results" show-loading="$root.showLoading"></results-grid>
+		</div>
+	</div>
+
+	<div class="notice notice-host container-fluid" kstyle="height: 300px;">
+		<div class="container" style="margin-bottom: 40px; margin-top: 40px;">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<h4 style="margin-top: 10px; font-size: 32px; margin-bottom: 40px;">
+						Your Next-Gen Sequencing Core In the Cloud
+					</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<h4 style="font-size: 26px;">
+						Never Wait for a Sequencer
+					</h4>
+					<p>
+						It can be frustrating not knowing when your samples will
+						be sequenced. With Meenta your samples will be ready in
+						12 days.
+					</p>
+					<p>
+						Tell us how you want to do your next-gen sequencing project
+						and we will show you live instruments matching your needs.
+					</p>
+					<p>
+						Select from the full suite <b>Illumnia NGS</b> instruments:
+						MiSeq, HiSeq and NovaSeq.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<h4 style="font-size: 26px;">
+						Skip the e-mails & Quotes
+					</h4>
+					<p>
+						There can be a lot of back and forth by e-mail before
+						you get in the sequencing queue. Getting a final quote
+						for your project may require multiple iterations as well.
+					</p>
+					<p>
+						With Meenta <b>all pricing is visible</b> on our site and
+						you get complete visibility to the sequencing workflow.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<h4 style="font-size: 26px;">
+						Your Project is Safe
+					</h4>
+					<p>
+						We understand that you may have spent years on collecting your
+						samples.
+					</p>
+					<p>
+						So, Meenta provides <b>insurance</b> for your samples
+						should they get lost or damaged during shipment to the Host.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="notice notice-host container-fluid" style="background-color: #2977D2">
+		<div class="container" style="margin-bottom: 15px; margin-top: 10px;">
+			<div class="row">
+				<div class="col-lg-8 col-md-8">
+					<h4 style="color: white; margin-top: 10px; font-size: 22px; margin-bottom: 10px;">
+						Need help with your experimental design?<br>We are happy to
+						help. Start a chat, <a href="mailto:support@meenta.io" style="color: white">email</a> or give us call.
+						<br>
+						<br>
+						Of course, we also have <a href="/faqs" style="color: white">FAQs</a>
+					</h4>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<p style="color: white; margin-top: 10px; font-weight: bold; font-size: 33px; margin-bottom: 0px;">
+						<i class="fa fa-phone"></i>
+						(888) 204-5303
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="process container-fluid">
+		<div class="container">
+			<div class="process-header row visible-xs-block visible-sm-block">
+				<div class="col-md-12">
+					<h4>How it works</h4>
+				</div>
+			</div>
+			<div class="process-step process-step-search row">
+				<div class="process-step-image col-md-7 col-md-push-5">
+					<img src="/images/search-example.png" srcset="/images/search-example@2x.png 2x" style="-webkit-filter: grayscale(100%); filter: grayscale(100%);" alt="Search example" />
+				</div>
+				<div class="process-step-body col-md-5 col-md-pull-7">
+					<h4 class="hidden-xs hidden-sm">How it works</h4>
+					<p>Search by read type, read length, instrument type, location and date. View live instrument capacity that you can book instantly or reserve.</p>
+				</div>
+			</div>
+			<div class="process-step process-step-book row">
+				<div class="process-step-image col-md-7">
+					<img src="/images/book-example.png" srcset="/images/book-example@2x.png 2x" alt="Book example" />
+				</div>
+				<div class="process-step-body col-md-5">
+					<h4>Instantly book your lanes</h4>
+					<p>Choose your instruments and ship your samples. Labels, shipping, and data transfer is handled for you.</p>
+				</div>
+			</div>
+			<div class="process-step process-step-pipeline row">
+				<div class="process-step-image col-md-7 col-md-push-5">
+					<img src="/images/pipeline-example.png" srcset="/images/pipeline-example@2x.png 2x" alt="Pipeline example" />
+				</div>
+				<div class="process-step-body col-md-5 col-md-pull-7">
+					<h4>Submission and Delivery Deadlines</h4>
+					<p>Timeline of events that will impact your booking. <a href="/pipeline">Learn more</a></p>
+				</div>
+			</div>
+			<div class="process-step process-step-track row">
+				<div class="process-step-image col-md-5">
+					<img src="/images/progress-example.png" srcset="/images/progress-example@2x.png 2x" alt="Progress example" />
+				</div>
+				<div class="process-step-body col-md-7">
+					<h4>Do it all from your phone</h4>
+					<p>Monitor your samples and book lanes or accept requests from any device. Download your data from the Meenta Cloud when your data is ready.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+    angular.element(document).ready(function () {
+      angular.bootstrap(document, ['guidedSearch']);
+    });
+  </script>
+
+	{% include footer.html %}
+</body>
+</html>
