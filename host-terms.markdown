@@ -4,11 +4,8 @@ title: Host Terms of Use
 published: true
 ---
 
-<link rel="stylesheet" href="/styles/terms.css">
-
-Effective Date: August 30, 2017
-
-**Meenta Host Terms of Use**
+## Meenta Host Terms of Use
+###### Effective Date: August 30, 2017
 
 Welcome to https://meenta.io/host-terms (the &quot;Site&quot;), an online platform connecting academic laboratories and other research institutions approved by Meenta, such as yourself (&quot;Hosts&quot;) with users registered on the Site (&quot;Meenta Users&quot;) who possess biological samples or specimens (&quot;Specimens&quot;).  Through the Site, Hosts offer Meenta Users next generation sequencing and related genomics services (&quot;Genomics Services&quot;) using sequencing instruments and other similar equipment (&quot;Sequencing Equipment&quot;), and deliver to Meenta Users (who elect to purchase such Genomics Services through the Site) the information, data, documentation, reports, results and other products of the Genomics Services (the &quot;Results&quot;).
 

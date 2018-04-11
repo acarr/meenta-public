@@ -3,10 +3,9 @@ layout: default
 title: Privacy Policy
 published: true
 ---
-MEENTA, INC.
- ONLINE PRIVACY POLICY
 
-<link rel="stylesheet" href="/styles/terms.css">
+## MEENTA, INC.
+### ONLINE PRIVACY POLICY
 
 #### Introduction
 

@@ -3,11 +3,9 @@ layout: default
 title: User Terms and Conditions
 published: true
 ---
-<link rel="stylesheet" href="/styles/terms.css">
 
-Effective Date: August 30, 2017
-
-**Meenta User Terms of Use**
+## Meenta User Terms of Use
+###### Effective Date: August 30, 2017
 
 Welcome to https://meenta.io/user-terms (the &quot;Site&quot;), an online platform connecting users (&quot;Meenta Users&quot;) who possess biological samples or specimens (&quot;Specimens&quot;), with academic laboratories and other research institutions approved by Meenta (&quot;Hosts&quot;).  After being matched with Meenta Users through the Site, Hosts provide next generation sequencing and related genomics services (&quot;Genomics Services&quot;) using sequencing instruments and other similar equipment (&quot;Sequencing Equipment&quot;), and deliver to Meenta Users the information, data, documentation, reports, results and other products of the Genomics Services (the &quot;Results&quot;).
 

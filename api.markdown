@@ -4,9 +4,7 @@ title: API & SDK Documentation
 published: true
 ---
 
-<style>
-	li { padding: 4px; }
-</style>
+## API & SDK Documentation
 
 Meenta offers a REST API for user, partner and equipment integrations. To
 access the API you need an active account with API access enabled. Use
@@ -25,7 +23,7 @@ may change.
  - Rate Limiting: All endpoints have rate limiting. Please contact support for changes to limits.
  - HTTPS required.
 
-## Authentication
+### Authentication
 This endpoint provides access to endpoints for managing access to the API.
 All endpoints requests require a 'access-token' for access; via the header, URL or body.
 
