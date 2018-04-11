@@ -34,7 +34,6 @@ algolia:
     - functions
     - privacy-policy
     - user-terms
-    - resources
     - host-terms
     - become-a-host
     - how-to-book
