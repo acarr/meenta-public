@@ -118,7 +118,7 @@ All endpoints requests require a ‘access-token’ for access; via the header, 
 
 <p>Note: <strong>nonce</strong> values are not currently required.</p>
 
-<h2 id="search">Search</h2>
+<h3 id="search">Search</h3>
 <p>The following are search endpoints. These provides access to the meenta search
 engine.</p>
 
@@ -127,7 +127,7 @@ engine.</p>
   <li>/search/<strong>{query}</strong> (POST) - Advanced search. Returns all search results for a given a given search object.</li>
 </ul>
 
-<h2 id="instruments">Instruments</h2>
+<h3 id="instruments">Instruments</h3>
 <p>The following are instrument endpoints. These provides access to manage a given
 users instruments.</p>
 
@@ -138,7 +138,7 @@ users instruments.</p>
   <li>/instrument/<strong>{ id }</strong>/samples - Returns all samples for a given instrument.</li>
 </ul>
 
-<h2 id="scheduled-runs">Scheduled Runs</h2>
+<h3 id="scheduled-runs">Scheduled Runs</h3>
 <p>The following are endpoints to manage a given instrument scheduled runs.</p>
 
 <ul>
@@ -149,7 +149,7 @@ users instruments.</p>
   <li>/instrument/<strong>{ id }</strong>/{run} (DELETE) - Provides the ability to delete a given run.</li>
 </ul>
 
-<h2 id="samples">Samples</h2>
+<h3 id="samples">Samples</h3>
 <p>The following are sample endpoints. These provides access to manage a given
 users samples.</p>
 
@@ -160,7 +160,7 @@ users samples.</p>
   <li>/sample/reject (POST) - Provides an action to reject an sample order.</li>
 </ul>
 
-<h2 id="orders">Orders</h2>
+<h3 id="orders">Orders</h3>
 <p>The following are order endpoints. These provides access to manage a given
 partner or users orders.</p>
 
@@ -172,7 +172,7 @@ partner or users orders.</p>
   <li>/order/<strong>{ id }</strong>/payments (GET) - Provides a summary of all meenta/customer payments for a given order.</li>
 </ul>
 
-<h2 id="purchase-orders">Purchase Orders</h2>
+<h3 id="purchase-orders">Purchase Orders</h3>
 <p>The following are purchase order endpoints. These provide hosts and users the
 ability to manage their account purchase order payment options.</p>
 
@@ -186,7 +186,7 @@ ability to manage their account purchase order payment options.</p>
 
 <p><em>Please note that Credit Cards are not supported via the API.</em></p>
 
-<h2 id="products">Products</h2>
+<h3 id="products">Products</h3>
 <p>The following are third party products and services endpoints.
 These provide hosts and users the ability to manage platform products.</p>
 
@@ -197,7 +197,7 @@ These provide hosts and users the ability to manage platform products.</p>
   <li>/product/<strong>{ id }</strong> (PUT) - Updates a product.</li>
 </ul>
 
-<h2 id="reports">Reports</h2>
+<h3 id="reports">Reports</h3>
 <p>The following provides access to partner reports.</p>
 
 <ul>
@@ -205,10 +205,10 @@ These provide hosts and users the ability to manage platform products.</p>
   <li>/report/<strong>{ year }</strong>/<strong>{ month }</strong>/payments (GET) - Returns a report of all payments for a given year + month.</li>
 </ul>
 
-<h2 id="sdks--third-party-packages">SDKs &amp; Third Party Packages</h2>
+<h3 id="sdks--third-party-packages">SDKs &amp; Third Party Packages</h3>
 <p>Currently Meenta only supports a node.js SDK. The node.js SDK is coming soon.</p>
 
-<h2 id="notes">Notes</h2>
+<h3 id="notes">Notes</h3>
 <p>Some helpful things to note.</p>
 
 <ul>

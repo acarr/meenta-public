@@ -33,14 +33,14 @@ All endpoints requests require a 'access-token' for access; via the header, URL 
 
 Note: __nonce__ values are not currently required.
 
-## Search
+### Search
 The following are search endpoints. These provides access to the meenta search
 engine.
 
 - /search/__{query}__ (GET) - Basic search. Returns all search results for a given 'query'.
 - /search/__{query}__ (POST) - Advanced search. Returns all search results for a given a given search object.
 
-## Instruments
+### Instruments
 The following are instrument endpoints. These provides access to manage a given
 users instruments.
 
@@ -49,7 +49,7 @@ users instruments.
 - /instrument/__{ id }__ (GET) - Return a single instrument.
 - /instrument/__{ id }__/samples - Returns all samples for a given instrument.
 
-## Scheduled Runs
+### Scheduled Runs
 The following are endpoints to manage a given instrument scheduled runs.
 
 - /instrument/__{ id }__/runs (GET) - Return a runs for a given instrument.
@@ -58,7 +58,7 @@ The following are endpoints to manage a given instrument scheduled runs.
 - /instrument/__{ id }__/{run}/samples (GET) - Returns all a samples orders for a given run.
 - /instrument/__{ id }__/{run} (DELETE) - Provides the ability to delete a given run.
 
-## Samples
+### Samples
 The following are sample endpoints. These provides access to manage a given
 users samples.
 
@@ -67,7 +67,7 @@ users samples.
 - /sample/cancel (POST) - Provides an action to cancel an sample order.
 - /sample/reject (POST) - Provides an action to reject an sample order.
 
-## Orders
+### Orders
 The following are order endpoints. These provides access to manage a given
 partner or users orders.
 
@@ -77,7 +77,7 @@ partner or users orders.
 - /order/__{ id }__ (PUT) - Updates partner fields for an order.
 - /order/__{ id }__/payments (GET) - Provides a summary of all meenta/customer payments for a given order.
 
-## Purchase Orders
+### Purchase Orders
 The following are purchase order endpoints. These provide hosts and users the
 ability to manage their account purchase order payment options.
 
@@ -89,7 +89,7 @@ ability to manage their account purchase order payment options.
 
 *Please note that Credit Cards are not supported via the API.*
 
-## Products
+### Products
 The following are third party products and services endpoints.
 These provide hosts and users the ability to manage platform products.
 
@@ -98,16 +98,16 @@ These provide hosts and users the ability to manage platform products.
 - /product/__{ id }__ (GET) - Return a single product.
 - /product/__{ id }__ (PUT) - Updates a product.
 
-## Reports
+### Reports
 The following provides access to partner reports.
 
 - /report/__{ year }__/__{ month }__/transactions (GET) - Returns a report of all transactions for a given year + month.
 - /report/__{ year }__/__{ month }__/payments (GET) - Returns a report of all payments for a given year + month.
 
-## SDKs & Third Party Packages
+### SDKs & Third Party Packages
 Currently Meenta only supports a node.js SDK. The node.js SDK is coming soon.
 
-## Notes
+### Notes
 Some helpful things to note.
 
 - API rate limiting values are not documented or available.
