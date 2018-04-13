@@ -54,6 +54,12 @@ published: true
 				<div class="col-md-12 col-lg-6">
 					<p class="sp-pre-1">Search by read type, read length, instrument type, location and date. View live instrument capacity that you can book instantly or reserve.</p>
 				</div>
+				<div class="col-12">
+					<search-bar-application libraries="5" type="rna" species="human" application="mRNA-Seq"></search-bar-application>
+				</div>
+				<div class="col-12">
+					<results-grid show-help="yes" results="$root.results" show-loading="$root.showLoading"></results-grid>
+				</div>
 			</div>
 		</div>
 	</div>

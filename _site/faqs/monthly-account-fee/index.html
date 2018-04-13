@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/styles/styles.css">
 <link rel="stylesheet" href="/styles/faqs.css">
+<link rel="stylesheet" href="https://meenta.github.io/meenta-guided-search/search-styles.css">
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favs/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favs/apple-touch-icon-114x114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favs/apple-touch-icon-72x72.png" />
@@ -47,8 +48,8 @@
 </head>
 <body class="page-home">
 	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
-<script src="/scripts/profile.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+<script src="/scripts/profile.js"></script> -->
 
 <nav class="navbar navbar-expand-lg bg-dark">
 	<div class="container">
@@ -230,6 +231,12 @@ monthly charge for an account active or inactive.</p>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="/scripts/main.js"></script>
 <script src="/scripts/faqs.js"></script>
+<script src="https://meenta.github.io/meenta-guided-search/search-bundle.js"></script>
+<script>
+angular.element(document).ready(function () {
+	angular.bootstrap(document, ['guidedSearch']);
+});
+</script>
 
 <!-- Start of GA -->
 <script>
