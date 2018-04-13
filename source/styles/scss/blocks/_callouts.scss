@@ -1,0 +1,15 @@
+
+.callout {
+
+    & > .row {
+
+        padding-bottom: pem(42.0, 30.0);
+    }
+
+    @include media-breakpoint-down(sm) {
+    
+        max-width: none; 
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
